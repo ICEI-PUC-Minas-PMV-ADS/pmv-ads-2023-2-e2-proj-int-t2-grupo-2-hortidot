@@ -1,23 +1,26 @@
-# TÍTULO DO PROJETO
+# HORTIDOT
+<img src="docs/img/logo-hortidot-horizontal.svg" alt="logotipo HortiDot">
 
-`CURSO`
+`CURSO:` Análise e Desenvolvimento de Sistemas
 
-`DISCIPLINA`
+`DISCIPLINA:` Projeto: Desenvolvimento de uma aplicação interativa
 
-`SEMESTRE`
+`SEMESTRE:` Eixo 2 [2023]
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O projeto se trata de uma aplicação interativa que visa desenvolver um sistema de cotação e pedidos de alimentos no setor de hortifruti.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+- <a href="https://github.com/alessandrasantos1098">Alessandra Santos</a>
+- <a href="https://github.com/Magi-3">Enzo Moura</a>
+- <a href="https://github.com/ingridrsbarros">Ingrid Barros</a>
+- <a href="https://github.com/kadgbarbosa">Karina Barbosa</a>
+- <a href="https://github.com/palomarizzon">Paloma Rizzon</a>
+- <a href="https://github.com/SamuelDLuffy">Samuel Magalhães</a>
 
 ## Orientador
 
-* Nome completo do professor 1
+* José Wilson da Costa
 
 ## Instruções de utilização
 
