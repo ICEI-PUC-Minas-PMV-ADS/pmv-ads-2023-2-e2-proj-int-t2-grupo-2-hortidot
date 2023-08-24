@@ -65,20 +65,21 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 ## Requisitos
 
-A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade em que os mesmos devem ser entregues.
-
 ### Requisitos Funcionais
+
+A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade em que os mesmos devem ser entregues.
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
 |RF-01| O sistema deve permitir que os fornecedores ajustem o preço para cada comprador correspondente. | ALTA | 
 |RF-02| O sistema deve permitir que o comprador e fornecedor ajustem a quantidade de itens solicitados. | ALTA |
-|RF-03| O sistema deve enviar um e-mail informando a abertura e fechamento da cotação solicitada. | MÉDIA |
+|RF-03| O sistema deve enviar uma mensagem informando a abertura e fechamento da cotação solicitada. | MÉDIA |
 |RF-04| O sistema deve mostrar o nome do fornecedor com clareza. | MÉDIA |
 |RF-05| O sistema deve permitir um canal de comunicação entre fornecedor e comprador. | ALTA|
-|RF-06| O sistema deve permitir que o comprador e fornecedor possam fazer a revisão do pedido antes do fechamento e do envio do e-mail. | ALTA |
-|RF-07| O sistema deve permitir o cadastro dos produtos de hortifruti contendo imagem, nome e código único do item. | ALTA |
+|RF-06| O sistema deve permitir que o comprador e fornecedor possam fazer a revisão do pedido antes do fechamento e do envio da mensagem. | ALTA |
+|RF-07| O sistema deve permitir o cadastro dos produtos de hortifruti contendo imagem, nome, código único do item e quantidade em estoque. | ALTA |
 |RF-08| O sistema deve permitir que o fornecedor e comprador possam efetuar o login. | ALTA |
+|RF-09|O sistema deve permitir que o fornecedor feche o pedido e que o comprador finalize a cotação após a revisão. | ALTA |
 
 ### Requisitos não Funcionais
 
@@ -86,7 +87,7 @@ A tabela a seguir apresenta os requisitos não funcionais que o projeto deverá 
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-01| O site deve ser publicado em um ambiente acessível publicamente na Internet (GitHub Pages).  | ALTA | 
+|RNF-01| O site deve ser publicado em um ambiente acessível publicamente na Internet (a definir).  | ALTA | 
 |RNF-02| O site deverá ser responsivo permitindo a visualização em um celular de forma acessível |  ALTA | 
 |RNF-03| O site deve ser compatível com os principais navegadores do mercado. | ALTA |
 |RNF-04| O site deve cumprir com boas práticas de acessibilidade, como por exemplo: contraste adequado, atributos para leitores de tela, tags semânticas em HTML, etc. | MÉDIA |
@@ -99,6 +100,10 @@ As questões que limitam a execução desse projeto e que se configuram como obr
 |--|-------------------------------------------------------|
 |RE-01| O projeto deverá ser entregue no final do semestre letivo, não podendo extrapolar a data de 06/12/2023. |
 |RE-02| A equipe não pode subcontratar o desenvolvimento do trabalho. |
+|RE-03| O projeto não deve usar sistemas de IAs para o desenvolvimento do código. |
+|RE-04| O projeto deve ser limitado a linguagem de programação C#. |
+|RE-05| O projeto deve ser limitado a um banco de dados relacional. |
+|RE-06| Caso seja usado algum framework front-end, usar bootstrap. |
 
 ## Diagrama de Casos de Uso
 
