@@ -1,10 +1,11 @@
 # Introdução
 
-A HortiDot tem como compromisso fornecer um sistema que permita a cotação e pedidos de produtos de hortifruti. Através de uma pesquisa de mercado não identificamos uma empresa que oferece esse tipo de serviço de cotação personalizada. A HortiDot surgiu para suprir essa necessidade, visando contribuir na produtividade dos funcionários de sua empresa. Fornecedores e compradores têm acesso único onde podem selecionar os itens que desejam fazer a cotação dentro de um período de tempo estabelecido pelo comprador.
+A HortiDot tem como compromisso fornecer um sistema que permita a cotação e pedidos de produtos de hortifruti. A HortiDot surgiu para suprir essa necessidade, visto que em 2022 este setor da economia movimentou 17,5 milhões de toneladas de produtos hortigranjeiros, representando R$61,8 bilhões de reais, segundo pesquisa da comercialização total de frutas e hortilaças realizada em 2023 pela CONAB. Sendo assim, visando contribuir na produtividade desse setor, que segundo os mesmos dados da CONAB, no que tange ao percentual de participação de regiões brasileiras na quantidade comercializada de hortigranjeiros, a região Sudeste corresponde por 49% (8.522.061 toneladas) do total do país, surge a urgência de uma nova ferramenta para cotações. Fornecedores e compradores têm acesso distinto onde podem selecionar os itens que desejam fazer a cotação de forma personalizada, dentro de um período de tempo estabelecido pelo comprador.
+
 
 ## Problema
-Este projeto visa resolver o problema da deficiência no mercado de uma solução prática na cotação de produtos e abertura de pedidos no setor de hortifruti no modelo atacado.
 
+Este projeto visa resolver o problema da deficiência no mercado de uma solução prática na cotação de produtos e abertura de pedidos no setor de hortifruti no modelo atacado. Na região sudeste por exemplo, a agricultura patronal tem muita força, segundo Melise Dantas Machado em sua dissertação(mestrado) pela UFSC, o atacado é a principal engrenagem desse setor na região.  Através de uma pesquisa de mercado não identificamos um sistema que ofereça esse tipo de serviço de cotação personalizada, onde a comunicação entre fornecedor e comprador seja feita de forma direta e flexível. Em nosso benchmarking encontramos sites como hortifruti.com.br e centralverde.com.br, onde a regra de negocio é apenas uma "forma" de e-commerce e não soluciona o problema de facilitaçao e comunicação entre comprador e fornecedor.
 
 ## Objetivos
 
