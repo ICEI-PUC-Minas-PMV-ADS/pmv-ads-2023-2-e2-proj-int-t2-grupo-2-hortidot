@@ -1,15 +1,24 @@
-
 # Metodologia
-
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
+<span style="color:red">Pré-requisitos: <a href="02-Especificação do Projeto.md"> Documentação de Especificação</a></span>
 
 Aqui apresentamos as ferramentas, processos e como nos organizamos para o desenvolvimento do projeto.
 
 ## Etapa 1
-Na primeira etapa discutimos a definição do problema, realizamos um benchmarking para encontrar sites com propostas aproximadas ao nosso problema, trabalhamos na justificativa, objetivos, público alvo e no levantamento de requisitos e restrições.
+Na primeira etapa discutimos a definição do problema, realizamos um benchmarking para encontrar sites com propostas parecidas ao nosso problema, trabalhamos na justificativa, objetivos, público alvo e no levantamento de requisitos e restrições.
+
+## Etapa 2
+Na segunda etapa definimos como será a metodologia do todo o projeto, incluindo ferramentas que vamos utilizar para o desenvolvimento e documentação do projeto, papéis que cada integrante irá desempenhar, além de diagramas de fluxo e de classes, wireframes, projeto da base de dados e planos de testes de software e de usabilidade.
+
+## Etapa 3
+Na etapa três o grupo irá desenvolver o template padrão da aplicação e registrar os casos de testes planejados na etapa anterior.
+
+## Etapa 4
+A etapa quatro será completamente voltada para o desenvolvimento de todas as funcionalidades e correção de possíveis bugs na aplicação.
+
+## Etapa 5
+Por fim, o grupo estará encarregado de finalizar as funcionalidades propostas e preparar a apresentação do projeto.
 
 ## Controle de Versão
-
 A ferramenta de controle de versão adotada no projeto foi o [GitHub Desktop](https://desktop.github.com/), sendo que o [Github](https://github.com) foi utilizado para hospedagem do repositório.
 
 O projeto segue apenas uma branch até o momento:
@@ -23,11 +32,9 @@ Quanto à gerência de issues no quadro do GitHub Projects, o projeto adota a se
 - `feature`: uma nova funcionalidade precisa ser desenvolvida
 
 ## Gerenciamento de Projeto
-
 A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para definição do processo de desenvolvimento.
 
 ### Divisão de Papéis
-
 A equipe está organizada da seguinte forma:
 - Scrum Master:
   - Paloma Rizzon
@@ -41,7 +48,6 @@ A equipe está organizada da seguinte forma:
   - Ingrid Barros
 
 ### Processo
-
 Para organização e distribuição das tarefas do projeto, a equipe está utilizando o GitHub Projects estruturado com as seguintes listas:
 
 - `Backlog`: recebe todas as atividades a serem realizadas e é representada como Backlog. Todas as tarefas que são identificadas no decorrer do projeto são documentadas na lista.
@@ -58,7 +64,6 @@ O quadro kanban do grupo desenvolvido na ferramenta de gerenciamento de projetos
 Figura 1 - Tela do kanban (GitHub Projects) utilizada pelo grupo
 
 ### Ferramentas
-
 Todas as ferramentas abaixo foram escolhidas por serem as mais utilizadas no mercado e/ou por terem uma boa usabilidade. Assim, conseguimos desenvolver o projeto com facilidade e ainda experimentamos ferramentas que o mercado pede.
 
 As ferramentas empregadas no projeto são:
