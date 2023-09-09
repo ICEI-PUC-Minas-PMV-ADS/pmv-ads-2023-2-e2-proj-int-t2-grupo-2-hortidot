@@ -2,30 +2,56 @@
 
 <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>
 
-Apresente os cenários de testes utilizados na realização dos testes da sua aplicação. Escolha cenários de testes que demonstrem os requisitos sendo satisfeitos.
+Os requisitos para realização dos testes de software são: <br>
+ * Aplicação publicada na Internet <br>
+ * Navegador da Internet - Chrome, Firefox ou Edge <br>
 
-Não deixe de enumerar os casos de teste de forma sequencial e de garantir que o(s) requisito(s) associado(s) a cada um deles está(ão) correto(s) - de acordo com o que foi definido na seção "2 - Especificação do Projeto". 
-
-Por exemplo:
+Os testes funcionais a serem realizados no aplicativo são descritos a seguir.
  
-| **Caso de Teste** 	| **CT-01 – Cadastrar perfil** 	|
+| **Caso de Teste** 	| **CT-01 – Cadastro de usuário** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-00X - A aplicação deve apresentar, na página principal, a funcionalidade de cadastro de usuários para que esses consigam criar e gerenciar seu perfil. |
-| Objetivo do Teste 	| Verificar se o usuário consegue se cadastrar na aplicação. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Clicar em "Criar conta" <br> - Preencher os campos obrigatórios (e-mail, nome, sobrenome, celular, CPF, senha, confirmação de senha) <br> - Aceitar os termos de uso <br> - Clicar em "Registrar" |
-|Critério de Êxito | - O cadastro foi realizado com sucesso. |
+|	Requisito Associado 	| RF-08 - O sistema deve permitir que o fornecedor e o comprador possam cadastrar, alterar e excluir seu cadastro. |
+| Objetivo do Teste 	| Verificar se o cadastro de usuário funciona conforme especificado nos requisitos funcionais. |
+| Passos 	| 1) Acessar o Navegador <br> 2) Informar o endereço da aplicação <br> 3) Visualizar a página inicial <br> 4) Clicar em “Fazer cadastro” <br> 5) Realizar cadastro do usuário |
+|Critério de Êxito | O sistema deve permitir a criação de cadastros, a leitura dos dados desses cadastros, a atualização dos dados e, se necessário, a exclusão dessas informações. As informações devem ficar em um banco de dados. |
 |  	|  	|
-| Caso de Teste 	| CT-02 – Efetuar login	|
-|Requisito Associado | RF-00Y	- A aplicação deve possuir opção de fazer login, sendo o login o endereço de e-mail. |
-| Objetivo do Teste 	| Verificar se o usuário consegue realizar login. |
-| Passos 	| - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html<br> - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Login" |
-|Critério de Êxito | - O login foi realizado com sucesso. |
-
- 
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Práticas e Técnicas de Testes Ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-> - [Criação e Geração de Planos de Teste de Software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
+| Caso de Teste 	| **CT-02 – Ajustar preço**	|
+| Requisito Associado | RF-01 - O sistema deve permitir que os fornecedores ajustem o preço para cada comprador correspondente. |
+| Objetivo do Teste 	|Verificar se os campos de preços são editáveis apenas para o fornecedor. |
+| Passos 	| 1) Acessar o Navegador <br> 2) Informar o endereço da aplicação <br> 3) Inserir informações para o login <br> 4) Abrir a solicitação de cotação feita pelo comprador <br> 5) Inserir os preços correspondentes aos produtos |
+|Critério de Êxito | O sistema deve permitir que o fornecedor altere os preços de seus produtos através de campos editáveis. |
+|   |   |
+| Caso de Teste | **CT-03 - Ajustar quantidades de produtos** |
+| Requisito Associado | RF-02 - O sistema deve permitir que o comprador e fornecedor ajustem a quantidade de itens solicitados. |
+| Objetivo do Teste | Verificar se os campos de quantidades de produtos são editáveis para os usuários fornecedor e comprador. |
+| Passos | 1) Acessar o Navegador <br> 2) Informar o endereço da aplicação <br> 3) Inserir informações para o login <br> 4) Abrir a solicitação de cotação feita pelo comprador <br> 5) Inserir as quantidades de itens desejadas ou disponíveis em estoque |
+| Critérios de Êxito | O sistema deve permitir que o comprador possa colocar a quantidade de itens desejados na solicitação, e deve permitir que o fornecedor ajuste a quantidade de itens solicitados na cotação de acordo com seu estoque. |
+|   |   | 
+| Caso de Teste | **CT-04 - Mensagem de aviso sobre a cotação** |
+| Requisito Associado | RF-03 - O sistema deve enviar uma mensagem informando a abertura e fechamento da cotação solicitada. |
+| Objetivo do Teste | Verificar se o sistema irá emitir corretamente uma mensagem de abertura ou fechamento da cotação quando um botão específico com essas funções for disparado. |
+| Passos | 1) Acessar o Navegador <br> 2) Informar o endereço da aplicação <br> 3) Inserir informações para o login <br> 4) Abrir a solicitação de cotação feita pelo comprador <br> 5) Inserir as quantidades de itens desejadas ou disponíveis em estoque <br> 6) Clicar em “Abrir cotação” ou em "Fechar cotação” |
+| Critérios de Êxito | O sistema deve reconhecer a ação e enviar uma mensagem aos usuários que estão participando da cotação, informando se a solicitação foi iniciada ou finalizada. 
+|   |   | 
+| Caso de Teste | **CT-05 - Comunicação entre os usuários** |
+| Requisito Associado | RF-05 - O sistema deve permitir um canal de comunicação entre fornecedor e comprador. |
+| Objetivo do Teste | Verificar se o fornecedor e o comprador têm uma comunicação clara através dos canais de comunicação disponibilizados pela aplicação. |
+| Passos | 1) Acessar o Navegador <br> 2) Informar o endereço da aplicação <br> 3) Inserir informações para o login <br> 4) Clicar em “Chat” e iniciar a conversa
+| Critérios de Êxito | Os usuários devem conseguir se comunicar de forma eficaz, através de um canal de comunicação interno da aplicação. |
+|   |   | 
+| Casos de Teste | **CT-06 - Revisão do pedido** |
+| Requisito Associado | RF-06 - O sistema deve permitir que o comprador e fornecedor possam fazer a revisão do pedido antes do fechamento e do envio da mensagem. |
+| Objetivo do Teste | Verificar se os usuários envolvidos na cotação conseguem fazer uma revisão do pedido antes do fechamento. |
+| Passos | 1) Acessar o Navegador <br> 2) Informar o endereço da aplicação <br> 3) Inserir informações para o login <br> 4) Abrir a solicitação de cotação feita pelo comprador <br> 5) Verificar a quantidade de itens e de preços da cotação
+| Critérios de Êxito | Os usuários devem conseguir acessar a cotação em andamento para fazer uma revisão dos itens solicitados. |
+|   |   | 
+| Caso de Teste | **CT-07 - Fechamento da cotação** |
+| Requisito Associado | Verificar se os usuários conseguem executar a ação sem que ocorram erros durante o processo. |
+| Objetivo do Teste | 1) Acessar o Navegador <br> 2) Informar o endereço da aplicação <br> 3) Inserir informações para o login <br> 4) Abrir a solicitação de cotação feita pelo comprador <br> 5) Clicar no botão “Fechar cotação”
+| Critérios de Êxito | O fornecedor deve conseguir fechar o pedido sem dificuldades, e o comprador deve conseguir finalizar o processo de cotação. |
+|   |   | 
+| Caso de Teste | **CT-08 - Cadastro de produtos** | 
+| Requisito Associado | RF-07 - O sistema deve permitir o cadastro, edição e exclusão dos produtos de hortifruti contendo imagem, nome, código único do item e quantidade em estoque. |
+| Objetivo do teste | Verificar se o cadastro dos produtos é feito de acordo com as especificações dos requisitos funcionais. |
+| Passos | 1) Acessar o Navegador <br> 2) Informar o endereço da aplicação <br> 3) Inserir informações para o login <br> 4) No menu principal, clicar em “Cadastrar produto” <br> 5) Efetuar cadastro, alteração ou exclusão dos dados |
+| Critérios de Êxito | O sistema deve permitir a criação de cadastros, a leitura dos dados desses cadastros, a atualização dos dados e, se necessário, a exclusão dessas informações. As informações devem ficar em um banco de dados. | 
