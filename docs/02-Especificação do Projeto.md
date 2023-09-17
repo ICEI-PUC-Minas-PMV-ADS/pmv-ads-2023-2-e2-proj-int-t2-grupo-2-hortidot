@@ -50,7 +50,7 @@ A empresa de Ana trabalha com fornecimento há muito tempo. Ela adora ser respon
 
 ## Histórias de Usuários
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
+Com base na análise das personas foram identificadas as seguintes histórias de usuários:
 
 | EU COMO... `PERSONA` | QUERO/PRECISO ... `FUNCIONALIDADE`                                                    | PARA ... `MOTIVO/VALOR`                                      |
 | -------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
@@ -74,23 +74,22 @@ A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade
 | RF-01 | O sistema deve permitir que os fornecedores ajustem o preço para cada comprador correspondente.                                                       | ALTA       |
 | RF-02 | O sistema deve permitir que o comprador e fornecedor ajustem a quantidade de itens solicitados.                                                       | ALTA       |
 | RF-03 | O sistema deve enviar uma mensagem informando a abertura e fechamento da cotação solicitada.                                                          | MÉDIA      |
-| RF-04 | O sistema deve mostrar o nome do fornecedor com clareza.                                                                                              | MÉDIA      |
-| RF-05 | O sistema deve permitir um canal de comunicação entre fornecedor e comprador.                                                                         | ALTA       |
-| RF-06 | O sistema deve permitir que o comprador e fornecedor possam fazer a revisão do pedido antes do fechamento e do envio da mensagem.                     | ALTA       |
-| RF-07 | O sistema deve permitir o cadastro, edição e exclusão dos produtos de hortifruti contendo imagem, nome, código único do item e quantidade em estoque. | ALTA       |
-| RF-08 | O sistema deve permitir que o fornecedor e comprador possam cadastrar, alterar e excluir seu cadastro.                                                | ALTA       |
-| RF-09 | O sistema deve permitir que o fornecedor feche o pedido e que o comprador finalize a cotação após a revisão.                                          | ALTA       |
+| RF-04 | O sistema deve permitir um canal de comunicação entre fornecedor e comprador.                                                                         | ALTA       |
+| RF-05 | O sistema deve permitir que o comprador e fornecedor possam fazer a revisão do pedido antes do fechamento e do envio da mensagem.                     | ALTA       |
+| RF-06 | O sistema deve permitir o cadastro, edição e exclusão dos produtos de hortifruti contendo imagem, nome, código único do item e quantidade em estoque. | ALTA       |
+| RF-07 | O sistema deve permitir que o fornecedor e comprador possam cadastrar, alterar e excluir seu cadastro.                                                | ALTA       |
+| RF-08 | O sistema deve permitir que o fornecedor feche o pedido e que o comprador finalize a cotação após a revisão.                                          | ALTA       |
 
 ### Requisitos não Funcionais
 
 A tabela a seguir apresenta os requisitos não funcionais que o projeto deverá atender.
 
-| ID     | Descrição do Requisito                                                                                                                                        | Prioridade |
-| ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
-| RNF-01 | O site deve ser publicado em um ambiente acessível publicamente na Internet (a definir).                                                                      | ALTA       |
-| RNF-02 | O site deverá ser responsivo permitindo a visualização em um celular de forma acessível                                                                       | ALTA       |
-| RNF-03 | O site deve ser compatível com os principais navegadores do mercado.                                                                                          | ALTA       |
-| RNF-04 | O site deve cumprir com boas práticas de acessibilidade, como por exemplo: contraste adequado, atributos para leitores de tela, tags semânticas em HTML, etc. | MÉDIA      |
+| ID     | Descrição do Requisito                                                                                                                                             | Prioridade |
+| ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- |
+| RNF-01 | A aplicação deve ser publicada em um ambiente acessível publicamente na Internet (a definir).                                                                      | ALTA       |
+| RNF-02 | A aplicação deve ser responsiva permitindo a visualização em um celular de forma acessível                                                                         | ALTA       |
+| RNF-03 | A aplicação deve ser compatível com os principais navegadores do mercado.                                                                                          | ALTA       |
+| RNF-04 | A aplicação deve cumprir com boas práticas de acessibilidade, como por exemplo: contraste adequado, atributos para leitores de tela, tags semânticas em HTML, etc. | MÉDIA      |
 
 ## Restrições
 
