@@ -6,7 +6,7 @@ O software é composto por 3 componentes responsaveis por representar entidades 
 
 ## Diagrama de Classes
 
-O diagrama de classes ilustra graficamente como será a estrutura do software, e como cada uma das classes da sua estrutura estarão interligadas. Essas classes servem de modelo para materializar os objetos que executarão na memória.
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/ba111e486641475bae8a2a8fd146e2d5a4b5ca1b/docs/img/diagramadeclasses.png" />
 
 As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Classes”.
 
