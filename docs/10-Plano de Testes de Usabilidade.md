@@ -4,7 +4,7 @@ O propósito deste teste é verificar a performance alcançada pelos participant
 
 O objetivo da aplicação é realizar a cotação e os pedidos de alimentos no setor de hortifruti, permitindo a comunicação entre fornecedor e comprador, facilitando o envio de pedidos.
 
-Os testes vão acontecer de maneira remota, utilizando quatro participantes, sendo dois compradores e dois fornecedores, com experiência em hortifruti, contendo uma lista de tarefas voltadas para o comprador e outra para o fornecedor.
+Os testes vão acontecer de maneira remota, utilizando quatro participantes, sendo dois compradores e dois fornecedores, com experiência em hortifruti, contendo uma lista de tarefas voltadas para o comprador e outra para o fornecedor, todos os testes serão gravados, visando complementar o questionário que será aplicado logo após o teste da aplicação HortDot.
 
 ## Lista de tarefas
 
@@ -45,9 +45,16 @@ Nas questões, marcar com X o número correspondente ao grau de concordância, d
 |                                                          | 1          | 2    | 3   | 4     | 5         |
 | Achou o sistema fácil de usar?                           |            |      |     |       |           |
 | A interface do sistema é agradável?                      |            |      |     |       |           |
-| Foi fácil encontrar a informação que precisava?          |            |      |     |       |           |
+| Você teve facilidade em aprender e usar os comandos no início do teste? |           |      |     |      |          |
+| Achou o sistema eficiente enquanto estava desenvolvendo as tarefas? |            |      |     |       |           |
 | O que achou do Layout das telas?                         |            |      |     |       |           |
 | Sentiu-se confortável com este sistema?                  |            |      |     |       |           |
-| A organização de informações na tela do sistema é clara? |            |      |     |       |           |
+| A organização de informações na tela do sistema é clara, sendo fácil de memorizar os comandos? |            |      |     |       |           |
+| O design e comandos são padronizados?                    |            |      |     |       |           |
+| É fácil desfazer um comando, ou corrigir um erro?        |            |      |     |       |           |
+| Você ficou satisfeito com sua experiência utilizando nossa aplicação? |            |      |     |       |           |
+| A aplicação possui acessibilidade?                       |            |      |     |       |           |
+| Todas as informações e comandos são de fácil entendimento? |            |      |     |       |           |
 | Gostaria de usar este sistema com frequência?            |            |      |     |       |           |
 | No geral, como foi a realização do teste?                |            |      |     |       |           |
+
