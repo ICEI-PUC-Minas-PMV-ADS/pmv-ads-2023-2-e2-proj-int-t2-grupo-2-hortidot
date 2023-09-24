@@ -6,7 +6,7 @@ O software é composto por 3 componentes responsaveis por representar entidades 
 
 ## Diagrama de Classes
 
-<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/main/docs/img/Diagrama de classes.jpg" />
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/main/docs/img/Diagrama de Classes.jpg" />
 
 As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Classes”.
 
