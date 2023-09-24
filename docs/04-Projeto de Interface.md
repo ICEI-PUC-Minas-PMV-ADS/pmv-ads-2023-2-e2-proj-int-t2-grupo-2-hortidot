@@ -87,4 +87,4 @@ Figura 15 -  Nova cotação (fornecedor)
 
 Apresenta as informações atualizadas pelos fornecedores para que sejam avaliadas para finalização do pedido.
 <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/107df6b8ee825cc9da3e8255f55c0a465ccfe2a2/docs/img/Analisar%20cota%C3%A7%C3%A3o%20(comprador).jpg" />
-Figura 15 -  Analisar cotação
+Figura 16 -  Analisar cotação
