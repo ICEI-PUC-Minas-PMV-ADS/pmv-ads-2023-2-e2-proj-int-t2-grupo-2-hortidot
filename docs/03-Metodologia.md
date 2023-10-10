@@ -86,4 +86,4 @@ As ferramentas empregadas no projeto são:
 | Documentos do projeto             | Github          | [Documentos do projeto](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot)                                                     |
 | Gerenciamento do Projeto          | GitHub Projects | [Gerenciamento do Projeto](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/468/views/1)                                                                       |
 | Projeto de Interface e Wireframes | Figma           | [Projeto de Interface e Wireframes](https://www.figma.com/file/K8HQgg1yBrEB4vFAZjcok9/Grupo-02---HortiDot?type=design&node-id=0%3A1&mode=design&t=xjdF0Z7Y32xzzAhB-1) |
-| Diagramas                         | Drawio          | [Diagrama de casos de uso](https://drive.google.com/file/d/1tzP8sP_H91isAu6SPofVehiHzRSIQGvi/view?usp=sharing)                                                        |
+| Diagramas                         | Drawio          | [Diagramas](https://drive.google.com/file/d/1tzP8sP_H91isAu6SPofVehiHzRSIQGvi/view?usp=sharing)                                                        |
