@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\enzod\\OneDrive\\Documentos\\GitHub\\pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot\\src\\HortiDot\\HortiDot.csproj": {}
+    "C:\\Workspace\\pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot\\src\\HortiDot\\HortiDot.csproj": {}
   },
   "projects": {
-    "C:\\Users\\enzod\\OneDrive\\Documentos\\GitHub\\pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot\\src\\HortiDot\\HortiDot.csproj": {
+    "C:\\Workspace\\pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot\\src\\HortiDot\\HortiDot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\enzod\\OneDrive\\Documentos\\GitHub\\pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot\\src\\HortiDot\\HortiDot.csproj",
+        "projectUniqueName": "C:\\Workspace\\pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot\\src\\HortiDot\\HortiDot.csproj",
         "projectName": "HortiDot",
-        "projectPath": "C:\\Users\\enzod\\OneDrive\\Documentos\\GitHub\\pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot\\src\\HortiDot\\HortiDot.csproj",
-        "packagesPath": "C:\\Users\\enzod\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\enzod\\OneDrive\\Documentos\\GitHub\\pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot\\src\\HortiDot\\obj\\",
+        "projectPath": "C:\\Workspace\\pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot\\src\\HortiDot\\HortiDot.csproj",
+        "packagesPath": "C:\\Users\\palom\\.nuget\\packages\\",
+        "outputPath": "C:\\Workspace\\pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot\\src\\HortiDot\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\enzod\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\palom\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -70,11 +70,11 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.11, )"
+              "version": "[7.0.12, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[7.0.9, )"
+              "version": "[7.0.10, )"
             }
           },
           "imports": [

@@ -16,7 +16,7 @@ namespace HortiDot.Models
         public string Observacao { get; set; }
 
         [Required]
-        [Display(Name = "Codígo do Comprador")]
+        [Display(Name = "Código do Comprador")]
         public int CodigoDoComprador { get; set; }
     }
 }
