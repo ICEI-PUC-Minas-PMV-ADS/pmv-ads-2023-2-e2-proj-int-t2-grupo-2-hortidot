@@ -18,11 +18,14 @@
     font-family: Montserrat;
 }
 
-/*body {
+.container {
+    padding: 0;
+}
+
+main .container {
     display: flex;
-    flex-wrap: wrap;
-    gap: 0 40px;
-}*/
+    gap: 40px;
+}
 
 ul {
     list-style: none;
@@ -39,12 +42,60 @@ button {
     background: none;
 }
 
-header nav.navbar {
-    padding: 0;
-    position: fixed;
+.menu-topo {
+    background-color: var(--amarelo-claro);
+    padding: 24px;
 }
 
-header nav ul {
+.menu-topo .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-topo .user-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.menu-topo .user-info img {
+    width: 50px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+
+.menu-topo .user-info .user-name h2 {
+    font-family: 'Righteous', sans-serif;
+    font-size: 24px;
+    color: var(--verde-escuro);
+}
+
+.menu-topo .user-info .user-name p {
+    margin: 0;
+}
+
+.menu-topo-right {
+    display: flex;
+    gap: 24px;
+}
+
+.menu-topo-right a {
+    display: flex;
+    gap: 12px;
+    color: var(--verde-escuro);
+}
+
+aside {
+    width: fit-content;
+}
+
+aside .menu-lateral {
+    padding: 0;
+}
+
+aside .menu-lateral ul {
     padding: 40px 24px;
     display: flex;
     flex-direction: column;
@@ -53,18 +104,18 @@ header nav ul {
     background-color: var(--amarelo-claro);
 }
 
-header nav ul li {
+aside .menu-lateral ul li {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-header nav ul li .logo {
+aside .menu-lateral ul li .logo {
     width: 100%;
     max-width: 250px;
 }
 
-header nav ul li h2.menu-title {
+aside .menu-lateral ul li h2.menu-title {
     background-color: var(--verde-claro);
     color: var(--verde-escuro);
     border-radius: 12px;
@@ -77,41 +128,9 @@ header nav ul li h2.menu-title {
     gap: 12px;
 }
 
-header nav ul li a:not(header nav ul li a:first-child) {
+aside .menu-lateral ul li a:not(a:first-child) {
     padding-left: 24px;
     color: var(--preto);
-}
-
-ul.menu-topo {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: var(--amarelo-claro);
-    border-radius: 12px;
-    padding: 24px;
-}
-
-ul.menu-topo .user-info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-}
-
-ul.menu-topo .user-info img {
-    width: 50px;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-}
-
-ul.menu-topo .user-info .user-name h2 {
-    font-family: 'Righteous', sans-serif;
-    font-size: 24px;
-    color: var(--verde-escuro);
-}
-
-ul.menu-topo .user-info .user-name p {
-    margin: 0;
 }
 
 .btn {
@@ -166,19 +185,8 @@ ul.menu-topo .user-info .user-name p {
     background-color: #D71F1A;
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+.btn:focus, .btn:active:focus, .btn-link..menu-lateral-link:focus, .form-control:focus, .form-check-input:focus {
     box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-.menu-topo-right {
-    display: flex;
-    gap: 24px;
-}
-
-.menu-topo-right a {
-    display: flex;
-    gap: 12px;
-    color: var(--verde-escuro);
 }
 
 footer {
