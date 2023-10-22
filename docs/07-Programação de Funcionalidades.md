@@ -14,8 +14,7 @@ Tela permite o cadastro, edição e visualização de dados do usuário. A estru
 * RF-07- O sistema deve permitir que o fornecedor e comprador possam cadastrar, alterar e excluir seu cadastro.
 
 #### Artefatos da funcionalidade
-* usuario.cs
-* _layout.cshtml
+Em construção.
 
 #### Estrutura de dados 
 Em construção. 
@@ -30,8 +29,7 @@ Tela que permite a exclusão dos dados de um usuário da base de dados.
 * RF-07 - O sistema deve permitir que o fornecedor e comprador possam cadastrar, alterar e excluir seu cadastro.
 
 #### Artefatos da funcionalidade
-* usuario.cs
-* _layout.cshtml
+Em construção.
 
 #### Estrutura de dados 
 Em construção. 
