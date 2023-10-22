@@ -7,16 +7,19 @@ namespace HortiDot.Models
         [Key]
         public int ID { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Campo obrigatório.")]
         public string Nome { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Campo obrigatório.")]
+        [Display(Name = "E-mail")]
         public string Email { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Campo obrigatório.")]
+        [Display(Name = "Endereço")]
         public string Endereco { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Campo obrigatório.")]
+        [DataType(DataType.Password)]
         public string senha { get; set; }
 
         public string pedidos { get; set; }

@@ -7,21 +7,21 @@ namespace HortiDot.Models
     public class Produto
     {
         [Key]
-        public int ID { get; set; }
+        [Display(Name = "Código")]
+        public int Codigo { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Campo obrigatório.")]
         public string Nome { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Campo obrigatório.")]
         public string Imagem { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Campo obrigatório.")]
         [Display(Name = "Data de Inclusão")]
         public DateTime DataDeInclusao { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Campo obrigatório.")]
         [Display(Name = "Preço")]
-        public int preco { get; set; }
-
+        public int Preco { get; set; }
     }
 }
