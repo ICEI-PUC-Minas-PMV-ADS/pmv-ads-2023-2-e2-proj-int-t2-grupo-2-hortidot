@@ -64,7 +64,7 @@ Figura x - Login
 
 ### Tela Página Inicial do Comprador
 
-Esta tela apresenta os pedidos em andamento, contendo o código do pedido, itens do pedido, data e status, disponibilizando também o histórico de pedidos, a opção de criação de um novo, além do menu lateral dando acesso a todas as funcionalidades do sistema.
+Esta tela apresenta os pedidos em andamento, contendo o código e os itens do pedido, a data e o status do pedido. A tela apresenta também o histórico de pedidos e a opção de abrir uma nova cotação, além de um menu lateral que dá acesso a todas as funcionalidades do sistema.
 
 <img src="/docs/img/tela-inicial.jpg" alt="">
 
@@ -80,7 +80,7 @@ Figura x - Página incial do fornecedor
 
 ### Tela Cadastro do Perfil
 
-Apresenta os campos para preenchimento do cadastro como dados pessoais, tais como nome completo, CPF, E-mail, Telefone, especificação do tipo de usuário comprador ou fornecedor, fotos e dados da empresa como nome, CNPJ e endereço, todos como campo obrigatório.
+Tela apresenta campos para preenchimento de dados para cadastro de usuários. O cliente deve cadastrar seus dados pessoais: nome completo, CPF, endereço de e-mail, telefone, foto e tipo de usuário (comprador ou fornecedor), e deve cadastrar os dados da empresa que representa: nome da empresa, CNPJ e endereço. Todos os campos são obrigatórios.
 
 <img src="/docs/img/tela-cadastro-perfil.jpg" alt="">
 
@@ -117,3 +117,21 @@ Esta tela é exibida na forma de pop-up e permite criar uma nova mensagem para q
 <img src="/docs/img/tela-mensagem.jpg" alt="">
 
 Figura x - Nova mensagem
+
+### Tela de produtos
+
+Esta tela apresenta os produtos cadastrados no sistema. Os produtos devem possuir código próprio, imagem e nome. A tela deve produtos deve permitir ao usuário a possibilidade de cadastrar, visualizar, editar ou excluir um produto. Possui menu lateral e uma barra de pesquisas.
+
+<img src="/docs/img/tela-produtos.jpg" alt="">
+
+Figura x - Produtos
+
+### Tela Cadastrar Produtos
+
+A tela é exibida em formato pop-up e permite o cadastro de um novo produto, que deve conter nome e imagem. 
+
+<img src="/docs/img/tela-cadastro-produto.jpg" alt="">
+
+Figura X - Cadastro de produtos 
+
+###
