@@ -8,22 +8,42 @@ A aplicação é composta por 3 componentes responsáveis por representar entida
 
 O diagrama de classes ilustra graficamente como será a estrutura do software, e como cada uma das classes da sua estrutura estarão interligadas. Essas classes servem de modelo para materializar os objetos que executarão na memória.
 
+Versão 01 -
+
 <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/main/docs/img/Diagrama de Classes.jpg" />
+
 Figura 17 - Diagrama de Classes
+
+Versão 02 [22/10/23] -
+
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/main/docs/img/Diagramas-Diagrama de Classes v2.jpg" />
+
+Figura 18 - Diagrama de Classes v2
 
 ## Modelo ER (Projeto Conceitual)
 
 O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.
 
 <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/main/docs/img/Diagrama ER (DER).jpg" />
-Figura 18 - Diagrama ER (DER)
+Figura 19 - Diagrama ER (DER)
 
 ## Projeto da Base de Dados
 
 O projeto da base de dados corresponde à representação das entidades e relacionamentos identificadas no Modelo ER, no formato de tabelas, com colunas e chaves primárias/estrangeiras necessárias para representar corretamente as restrições de integridade.
 
+Versão 01 -
+
 <img src= "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/main/docs/img/Projeto da Base de Dados.jpg" />
-Figura 19 - Projeto da Base de Dados
+
+Figura 20 - Projeto de Base de Dados 
+
+Versão 02 [22/10/23] -
+
+<img src= "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/main/docs/img/Diagramas-Projeto da Base de Dados.v2.jpg" />
+
+Figura 21 - Projeto de Base de Dados v2
+
+
 
 ## Tecnologias Utilizadas
 
