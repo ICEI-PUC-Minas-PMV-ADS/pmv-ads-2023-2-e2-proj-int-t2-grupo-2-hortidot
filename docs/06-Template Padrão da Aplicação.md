@@ -80,7 +80,7 @@ Figura x - Página incial do fornecedor
 
 ### Tela Cadastro do Perfil
 
-Tela apresenta campos para preenchimento de dados para cadastro de usuários. O cliente deve cadastrar seus dados pessoais: nome completo, CPF, endereço de e-mail, telefone, foto e tipo de usuário (comprador ou fornecedor), e deve cadastrar os dados da empresa que representa: nome da empresa, CNPJ e endereço. Todos os campos são obrigatórios.
+Tela apresenta campos para preenchimento de dados para cadastro de usuários. O cliente deve preencher seus dados pessoais: nome completo, CPF, endereço de e-mail, telefone, foto e tipo de usuário (comprador ou fornecedor), e deve cadastrar os dados da empresa que representa: nome da empresa, CNPJ e endereço. Todos os campos são obrigatórios.
 
 <img src="/docs/img/tela-cadastro-perfil.jpg" alt="">
 
@@ -120,7 +120,7 @@ Figura x - Nova mensagem
 
 ### Tela de produtos
 
-Esta tela apresenta os produtos cadastrados no sistema. Os produtos devem possuir código próprio, imagem e nome. A tela deve produtos deve permitir ao usuário a possibilidade de cadastrar, visualizar, editar ou excluir um produto. Possui menu lateral e uma barra de pesquisas.
+Esta tela apresenta os produtos cadastrados no sistema. Os produtos devem possuir código próprio, imagem e nome. A tela deve permitir ao usuário a possibilidade de cadastrar, visualizar, editar ou excluir um produto. Possui menu lateral e uma barra de pesquisas.
 
 <img src="/docs/img/tela-produtos.jpg" alt="">
 
@@ -134,4 +134,21 @@ A tela é exibida em formato pop-up e permite o cadastro de um novo produto, que
 
 Figura X - Cadastro de produtos 
 
-###
+### Tela de Nova Cotação (Comprador)
+
+Apresenta as opções de produtos e informações a serem incluidas em uma cotação para que seja enviada aos fornecedores, tais como código do produtos, imagem e nome dos produtos, juntamente com as quantidades desejadas.
+
+(Tela em Construção)
+
+### Tela de Nova Cotação (Fornecedor)
+
+Apresenta a cotação recebida para que seja editada e atualizada de acordo com os preços deste fornecedor. 
+
+
+(Tela em Construção)
+
+### Analisar Cotação
+
+Apresenta as informações atualizadas pelos fornecedores para que sejam avaliadas para finalização do pedido.
+(Tela em Construção)
+
