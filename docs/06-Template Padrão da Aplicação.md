@@ -29,11 +29,13 @@ Figura X - Tipografia escolhida
 
 ### Ícones
 
+<img src="/docs/img/Ícones.jpg" alt="">
 Ícones criados pela fonte Material Icons do Figma.
 Figura X - Ícones usados
 
 ### Botões
 
+<img src="/docs/img/Botões.jpg" alt="">
 Figura X - Componentes de botões
 
 ## Estrutura
