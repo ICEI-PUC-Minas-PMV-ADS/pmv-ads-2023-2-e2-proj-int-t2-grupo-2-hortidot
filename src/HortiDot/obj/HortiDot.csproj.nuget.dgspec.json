@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Workspace\\pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot\\src\\HortiDot\\HortiDot.csproj": {}
+    "C:\\Users\\enzod\\OneDrive\\Documentos\\GitHub\\pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot\\src\\HortiDot\\HortiDot.csproj": {}
   },
   "projects": {
-    "C:\\Workspace\\pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot\\src\\HortiDot\\HortiDot.csproj": {
+    "C:\\Users\\enzod\\OneDrive\\Documentos\\GitHub\\pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot\\src\\HortiDot\\HortiDot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Workspace\\pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot\\src\\HortiDot\\HortiDot.csproj",
+        "projectUniqueName": "C:\\Users\\enzod\\OneDrive\\Documentos\\GitHub\\pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot\\src\\HortiDot\\HortiDot.csproj",
         "projectName": "HortiDot",
-        "projectPath": "C:\\Workspace\\pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot\\src\\HortiDot\\HortiDot.csproj",
-        "packagesPath": "C:\\Users\\palom\\.nuget\\packages\\",
-        "outputPath": "C:\\Workspace\\pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot\\src\\HortiDot\\obj\\",
+        "projectPath": "C:\\Users\\enzod\\OneDrive\\Documentos\\GitHub\\pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot\\src\\HortiDot\\HortiDot.csproj",
+        "packagesPath": "C:\\Users\\enzod\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\enzod\\OneDrive\\Documentos\\GitHub\\pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot\\src\\HortiDot\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\palom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\enzod\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
