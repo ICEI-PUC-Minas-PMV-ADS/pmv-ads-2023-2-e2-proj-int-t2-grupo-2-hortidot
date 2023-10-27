@@ -1,113 +1,264 @@
-﻿﻿:root {
-    --input-padding-x: 1.5rem;
-    --input-padding-y: 0.75rem;
+﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,800;1,400&family=Righteous&display=swap');
+
+:root {
+    --verde-escuro: #455218;
+    --verde-claro: #B3C948;
+    --amarelo: #DEB32C;
+    --laranja: #E36B00;
+    --vermelho: #E74641;
+    --preto: #000000;
+    --branco: #FFFFFF;
+    --amarelo-claro: #FFFBED;
+    --cinza: #E3E3E3;
 }
 
-.login,
-.image {
-    min-height: 100vh;
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat;
 }
 
-.bg-image {
-    background-image: url('https://source.unsplash.com/WEQbe2jBg40/600x1200');
-    background-size: cover;
-    background-position: center;
+.containerr {
+    padding: 0;
 }
 
-.login-heading {
-    font-weight: 300;
+main .containerr {
+    display: flex;
+    gap: 40px;
 }
 
-.btn-login {
-    font-size: 0.9rem;
-    letter-spacing: 0.05rem;
-    padding: 0.75rem 1rem;
-    border-radius: 2rem;
+ul {
+    list-style: none;
+    margin-bottom: 0;
 }
 
-.form-label-group {
-    position: relative;
-    margin-bottom: 1rem;
+a {
+    text-decoration: none;
 }
 
-    .form-label-group > input,
-    .form-label-group > label {
-        padding: var(--input-padding-y) var(--input-padding-x);
-        height: auto;
-        border-radius: 2rem;
+button {
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+
+.menu-topo {
+    background-color: var(--amarelo-claro);
+    padding: 24px;
+}
+
+    .menu-topo .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
-    .form-label-group > label {
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: block;
-        width: 100%;
-        margin-bottom: 0;
-        /* Override default `<label>` margin */
-        line-height: 1.5;
-        color: #495057;
-        cursor: text;
-        /* Match the input under the label */
-        border: 1px solid transparent;
-        border-radius: .25rem;
-        transition: all .1s ease-in-out;
+    .menu-topo .user-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
     }
 
-    .form-label-group input::-webkit-input-placeholder {
-        color: transparent;
-    }
-
-    .form-label-group input:-ms-input-placeholder {
-        color: transparent;
-    }
-
-    .form-label-group input::-ms-input-placeholder {
-        color: transparent;
-    }
-
-    .form-label-group input::-moz-placeholder {
-        color: transparent;
-    }
-
-    .form-label-group input::placeholder {
-        color: transparent;
-    }
-
-    .form-label-group input:not(:placeholder-shown) {
-        padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
-        padding-bottom: calc(var(--input-padding-y) / 3);
-    }
-
-        .form-label-group input:not(:placeholder-shown) ~ label {
-            padding-top: calc(var(--input-padding-y) / 3);
-            padding-bottom: calc(var(--input-padding-y) / 3);
-            font-size: 12px;
-            color: #777;
+        .menu-topo .user-info img {
+            width: 50px;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
         }
 
-/* Fallback for Edge
--------------------------------------------------- */
+        .menu-topo .user-info .user-name h2 {
+            font-family: 'Righteous', sans-serif;
+            font-size: 24px;
+            color: var(--verde-escuro);
+        }
 
-@supports (-ms-ime-align: auto) {
-    .form-label-group > label {
-        display: none;
-    }
+        .menu-topo .user-info .user-name p {
+            margin: 0;
+        }
 
-    .form-label-group input::-ms-input-placeholder {
-        color: #777;
-    }
+.menu-topo-right {
+    display: flex;
+    gap: 24px;
 }
 
-/* Fallback for IE
--------------------------------------------------- */
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    .form-label-group > label {
-        display: none;
+    .menu-topo-right a {
+        display: flex;
+        gap: 12px;
+        color: var(--verde-escuro);
     }
 
-    .form-label-group input:-ms-input-placeholder {
-        color: #777;
-    }
+aside {
+    width: fit-content;
 }
+
+    aside .menu-lateral {
+        padding: 0;
+    }
+
+        aside .menu-lateral ul {
+            padding: 40px 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            border-radius: 12px;
+            background-color: var(--amarelo-claro);
+        }
+
+            aside .menu-lateral ul li {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+            }
+
+                aside .menu-lateral ul li .logo {
+                    width: 100%;
+                    max-width: 250px;
+                }
+
+                aside .menu-lateral ul li h2.menu-title {
+                    background-color: var(--verde-claro);
+                    color: var(--verde-escuro);
+                    border-radius: 12px;
+                    padding: 6px 6px 6px 16px;
+                    margin-bottom: 0;
+                    font-family: 'Righteous', sans-serif;
+                    font-size: 20px;
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+                }
+
+                aside .menu-lateral ul li a:not(a:first-child) {
+                    padding-left: 24px;
+                    color: var(--preto);
+                }
+
+.btn {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    padding: 12px 24px;
+    border-radius: 12px;
+    color: var(--preto);
+    font-size: 14px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.btn-verde {
+    background-color: var(--verde-claro);
+}
+
+    .btn-verde:hover,
+    .btn-verde:active,
+    .btn-verde:focus-visible {
+        background-color: #A0BA24;
+    }
+
+.btn-amarelo {
+    background-color: var(--amarelo);
+}
+
+    .btn-amarelo:hover,
+    .btn-amarelo:active,
+    .btn-amarelo:focus-visible {
+        background-color: #C89D04;
+    }
+
+.btn-laranja {
+    background-color: var(--laranja);
+}
+
+    .btn-laranja:hover,
+    .btn-laranja:active,
+    .btn-laranja:focus-visible {
+        background-color: #C15B00;
+    }
+
+.btn-vermelho {
+    background-color: var(--vermelho);
+}
+
+    .btn-vermelho:hover,
+    .btn-vermelho:active,
+    .btn-vermelho:focus-visible {
+        background-color: #D71F1A;
+    }
+
+.btn:focus, .btn:active:focus, .btn-link..menu-lateral-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+footer {
+    width: 100%;
+    background-color: var(--verde-escuro);
+    padding: 64px;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+    footer .container {
+        color: var(--branco);
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+
+        footer .container p {
+            margin: 0;
+        }
+
+        footer .container a {
+            color: var(--branco);
+        }
+
+@media (min-width: 768px) {
+}
+
+.caixa-central {
+    /* Frame 36578 */
+
+    box-sizing: border-box;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 40px 40px;
+    gap: 24px;
+    position: absolute;
+    width: 469px;
+    height: auto;
+    left: 406px;
+    top: 359px;
+    /* Branco */
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    z-index: 2;
+}
+
+.backgroundlogin {
+    height: 932px;
+    background-image: url("img/login-bg.jpg");
+    display: flex;
+    order: 0;
+    flex-grow: 0;
+    z-index: 0;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.logo {
+    width: 85px;
+    heigh: 79;
+}
+
+
