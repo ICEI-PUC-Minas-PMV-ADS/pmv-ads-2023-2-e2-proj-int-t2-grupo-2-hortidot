@@ -10,6 +10,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\css\criarConta.css" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="wwwroot\css\img\login-bg.jpg" />
   </ItemGroup>
 
