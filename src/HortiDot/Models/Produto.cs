@@ -23,5 +23,6 @@ namespace HortiDot.Models
         [Required(ErrorMessage = "Campo obrigatório.")]
         [Display(Name = "Preço")]
         public int Preco { get; set; }
+
     }
 }

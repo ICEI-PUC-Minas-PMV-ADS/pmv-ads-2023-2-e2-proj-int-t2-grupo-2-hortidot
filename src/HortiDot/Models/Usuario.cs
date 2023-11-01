@@ -2,7 +2,7 @@
 
 namespace HortiDot.Models
 {
-    public abstract class Usuario
+    public class Usuario
     {
         [Key]
         public int ID { get; set; }
@@ -14,17 +14,31 @@ namespace HortiDot.Models
         [Display(Name = "E-mail")]
         public string Email { get; set; }
 
+        [Required]
+        [Display(Name = "CPF")]
+        public string Cpf { get; set; }
+
         [Required(ErrorMessage = "Campo obrigatório.")]
         [Display(Name = "Endereço")]
         public string Endereco { get; set; }
 
         [Required(ErrorMessage = "Campo obrigatório.")]
         [DataType(DataType.Password)]
-        public string senha { get; set; }
+        public string Senha { get; set; }
 
-        public string pedidos { get; set; }
+        public string Pedidos { get; set; }
 
-        public string contatos { get; set; }
+        public string Contatos { get; set; }
 
+        [Required]
+        [Display(Name = "Modelo de usuário")]
+        public string TipoDeUsuario { get; set; }
+
+    }
+
+    public enum TipoDeUsuario
+    {
+        Comprador,
+        Fornecedor
     }
 }

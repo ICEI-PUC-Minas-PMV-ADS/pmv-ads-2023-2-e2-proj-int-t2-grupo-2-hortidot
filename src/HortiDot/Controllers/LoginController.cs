@@ -25,24 +25,24 @@ namespace HortiDot.Controllers
         }
         [AllowAnonymous]
         [HttpPost]
-        public async Task<IActionResult> Index(Fornecedor fornecedor)
+        public async Task<IActionResult> Index(Usuario usuario)
         {
-            var dados = _context.fornecedores
-                .FirstOrDefault(acc => acc.Email == fornecedor.Email);
+            var dados = _context.usuarios
+                .FirstOrDefault(acc => acc.Email == usuario.Email);
 
             if (dados == null)
             {
                 ViewBag.Message = "erro";
             }
 
-            bool senhaOK = BCrypt.Net.BCrypt.Verify(fornecedor.senha, dados.senha);
+            bool senhaOK = BCrypt.Net.BCrypt.Verify(usuario.Senha, dados.Senha);
 
             if (senhaOK)
             {
                 var claims = new List<Claim>
                 {
                     new Claim(ClaimTypes.Name, dados.Nome),
-                    new Claim(ClaimTypes.NameIdentifier, dados.Email.ToString())
+                    new Claim(ClaimTypes.NameIdentifier, dados.TipoDeUsuario.ToString()),
                 };
 
                 var fornecedorIdentiy = new ClaimsIdentity(claims, "login");
@@ -56,7 +56,7 @@ namespace HortiDot.Controllers
                 };
                 
                 await HttpContext.SignInAsync(principal, props);
-                return Redirect("/login/Menu");
+                return Redirect("/Login/Menu");
 
             }
             else
@@ -64,12 +64,15 @@ namespace HortiDot.Controllers
             return View();
         }
 
-        public IActionResult Menu() { return View(); }
+        public IActionResult Menu() 
+        {
+            return View(); 
+        }
 
         public async Task<IActionResult> Logout()
         {
             await HttpContext.SignOutAsync();
-            return RedirectToAction("Login", "fornecedores");
+            return Redirect("/");
         }
 
     }

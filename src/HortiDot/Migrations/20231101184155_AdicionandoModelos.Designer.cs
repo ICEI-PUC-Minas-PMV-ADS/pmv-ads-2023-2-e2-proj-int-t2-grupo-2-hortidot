@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace HortiDot.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20231024200950_AddingNewModels")]
-    partial class AddingNewModels
+    [Migration("20231101184155_AdicionandoModelos")]
+    partial class AdicionandoModelos
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,47 +24,6 @@ namespace HortiDot.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
-
-            modelBuilder.Entity("HortiDot.Models.Comprador", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ID"));
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("Endereco")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("Nome")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("contatos")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("cpf")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("pedidos")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("senha")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.HasKey("ID");
-
-                    b.ToTable("Compradores");
-                });
 
             modelBuilder.Entity("HortiDot.Models.Cotacao", b =>
                 {
@@ -91,47 +50,6 @@ namespace HortiDot.Migrations
                     b.HasKey("ID");
 
                     b.ToTable("cotacoes");
-                });
-
-            modelBuilder.Entity("HortiDot.Models.Fornecedor", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ID"));
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("Endereco")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("Nome")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("cnpj")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("contatos")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("pedidos")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("senha")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.HasKey("ID");
-
-                    b.ToTable("Fornecedores");
                 });
 
             modelBuilder.Entity("HortiDot.Models.Produto", b =>
@@ -164,6 +82,50 @@ namespace HortiDot.Migrations
                     b.HasIndex("CotacaoID");
 
                     b.ToTable("Produtos");
+                });
+
+            modelBuilder.Entity("HortiDot.Models.Usuario", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ID"));
+
+                    b.Property<string>("Contatos")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Cpf")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Endereco")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Nome")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Pedidos")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Senha")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<int>("UsuarioTipo")
+                        .HasColumnType("integer");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("usuarios");
                 });
 
             modelBuilder.Entity("HortiDot.Models.Produto", b =>

@@ -261,4 +261,21 @@ footer {
     heigh: 79;
 }
 
+.criarconta {
+    /* Ainda não possui uma conta? Inscreva-se! */
 
+    width: 293px;
+    height: 17px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    color: #000000;
+    /* Inside auto layout */
+    flex: none;
+    order: 4;
+    flex-grow: 0;
+}
