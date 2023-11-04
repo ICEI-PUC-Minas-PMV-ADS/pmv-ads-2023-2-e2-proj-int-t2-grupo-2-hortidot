@@ -139,10 +139,14 @@ aside .menu-lateral ul li a:not(a:first-child) {
     max-width: 320px;
     padding: 12px 24px;
     border-radius: 12px;
-    color: var(--preto);
+    color: var(--branco);
     font-size: 14px;
     text-align: center;
     transition: 0.3s ease;
+}
+]
+.btn:hover {
+    color: var(--branco);
 }
 
 .btn-verde {
@@ -198,8 +202,10 @@ footer {
 footer .container {
     color: var(--branco);
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
+    text-align: center;
 }
 
 footer .container p {
