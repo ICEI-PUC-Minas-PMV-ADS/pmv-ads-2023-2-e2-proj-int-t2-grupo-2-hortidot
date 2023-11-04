@@ -8,15 +8,27 @@ namespace HortiDot.Models
         public int ID { get; set; }
 
         [Required(ErrorMessage = "Campo obrigatório.")]
+        [Display(Name = "Nome Completo*:")]
         public string Nome { get; set; }
 
         [Required(ErrorMessage = "Campo obrigatório.")]
-        [Display(Name = "E-mail")]
+        [Display(Name = "E-mail*:")]
         public string Email { get; set; }
 
         [Required]
-        [Display(Name = "CPF")]
+        [Display(Name = "CPF*:")]
         public string Cpf { get; set; }
+
+        [Required(ErrorMessage = "Campo Obrigatório")]
+        public string Telefone { get; set; }
+
+        [Required(ErrorMessage = "Campo Obrigatório")]
+        [Display(Name = "Nome da Empresa*:")]
+        public string NomeEmpresa { get; set; }
+
+        [Required(ErrorMessage = "Campo Obrigatório")]
+        [Display(Name = "CNPJ*:")]
+        public string CNPJ { get; set; }
 
         [Required(ErrorMessage = "Campo obrigatório.")]
         [Display(Name = "Endereço")]

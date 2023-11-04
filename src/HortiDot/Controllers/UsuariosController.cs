@@ -20,7 +20,7 @@ namespace HortiDot.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CriarConta([Bind("ID,Nome,Email,Cpf,Endereco,Senha,TipoDeUsuario,Contatos,Pedidos")] Usuario usuario)
+        public async Task<IActionResult> CriarConta([Bind("ID,Nome,Email,Cpf,Telefone,NomeEmpresa,CNPJ,Endereco,Senha,TipoDeUsuario,Contatos,Pedidos")] Usuario usuario)
         {
             usuario.Pedidos = "";
             usuario.Contatos = "";
