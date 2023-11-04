@@ -18,6 +18,15 @@
     font-family: Montserrat;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Righteous', sans-serif;
+}
+
 .container {
     padding: 0;
 }
@@ -67,7 +76,6 @@ button {
 }
 
 .menu-topo .user-info .user-name h2 {
-    font-family: 'Righteous', sans-serif;
     font-size: 24px;
     color: var(--verde-escuro);
 }
@@ -144,7 +152,7 @@ aside .menu-lateral ul li a:not(a:first-child) {
     text-align: center;
     transition: 0.3s ease;
 }
-]
+
 .btn:hover {
     color: var(--branco);
 }
@@ -214,7 +222,4 @@ footer .container p {
 
 footer .container a {
     color: var(--branco);
-}
-
-@media (min-width: 768px) {
 }
