@@ -17,7 +17,7 @@
 
 <body>
     <header>
-        <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/af6c62358c723c0cbfc7acfe411df44cf236f59f/docs/img/logo-hortidot-horizontal.svg"/>
+        <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/af6c62358c723c0cbfc7acfe411df44cf236f59f/docs/img/logo-hortidot-horizontal.svg" />
     </header>
 
     <main>
@@ -34,7 +34,7 @@
                         <h1>Dados Pessoais</h1>
                         <p>Preencha todos os campos com *</p>
                     </div>
-                    
+
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                     <div class="form-group">
                         <label asp-for="Nome" class="control-label"></label>
@@ -61,7 +61,7 @@
                         <h2>DADOS DA EMPRESA</h2>
                         <p>Preencha com os dados da empresa a quem você representa.</p>
                     </div>
-                    
+
                     <div class="form-group">
                         <label asp-for="NomeEmpresa" class="control-label"></label>
                         <input asp-for="NomeEmpresa" class="form-control" />
@@ -84,7 +84,7 @@
                     </div>
                     <div class="form-group">
                         <label asp-for="TipoDeUsuario" class="control-label"></label>
-                        <input asp-for="TipoDeUsuario" class="form-control"/>
+                        <select asp-for="TipoDeUsuario" class="form-control" asp-items="Html.GetEnumSelectList<TipoDeUsuario>()"></select>
                         <span asp-validation-for="TipoDeUsuario" class="text-danger"></span>
                     </div>
                     <div class="form-group">
