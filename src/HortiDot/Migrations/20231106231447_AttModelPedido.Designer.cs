@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace HortiDot.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20231106225133_add-Pedido")]
-    partial class addPedido
+    [Migration("20231106231447_AttModelPedido")]
+    partial class AttModelPedido
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -52,6 +52,34 @@ namespace HortiDot.Migrations
                     b.ToTable("cotacoes");
                 });
 
+            modelBuilder.Entity("HortiDot.Models.Pedido", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CodigoComprador")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("CodigoFornecedor")
+                        .HasColumnType("integer");
+
+                    b.Property<DateTime>("DataPedido")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("StatusPedidos")
+                        .HasColumnType("text");
+
+                    b.Property<decimal>("ValorTotal")
+                        .HasColumnType("numeric");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Pedidos");
+                });
+
             modelBuilder.Entity("HortiDot.Models.Produto", b =>
                 {
                     b.Property<int>("Codigo")
@@ -74,12 +102,17 @@ namespace HortiDot.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<int?>("PedidoId")
+                        .HasColumnType("integer");
+
                     b.Property<int>("Preco")
                         .HasColumnType("integer");
 
                     b.HasKey("Codigo");
 
                     b.HasIndex("CotacaoID");
+
+                    b.HasIndex("PedidoId");
 
                     b.ToTable("Produtos");
                 });
@@ -144,11 +177,20 @@ namespace HortiDot.Migrations
                     b.HasOne("HortiDot.Models.Cotacao", null)
                         .WithMany("ListaDeProdutos")
                         .HasForeignKey("CotacaoID");
+
+                    b.HasOne("HortiDot.Models.Pedido", null)
+                        .WithMany("ListaProdutos")
+                        .HasForeignKey("PedidoId");
                 });
 
             modelBuilder.Entity("HortiDot.Models.Cotacao", b =>
                 {
                     b.Navigation("ListaDeProdutos");
+                });
+
+            modelBuilder.Entity("HortiDot.Models.Pedido", b =>
+                {
+                    b.Navigation("ListaProdutos");
                 });
 #pragma warning restore 612, 618
         }

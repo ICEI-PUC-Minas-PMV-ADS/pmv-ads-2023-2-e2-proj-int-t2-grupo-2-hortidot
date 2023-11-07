@@ -11,5 +11,6 @@ namespace HortiDot.Config
 
         public DbSet<Cotacao> cotacoes { get; set; }
 
+        public DbSet<Pedido> Pedidos { get; set; }
     }
 }
