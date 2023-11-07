@@ -10,15 +10,14 @@ namespace HortiDot.Models
         [Key]
         public int Id { get; set; }
 
-        [Required]
-        public List<Produto> ListaProdutos { get; set; }
-
+        public List<Produto> ListaProdutos = new List<Produto> { };
 
         [Display(Name = "Data do Pedido")]
-        public string DataPedido { get; set; }
+        [DataType(DataType.Date)]
+        public DateTime DataPedido { get; set; }
 
         [Display(Name = "Status do Pedido")]
-        public string StatusPedidos { get; set; }
+        public StatusPedidos StatusPedidos { get; set; }
 
         [Display(Name = "Valor Total")]
         public decimal ValorTotal { get; set; }
@@ -28,5 +27,12 @@ namespace HortiDot.Models
 
         [Display(Name = "Código do Fornecedor")]
         public int CodigoFornecedor { get; set; }
+    }
+
+    public enum StatusPedidos
+    {
+        EmAndamento,
+        Finalizado,
+        Cancelado
     }
 }

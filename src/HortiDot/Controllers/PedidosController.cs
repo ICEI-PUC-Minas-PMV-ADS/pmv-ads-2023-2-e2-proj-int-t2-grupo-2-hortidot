@@ -58,6 +58,8 @@ namespace HortiDot.Controllers
         {
             if (ModelState.IsValid)
             {
+                Produto produto = new Produto() { Codigo = 2, Imagem = "22", Nome = "enzo", Preco = 2, DataDeInclusao = new DateTime(1998, 04, 30) };
+                pedido.DataPedido = DateTime.UtcNow;
                 _context.Add(pedido);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));

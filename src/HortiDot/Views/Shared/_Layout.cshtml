@@ -1,4 +1,11 @@
 ﻿@model HortiDot.Models.Usuario
+@using System.Threading;
+@using System.Security.Claims;
+
+@{
+    string userCargo = ((ClaimsIdentity)User.Identity).FindFirst("Cargo").Value;
+
+}
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -19,6 +26,7 @@
                     <img src="../Assets/login-bg.jpg" alt="Foto do usuário" />
                     <div class="user-name">
                         <h2>Olá @User.Identity.Name</h2>
+                        <p>@userCargo</p>
                     </div>
                 </div>
 

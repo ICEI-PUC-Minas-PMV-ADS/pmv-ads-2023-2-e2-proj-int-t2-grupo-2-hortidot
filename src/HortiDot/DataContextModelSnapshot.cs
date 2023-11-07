@@ -66,8 +66,8 @@ namespace HortiDot.Migrations
                     b.Property<DateTime>("DataPedido")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<string>("StatusPedidos")
-                        .HasColumnType("text");
+                    b.Property<int>("StatusPedidos")
+                        .HasColumnType("integer");
 
                     b.Property<decimal>("ValorTotal")
                         .HasColumnType("numeric");
@@ -99,17 +99,12 @@ namespace HortiDot.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<int?>("PedidoId")
-                        .HasColumnType("integer");
-
                     b.Property<int>("Preco")
                         .HasColumnType("integer");
 
                     b.HasKey("Codigo");
 
                     b.HasIndex("CotacaoID");
-
-                    b.HasIndex("PedidoId");
 
                     b.ToTable("Produtos");
                 });
@@ -160,9 +155,8 @@ namespace HortiDot.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<string>("TipoDeUsuario")
-                        .IsRequired()
-                        .HasColumnType("text");
+                    b.Property<int>("TipoDeUsuario")
+                        .HasColumnType("integer");
 
                     b.HasKey("ID");
 
@@ -174,20 +168,11 @@ namespace HortiDot.Migrations
                     b.HasOne("HortiDot.Models.Cotacao", null)
                         .WithMany("ListaDeProdutos")
                         .HasForeignKey("CotacaoID");
-
-                    b.HasOne("HortiDot.Models.Pedido", null)
-                        .WithMany("ListaProdutos")
-                        .HasForeignKey("PedidoId");
                 });
 
             modelBuilder.Entity("HortiDot.Models.Cotacao", b =>
                 {
                     b.Navigation("ListaDeProdutos");
-                });
-
-            modelBuilder.Entity("HortiDot.Models.Pedido", b =>
-                {
-                    b.Navigation("ListaProdutos");
                 });
 #pragma warning restore 612, 618
         }

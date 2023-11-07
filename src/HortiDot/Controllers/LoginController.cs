@@ -27,6 +27,7 @@ namespace HortiDot.Controllers
         [HttpPost]
         public async Task<IActionResult> Index(Usuario usuario)
         {
+            var role = "";
             var dados = _context.usuarios
                 .FirstOrDefault(acc => acc.Email == usuario.Email);
 
@@ -35,6 +36,12 @@ namespace HortiDot.Controllers
                 ViewBag.Message = "erro";
             }
 
+            if (dados.TipoDeUsuario == 0)
+            {
+                role = "Comprador";
+            } else
+                role = "Fornecedor";
+            
             bool senhaOK = BCrypt.Net.BCrypt.Verify(usuario.Senha, dados.Senha);
 
             if (senhaOK)
@@ -42,7 +49,7 @@ namespace HortiDot.Controllers
                 var claims = new List<Claim>
                 {
                     new Claim(ClaimTypes.Name, dados.Nome),
-                    new Claim(ClaimTypes.NameIdentifier, dados.TipoDeUsuario.ToString()),
+                    new Claim("Cargo", role)
                 };
 
                 var fornecedorIdentiy = new ClaimsIdentity(claims, "login");
