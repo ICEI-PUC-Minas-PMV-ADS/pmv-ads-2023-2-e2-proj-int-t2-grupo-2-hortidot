@@ -21,7 +21,14 @@ namespace HortiDot.Controllers
         [AllowAnonymous]
         public IActionResult Index()
         {
-            return View();
+            if(User.Identity.IsAuthenticated)
+            {
+                return Redirect("/Login/Menu");
+            } else
+            {
+                return View();
+            }
+            
         }
         [AllowAnonymous]
         [HttpPost]
