@@ -33,6 +33,7 @@ h6 {
 
 main .container {
     display: flex;
+    flex-wrap: wrap;
     gap: 40px;
 }
 
@@ -51,6 +52,11 @@ button {
     background: none;
 }
 
+header,
+aside {
+    margin-bottom: 24px;
+}
+
 .menu-topo {
     background-color: var(--amarelo-claro);
     padding: 24px;
@@ -58,8 +64,10 @@ button {
 
 .menu-topo .container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 24px;
 }
 
 .menu-topo .user-info {
@@ -96,7 +104,7 @@ button {
 }
 
 aside {
-    width: fit-content;
+    width: 100%;
 }
 
 aside .menu-lateral {
@@ -201,6 +209,10 @@ aside .menu-lateral ul li a:not(a:first-child) {
     box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
+.content {
+    width: 100%;
+}
+
 footer {
     width: 100%;
     background-color: var(--verde-escuro);
@@ -222,4 +234,17 @@ footer .container p {
 
 footer .container a {
     color: var(--branco);
+}
+
+@media (min-width: 800px) {
+    aside {
+        max-width: 298px;
+    }
+    .menu-topo .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    main .container {
+        flex-wrap: nowrap;
+    }
 }
