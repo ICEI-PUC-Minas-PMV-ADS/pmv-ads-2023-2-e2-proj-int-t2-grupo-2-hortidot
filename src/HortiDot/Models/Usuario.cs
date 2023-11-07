@@ -44,7 +44,7 @@ namespace HortiDot.Models
 
         [Required]
         [Display(Name = "Tipo de usuário")]
-        public string TipoDeUsuario { get; set; }
+        public TipoDeUsuario TipoDeUsuario { get; set; }
 
     }
 
