@@ -1,0 +1,124 @@
+﻿@model HortiDot.Models.Usuario
+
+@{
+    ViewData["Title"] = "Criar Conta";
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - HortiDot</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/cadastro.css" asp-append-version="true" />
+</head>
+
+<body>
+    <header>
+        <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/af6c62358c723c0cbfc7acfe411df44cf236f59f/docs/img/logo-hortidot-horizontal.svg" />
+    </header>
+
+    <main>
+
+        <div class="container">
+
+            <div class="cadastro-foto">
+                <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/main/docs/img/persona-ana.jpg?raw=true" />
+                <a asp-area="" asp-controller="" asp-action="">Selecione uma imagem.</a>
+            </div>
+
+            <div class="cadastro">
+
+        <form asp-action="Create">
+                    <div>
+                        <h1>Dados Pessoais</h1>
+                        <p>Preencha todos os campos com *</p>
+                    </div>
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Nome" class="control-label"></label>
+                <input asp-for="Nome" class="form-control" />
+                <span asp-validation-for="Nome" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cpf" class="control-label"></label>
+                <input asp-for="Cpf" class="form-control" />
+                <span asp-validation-for="Cpf" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Telefone" class="control-label"></label>
+                <input asp-for="Telefone" class="form-control" />
+                <span asp-validation-for="Telefone" class="text-danger"></span>
+            </div>
+
+                    <div>
+                        <h2>DADOS DA EMPRESA</h2>
+                        <p>Preencha com os dados da empresa a quem você representa.</p>
+                    </div>
+
+            <div class="form-group">
+                <label asp-for="NomeEmpresa" class="control-label"></label>
+                <input asp-for="NomeEmpresa" class="form-control" />
+                <span asp-validation-for="NomeEmpresa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CNPJ" class="control-label"></label>
+                <input asp-for="CNPJ" class="form-control" />
+                <span asp-validation-for="CNPJ" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Endereco" class="control-label"></label>
+                <input asp-for="Endereco" class="form-control" />
+                <span asp-validation-for="Endereco" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Senha" class="control-label"></label>
+                <input asp-for="Senha" class="form-control" />
+                <span asp-validation-for="Senha" class="text-danger"></span>
+            </div>
+           @*  <div class="form-group">
+                <label asp-for="Pedidos" class="control-label"></label>
+                <input asp-for="Pedidos" class="form-control" />
+                <span asp-validation-for="Pedidos" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Contatos" class="control-label"></label>
+                <input asp-for="Contatos" class="form-control" />
+                <span asp-validation-for="Contatos" class="text-danger"></span>
+            </div> *@
+            <div class="form-group">
+                <label asp-for="TipoDeUsuario" class="control-label"></label>
+                <select asp-for="TipoDeUsuario" class="form-control" asp-items="Html.GetEnumSelectList<TipoDeUsuario>()"></select>
+                <span asp-validation-for="TipoDeUsuario" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                        <a asp-controller="Login" asp-action="Index" class="btn btn-amarelo">Já tenho uma conta</a>
+                        <input type="submit" value="Criar Cadastro" class="btn btn-verde" />
+            </div>
+        </form>
+    </div>
+</div>
+
+</main>
+
+    <footer>
+        <div class="container">
+            <p>©2022-2023 HortiDot. Todos os direitos reservados.</p>
+            <a asp-area="" asp-controller="Home" asp-action="Privacy">Política de Privacidade</a>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

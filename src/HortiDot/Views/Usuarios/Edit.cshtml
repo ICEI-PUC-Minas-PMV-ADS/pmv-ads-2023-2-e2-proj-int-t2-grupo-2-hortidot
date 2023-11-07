@@ -1,7 +1,7 @@
 ﻿@model HortiDot.Models.Usuario
 
 @{
-    ViewData["Title"] = "Criar conta";
+    ViewData["Title"] = "Editar Conta";
 }
 
 <!DOCTYPE html>
@@ -29,13 +29,15 @@
             </div>
 
             <div class="cadastro">
-                <form asp-action="CriarConta">
+
+                <form asp-action="Edit">
                     <div>
                         <h1>Dados Pessoais</h1>
                         <p>Preencha todos os campos com *</p>
                     </div>
 
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <input type="hidden" asp-for="ID" />
                     <div class="form-group">
                         <label asp-for="Nome" class="control-label"></label>
                         <input asp-for="Nome" class="form-control" />
@@ -82,17 +84,30 @@
                         <input asp-for="Senha" class="form-control" />
                         <span asp-validation-for="Senha" class="text-danger"></span>
                     </div>
+                   @*  <div class="form-group">
+                        <label asp-for="Pedidos" class="control-label"></label>
+                        <input asp-for="Pedidos" class="form-control" />
+                        <span asp-validation-for="Pedidos" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Contatos" class="control-label"></label>
+                        <input asp-for="Contatos" class="form-control" />
+                        <span asp-validation-for="Contatos" class="text-danger"></span>
+                    </div> *@
                     <div class="form-group">
                         <label asp-for="TipoDeUsuario" class="control-label"></label>
                         <select asp-for="TipoDeUsuario" class="form-control" asp-items="Html.GetEnumSelectList<TipoDeUsuario>()"></select>
                         <span asp-validation-for="TipoDeUsuario" class="text-danger"></span>
                     </div>
                     <div class="form-group">
-                        <input type="submit" value="Já tenho uma conta" class="btn btn-amarelo" />
-                        <input type="submit" value="Criar Cadastro" class="btn btn-verde" />
+                        <a asp-action="Index" class="btn btn-vermelho">Cancelar</a>
+                        <input type="submit" value="Salvar" class="btn btn-verde" />
                     </div>
                 </form>
             </div>
+            </>
+
+
         </div>
     </main>
 
@@ -102,5 +117,11 @@
             <a asp-area="" asp-controller="Home" asp-action="Privacy">Política de Privacidade</a>
         </div>
     </footer>
+
 </body>
 </html>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
