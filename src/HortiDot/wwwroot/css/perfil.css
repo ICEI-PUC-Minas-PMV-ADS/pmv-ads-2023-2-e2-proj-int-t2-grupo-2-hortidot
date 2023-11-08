@@ -1,0 +1,25 @@
+﻿main .container .cadastro-foto {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 1/1;
+}
+
+    main .container .cadastro-foto img {
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+main .container .cadastro {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
