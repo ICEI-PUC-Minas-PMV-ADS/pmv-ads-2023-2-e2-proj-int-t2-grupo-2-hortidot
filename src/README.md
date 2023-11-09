@@ -1,11 +1,4 @@
-# Instruções de utilização
+# Hospedagem
 
-## Instalação do Site
-
-O site em HTML/CSS/JS é um projeto estático, logo pode ser utilizado tanto em servidores...
-
-## Histórico de versões
-
-### [0.1.0] - DD/MM/AAAA
-#### Adicionado
-- Adicionado ...
+Você pode conferir nossa aplicação clicando no link: https://hortidot.azurewebsites.net/
+O cadastro é realizado normalmente, assim como é feito em outros sites.
