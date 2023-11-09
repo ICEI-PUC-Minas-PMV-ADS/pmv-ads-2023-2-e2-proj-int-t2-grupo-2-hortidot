@@ -87,3 +87,4 @@ As ferramentas empregadas no projeto são:
 | Gerenciamento do Projeto          | GitHub Projects | [Gerenciamento do Projeto](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/468/views/1)                                                                       |
 | Projeto de Interface e Wireframes | Figma           | [Projeto de Interface e Wireframes](https://www.figma.com/file/K8HQgg1yBrEB4vFAZjcok9/Grupo-02---HortiDot?type=design&node-id=0%3A1&mode=design&t=xjdF0Z7Y32xzzAhB-1) |
 | Diagramas                         | Drawio          | [Diagramas](https://drive.google.com/file/d/1tzP8sP_H91isAu6SPofVehiHzRSIQGvi/view?usp=sharing)                                                        |
+| Hospedagem                         | Azure          | [HortiDot](https://hortidot.azurewebsites.net/)                                                        |
