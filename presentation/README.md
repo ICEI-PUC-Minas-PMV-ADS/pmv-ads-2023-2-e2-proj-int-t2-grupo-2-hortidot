@@ -1,3 +1,10 @@
 # Apresentação da Solução
 
-Faça uma apresentação de um resumo de todos o processo de desenvolvimento e no final apresente a solução desenvolvida, usando um pequeno vídeo.
+O projeto HortiDot se trata de uma aplicação interativa que visa desenvolver um sistema de cotação de alimentos no setor de hortifruti.
+
+Inicialmente desenvolvemos toda a documentação incluindo: documentação do contexto, especificações do projeto, metodologia, diagramas, projetos das telas e testes.
+
+## Hospedagem
+Você pode conferir nossa aplicação clicando no link: https://hortidot.azurewebsites.net/
+
+## Video
