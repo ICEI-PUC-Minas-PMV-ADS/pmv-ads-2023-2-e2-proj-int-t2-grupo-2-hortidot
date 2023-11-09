@@ -1,0 +1,81 @@
+﻿﻿.login {
+    height: calc(100vh - 152px);
+    background-image: url("img/login-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.login .caixa-central {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+}
+
+.login .logo {
+    width: 142px;
+    height: 142px;
+    background-color: var(--branco);
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: -24px;
+    z-index: 2;
+}
+
+    .login .logo img {
+        width: 100%;
+        height: 100%;
+    }
+
+.login .formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    color: var(--verde-escuro);
+}
+
+    .login .formulario form {
+        background: var(--branco);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        padding: 40px;
+        border-radius: 12px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: center;
+    }
+
+        .login .formulario form .form-group {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            width: 100%;
+        }
+
+            .login .formulario form .form-group svg {
+                flex: none;
+            }
+
+            .login .formulario form .form-group input:not(input.btn) {
+                width: 100%;
+                background-color: var(--cinza);
+                border-radius: 12px;
+            }
+
+            .login .formulario form .form-group label {
+                text-wrap: nowrap;
+            }
+
+.login .criar-conta {
+    font-size: 14px;
+    color: var(--verde-escuro);
+}

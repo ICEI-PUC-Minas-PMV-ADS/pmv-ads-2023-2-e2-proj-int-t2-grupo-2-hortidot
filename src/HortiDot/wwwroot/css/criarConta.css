@@ -1,0 +1,82 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,800;1,400&family=Righteous&display=swap');
+
+:root {
+    --verde-escuro: #455218;
+    --verde-claro: #B3C948;
+    --amarelo: #DEB32C;
+    --laranja: #E36B00;
+    --vermelho: #E74641;
+    --preto: #000000;
+    --branco: #FFFFFF;
+    --amarelo-claro: #FFFBED;
+    --cinza: #E3E3E3;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat;
+}
+
+.container {
+    padding: 0;
+}
+
+main .containerr {
+    display: flex;
+    gap: 40px;
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+
+.logo {
+    /* Logo horizontal */
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px 0px;
+    gap: 10px;
+    width: 1280px;
+    height: 115.46px;
+}
+
+footer {
+    width: 100%;
+    background-color: var(--verde-escuro);
+    padding: 64px;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+    footer .container {
+        color: var(--branco);
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+
+        footer .container p {
+            margin: 0;
+        }
+
+        footer .container a {
+            color: var(--branco);
+        }
+
+@media (min-width: 768px) {
+}

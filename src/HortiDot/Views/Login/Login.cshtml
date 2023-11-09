@@ -1,0 +1,66 @@
+﻿@model HortiDot.Models.Usuario
+@{
+    ViewData["Title"] = "Login";
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - HortiDot</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
+</head>
+
+<body>
+    <main>
+        <section class="login">
+            <div class="caixa-central">
+                <div class="formulario">
+                    <div class="logo">
+                        <img src="https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/af6c62358c723c0cbfc7acfe411df44cf236f59f/docs/img/logo-hortidot-vertical.svg"></img>
+                    </div>
+                    <form asp-action="Login">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="form-group">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.98242 11.7715C4.90299 10.9902 6.74219 10.5996 8.5 10.5996C10.2578 10.5996 12.0807 10.9902 13.9688 11.7715C15.8893 12.5202 16.8496 13.513 16.8496 14.75V16.8496H0.150391V14.75C0.150391 13.513 1.0944 12.5202 2.98242 11.7715ZM11.4297 7.2793C10.6159 8.0931 9.63932 8.5 8.5 8.5C7.36068 8.5 6.38411 8.0931 5.57031 7.2793C4.75651 6.46549 4.34961 5.48893 4.34961 4.34961C4.34961 3.21029 4.75651 2.23372 5.57031 1.41992C6.38411 0.573568 7.36068 0.150391 8.5 0.150391C9.63932 0.150391 10.6159 0.573568 11.4297 1.41992C12.2435 2.23372 12.6504 3.21029 12.6504 4.34961C12.6504 5.48893 12.2435 6.46549 11.4297 7.2793Z" fill="#455218" />
+                            </svg>
+
+                            <label asp-for="Email" class="control-label"></label>
+                            <input asp-for="Email" class="form-control" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <svg width="17" height="22" viewBox="0 0 17 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.7227 7.34961V5.25C11.7227 4.37109 11.3971 3.6224 10.7461 3.00391C10.1276 2.35286 9.37891 2.02734 8.5 2.02734C7.62109 2.02734 6.85612 2.35286 6.20508 3.00391C5.58659 3.6224 5.27734 4.37109 5.27734 5.25V7.34961H11.7227ZM7.03516 16.0898C7.45833 16.513 7.94661 16.7246 8.5 16.7246C9.05339 16.7246 9.54167 16.513 9.96484 16.0898C10.388 15.6667 10.5996 15.1784 10.5996 14.625C10.5996 14.0716 10.388 13.5833 9.96484 13.1602C9.54167 12.737 9.05339 12.5254 8.5 12.5254C7.94661 12.5254 7.45833 12.737 7.03516 13.1602C6.61198 13.5833 6.40039 14.0716 6.40039 14.625C6.40039 15.1784 6.61198 15.6667 7.03516 16.0898ZM14.75 7.34961C15.3034 7.34961 15.7917 7.5612 16.2148 7.98438C16.638 8.375 16.8496 8.84701 16.8496 9.40039V19.8496C16.8496 20.403 16.638 20.8913 16.2148 21.3145C15.7917 21.7051 15.3034 21.9004 14.75 21.9004H2.25C1.69661 21.9004 1.20833 21.7051 0.785156 21.3145C0.361979 20.8913 0.150391 20.403 0.150391 19.8496V9.40039C0.150391 8.84701 0.361979 8.375 0.785156 7.98438C1.20833 7.5612 1.69661 7.34961 2.25 7.34961H3.27539V5.25C3.27539 3.81771 3.77995 2.59701 4.78906 1.58789C5.83073 0.546224 7.06771 0.0253906 8.5 0.0253906C9.93229 0.0253906 11.153 0.546224 12.1621 1.58789C13.2038 2.59701 13.7246 3.81771 13.7246 5.25V7.34961H14.75Z" fill="#455218" />
+                            </svg>
+
+                            <label asp-for="Senha" class="control-label"></label>
+                            <input asp-for="Senha" class="form-control" />
+                            <span asp-validation-for="Senha" class="text-danger"></span>
+                        </div>
+                        <a class="criar-conta" asp-area="" asp-controller="Usuarios" asp-action="CriarConta">
+                            Esqueceu sua senha?
+                        </a>
+                        <div class="form-group">
+                            <input type="submit" value="Entrar" class="btn btn-verde" />
+                        </div>
+                        <a class="criar-conta" asp-area="" asp-controller="Usuarios" asp-action="CriarUsuario">
+                            Ainda não possui uma conta? Inscreva-se!
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>©2022-2023 HortiDot. Todos os direitos reservados.</p>
+            <a asp-area="" asp-controller="Home" asp-action="Privacy">Política de Privacidade</a>
+        </div>
+    </footer>
+</body>
+</html>
