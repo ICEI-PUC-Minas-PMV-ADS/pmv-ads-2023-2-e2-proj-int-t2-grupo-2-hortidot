@@ -46,7 +46,7 @@ Você pode conferir nossa aplicação clicando no link: https://hortidot.azurewe
 
 # Código
 
-<li><a href="src/README.md"> Código Fonte</a></li>
+<li><a href="src/HortiDot/"> Código Fonte</a></li>
 
 # Apresentação
 
