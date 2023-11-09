@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using HortiDot.Models;
+using Microsoft.EntityFrameworkCore.Migrations;
+using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
@@ -10,7 +12,7 @@ namespace HortiDot.Migrations
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-
+            migrationBuilder.Sql("CREATE TABLE usuarioTeste (name text, tipo tipodeusuario);");
         }
 
         /// <inheritdoc />

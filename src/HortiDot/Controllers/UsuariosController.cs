@@ -43,6 +43,25 @@ namespace HortiDot.Controllers
             return View(usuario);
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int id, [Bind("ID,Nome,Email,Cpf,Telefone,NomeEmpresa,CNPJ,Endereco,Senha,Pedidos,Contatos,TipoDeUsuario")] Usuario usuario)
+        {
+            if (id != usuario.ID)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                _context.Update(usuario);
+                await _context.SaveChangesAsync();
+                
+                return RedirectToAction(nameof(Index));
+            }
+            return View(usuario);
+        }
+
         // GET: Usuarios/Create
         public IActionResult Create()
         {
@@ -68,6 +87,7 @@ namespace HortiDot.Controllers
         }
 
         // GET: Usuarios/Edit/5
+        [HttpGet]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null || _context.usuarios == null)
@@ -80,44 +100,9 @@ namespace HortiDot.Controllers
             {
                 return NotFound();
             }
-            return View(usuario);
+            return Redirect("/Usuarios/Details/1");
         }
 
-        // POST: Usuarios/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,Nome,Email,Cpf,Telefone,NomeEmpresa,CNPJ,Endereco,Senha,Pedidos,Contatos,TipoDeUsuario")] Usuario usuario)
-        {
-            if (id != usuario.ID)
-            {
-                return NotFound();
-            }
-
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    usuario.Senha = BCrypt.Net.BCrypt.HashPassword(usuario.Senha);
-                    _context.Update(usuario);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!UsuarioExists(usuario.ID))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
-            }
-            return View(usuario);
-        }
 
         // GET: Usuarios/Delete/5
         public async Task<IActionResult> Delete(int? id)
