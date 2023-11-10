@@ -5,11 +5,11 @@ namespace HortiDot.Config
 {
     public class DataContext : DbContext
     {
-        public DataContext(DbContextOptions<DataContext> options ) : base(options) { }
-        
-        public DbSet<Usuario> usuarios { get; set; }
+        public DataContext(DbContextOptions<DataContext> options) : base(options) { }
 
-        public DbSet<Cotacao> cotacoes { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
+
+        public DbSet<Produto> Produtos { get; set; }
 
         public DbSet<Pedido> Pedidos { get; set; }
     }

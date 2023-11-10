@@ -31,7 +31,7 @@
 
             <div class="cadastro">
 
-        <form asp-action="Create">
+                <form asp-action="CriarUsuario">
                     <div>
                         <h1>Dados Pessoais</h1>
                         <p>Preencha todos os campos com *</p>
@@ -100,7 +100,7 @@
                 <span asp-validation-for="TipoDeUsuario" class="text-danger"></span>
             </div>
             <div class="form-group">
-                        <a asp-controller="Login" asp-action="Index" class="btn btn-amarelo">Já tenho uma conta</a>
+                        <a asp-controller="Login" asp-action="Login" class="btn btn-amarelo">Já tenho uma conta</a>
                         <input type="submit" value="Criar Cadastro" class="btn btn-verde" />
             </div>
         </form>

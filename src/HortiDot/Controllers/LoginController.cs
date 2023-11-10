@@ -2,9 +2,7 @@
 using HortiDot.Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System.Security.Claims;
 
 namespace HortiDot.Controllers
@@ -19,44 +17,47 @@ namespace HortiDot.Controllers
             _context = context;
         }
         [AllowAnonymous]
-        public IActionResult Index()
+        public IActionResult Login()
         {
-            if(User.Identity.IsAuthenticated)
+            if (User.Identity.IsAuthenticated)
             {
-                return Redirect("/Login/Menu");
-            } else
+                return Redirect("/Login/Home");
+            }
+            else
             {
                 return View();
             }
-            
+
         }
         [AllowAnonymous]
         [HttpPost]
-        public async Task<IActionResult> Index(Usuario usuario)
+        public async Task<IActionResult> Login(Usuario usuario)
         {
             var role = "";
-            var dados = _context.usuarios
+
+            var dados = _context.Usuarios
                 .FirstOrDefault(acc => acc.Email == usuario.Email);
 
             if (dados == null)
             {
                 ViewBag.Message = "erro";
+                return RedirectToAction("Login");
             }
 
             if (dados.TipoDeUsuario == 0)
             {
                 role = "Comprador";
-            } else
+            }
+            else
                 role = "Fornecedor";
-            
+
             bool senhaOK = BCrypt.Net.BCrypt.Verify(usuario.Senha, dados.Senha);
 
             if (senhaOK)
             {
                 var claims = new List<Claim>
                 {
-                    new Claim(ClaimTypes.Name, dados.Nome),
-                    new Claim("Cargo", role)
+                    new Claim("Cargo", "comprador")
                 };
 
                 var fornecedorIdentiy = new ClaimsIdentity(claims, "login");
@@ -68,9 +69,9 @@ namespace HortiDot.Controllers
                     ExpiresUtc = DateTime.UtcNow.ToLocalTime().AddHours(8),
                     IsPersistent = true
                 };
-                
+
                 await HttpContext.SignInAsync(principal, props);
-                return Redirect("/Login/Menu");
+                return Redirect("/Login/Home");
 
             }
             else
@@ -78,16 +79,14 @@ namespace HortiDot.Controllers
             return View();
         }
 
-        public IActionResult Menu() 
+        public IActionResult Home()
         {
-            return View(); 
+            return View();
         }
-
         public async Task<IActionResult> Logout()
         {
             await HttpContext.SignOutAsync();
             return Redirect("/");
         }
-
     }
 }

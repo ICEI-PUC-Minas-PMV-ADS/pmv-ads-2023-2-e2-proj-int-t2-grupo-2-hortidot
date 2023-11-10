@@ -3,7 +3,6 @@
 @using System.Security.Claims;
 
 @{
-    string userCargo = ((ClaimsIdentity)User.Identity).FindFirst("Cargo").Value;
 
 }
 
@@ -26,7 +25,7 @@
                     <img src="../Assets/login-bg.jpg" alt="Foto do usuário" />
                     <div class="user-name">
                         <h2>Olá @User.Identity.Name</h2>
-                        <p>@userCargo</p>
+                        <p></p>
                     </div>
                 </div>
 
@@ -67,7 +66,7 @@
                                     </svg>
                                     Perfil
                                 </h2>
-                                <a asp-area="" asp-controller="Usuarios" asp-action="Details">Editar conta</a>
+                                <a asp-area="" asp-controller="Usuarios" asp-action="EditarUsuario">Editar conta</a>
                                 <a asp-area="" asp-controller="Usuarios" asp-action="Delete">Excluir conta</a>
                             </li>
 

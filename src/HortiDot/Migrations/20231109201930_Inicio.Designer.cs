@@ -12,45 +12,18 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace HortiDot.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20231106231447_AttModelPedido")]
-    partial class AttModelPedido
+    [Migration("20231109201930_Inicio")]
+    partial class Inicio
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "7.0.12")
+                .HasAnnotation("ProductVersion", "7.0.13")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
-
-            modelBuilder.Entity("HortiDot.Models.Cotacao", b =>
-                {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ID"));
-
-                    b.Property<int>("CodigoDoComprador")
-                        .HasColumnType("integer");
-
-                    b.Property<DateTime>("DataDeInclusao")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<string>("Observacao")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("ValorTotal")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.HasKey("ID");
-
-                    b.ToTable("cotacoes");
-                });
 
             modelBuilder.Entity("HortiDot.Models.Pedido", b =>
                 {
@@ -69,11 +42,8 @@ namespace HortiDot.Migrations
                     b.Property<DateTime>("DataPedido")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<string>("StatusPedidos")
-                        .HasColumnType("text");
-
-                    b.Property<decimal>("ValorTotal")
-                        .HasColumnType("numeric");
+                    b.Property<int>("StatusPedidos")
+                        .HasColumnType("integer");
 
                     b.HasKey("Id");
 
@@ -82,17 +52,11 @@ namespace HortiDot.Migrations
 
             modelBuilder.Entity("HortiDot.Models.Produto", b =>
                 {
-                    b.Property<int>("Codigo")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Codigo"));
-
-                    b.Property<int?>("CotacaoID")
-                        .HasColumnType("integer");
-
-                    b.Property<DateTime>("DataDeInclusao")
-                        .HasColumnType("timestamp with time zone");
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Imagem")
                         .IsRequired()
@@ -102,17 +66,7 @@ namespace HortiDot.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<int?>("PedidoId")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("Preco")
-                        .HasColumnType("integer");
-
-                    b.HasKey("Codigo");
-
-                    b.HasIndex("CotacaoID");
-
-                    b.HasIndex("PedidoId");
+                    b.HasKey("Id");
 
                     b.ToTable("Produtos");
                 });
@@ -127,9 +81,6 @@ namespace HortiDot.Migrations
 
                     b.Property<string>("CNPJ")
                         .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("Contatos")
                         .HasColumnType("text");
 
                     b.Property<string>("Cpf")
@@ -153,6 +104,7 @@ namespace HortiDot.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("Pedidos")
+                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("Senha")
@@ -163,34 +115,12 @@ namespace HortiDot.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<string>("TipoDeUsuario")
-                        .IsRequired()
-                        .HasColumnType("text");
+                    b.Property<int>("TipoDeUsuario")
+                        .HasColumnType("integer");
 
                     b.HasKey("ID");
 
-                    b.ToTable("usuarios");
-                });
-
-            modelBuilder.Entity("HortiDot.Models.Produto", b =>
-                {
-                    b.HasOne("HortiDot.Models.Cotacao", null)
-                        .WithMany("ListaDeProdutos")
-                        .HasForeignKey("CotacaoID");
-
-                    b.HasOne("HortiDot.Models.Pedido", null)
-                        .WithMany("ListaProdutos")
-                        .HasForeignKey("PedidoId");
-                });
-
-            modelBuilder.Entity("HortiDot.Models.Cotacao", b =>
-                {
-                    b.Navigation("ListaDeProdutos");
-                });
-
-            modelBuilder.Entity("HortiDot.Models.Pedido", b =>
-                {
-                    b.Navigation("ListaProdutos");
+                    b.ToTable("Usuários");
                 });
 #pragma warning restore 612, 618
         }

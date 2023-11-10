@@ -25,7 +25,6 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
         options.LoginPath = "/";
     });
 
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -43,9 +42,8 @@ app.UseRouting();
 
 app.UseAuthorization();
 
-
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Login}/{action=Index}/{id?}");
+    pattern: "{controller=Login}/{action=Login}/{id?}");
 
 app.Run();

@@ -1,6 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Reflection.Metadata.Ecma335;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace HortiDot.Models
 {
@@ -18,9 +17,6 @@ namespace HortiDot.Models
 
         [Display(Name = "Status do Pedido")]
         public StatusPedidos StatusPedidos { get; set; }
-
-        [Display(Name = "Valor Total")]
-        public decimal ValorTotal { get; set; }
 
         [Display(Name = "Código do Comprador")]
         public int CodigoComprador { get; set; }

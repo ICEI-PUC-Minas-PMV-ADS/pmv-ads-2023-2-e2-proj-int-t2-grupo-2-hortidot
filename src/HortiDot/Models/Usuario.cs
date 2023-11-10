@@ -1,7 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Diagnostics.CodeAnalysis;
 
 namespace HortiDot.Models
 {
+    [Table(name:"Usuários")]
     public class Usuario
     {
         [Key]
@@ -38,14 +41,12 @@ namespace HortiDot.Models
         [DataType(DataType.Password)]
         public string Senha { get; set; }
 
+        [AllowNull]
         public string Pedidos { get; set; }
-
-        public string Contatos { get; set; }
 
         [Required]
         [Display(Name = "Tipo de usuário")]
         public TipoDeUsuario TipoDeUsuario { get; set; }
-
     }
 
     public enum TipoDeUsuario
