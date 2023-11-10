@@ -1,6 +1,6 @@
-﻿﻿.loginBox {
+﻿.loginBox {
     height: calc(100vh - 152px);
-    background-image: url("/css/img/login-bg.jpg");
+    background-image: url("./img/login-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center
@@ -78,4 +78,5 @@
 .loginBox .criar-conta {
     font-size: 14px;
     color: var(--verde-escuro);
+    text-align: center;
 }

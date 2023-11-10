@@ -43,7 +43,7 @@
                             <input asp-for="Senha" class="form-control" />
                             <span asp-validation-for="Senha" class="text-danger"></span>
                         </div>
-                        <a class="criar-conta" asp-area="" asp-controller="Usuarios" asp-action="CriarConta">
+                        <a class="criar-conta" asp-area="" asp-controller="Usuarios" asp-action="CriarUsuario">
                             Esqueceu sua senha?
                         </a>
                         <div class="form-group">
@@ -60,7 +60,7 @@
     <footer>
         <div class="container">
             <p>©2022-2023 HortiDot. Todos os direitos reservados.</p>
-            <a asp-area="" asp-controller="Home" asp-action="Privacy">Política de Privacidade</a>
+            <a asp-area="" asp-controller="Home" asp-action="">Política de Privacidade</a>
         </div>
     </footer>
 </body>
