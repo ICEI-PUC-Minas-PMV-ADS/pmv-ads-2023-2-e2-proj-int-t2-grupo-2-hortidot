@@ -42,7 +42,8 @@ namespace HortiDot.Models
         public string Senha { get; set; }
 
         [AllowNull]
-        public string Pedidos { get; set; }
+        [ForeignKey("Pedido")]
+        public ICollection<Pedido> Pedidos { get; set; }
 
         [Required]
         [Display(Name = "Tipo de usuário")]

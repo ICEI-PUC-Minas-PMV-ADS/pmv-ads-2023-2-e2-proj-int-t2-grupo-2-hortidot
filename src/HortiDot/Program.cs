@@ -10,7 +10,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 
 builder.Services.AddDbContext<DataContext>(options =>
-    options.UseNpgsql(builder.Configuration.GetConnectionString("WebApiDatabase")));
+options.UseNpgsql(builder.Configuration.GetConnectionString("Database")));
 
 builder.Services.Configure<CookiePolicyOptions>(options =>
 {
@@ -22,7 +22,7 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
     .AddCookie(options =>
     {
         options.AccessDeniedPath = "/Login/AcessDenied";
-        options.LoginPath = "/";
+        options.LoginPath = "/Login";
     });
 
 var app = builder.Build();
@@ -40,7 +40,9 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
+
 
 app.MapControllerRoute(
     name: "default",

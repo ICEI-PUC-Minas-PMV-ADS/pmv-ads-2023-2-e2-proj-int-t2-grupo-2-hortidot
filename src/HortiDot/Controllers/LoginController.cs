@@ -16,6 +16,7 @@ namespace HortiDot.Controllers
         {
             _context = context;
         }
+
         [AllowAnonymous]
         public IActionResult Login()
         {
@@ -34,14 +35,12 @@ namespace HortiDot.Controllers
         public async Task<IActionResult> Login(Usuario usuario)
         {
             var role = "";
-
             var dados = _context.Usuarios
                 .FirstOrDefault(acc => acc.Email == usuario.Email);
 
             if (dados == null)
             {
                 ViewBag.Message = "erro";
-                return RedirectToAction("Login");
             }
 
             if (dados.TipoDeUsuario == 0)
@@ -57,7 +56,8 @@ namespace HortiDot.Controllers
             {
                 var claims = new List<Claim>
                 {
-                    new Claim("Cargo", "comprador")
+                    new Claim(ClaimTypes.Name, dados.Nome),
+                    new Claim("Cargo", role)
                 };
 
                 var fornecedorIdentiy = new ClaimsIdentity(claims, "login");

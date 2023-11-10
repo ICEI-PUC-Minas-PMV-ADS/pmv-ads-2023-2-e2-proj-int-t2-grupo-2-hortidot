@@ -12,13 +12,14 @@ namespace HortiDot.Migrations
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+
             migrationBuilder.CreateTable(
                 name: "Pedidos",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    DataPedido = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    DataPedido = table.Column<DateTime>(type: "timestamp", nullable: false),
                     StatusPedidos = table.Column<int>(type: "integer", nullable: false),
                     CodigoComprador = table.Column<int>(type: "integer", nullable: false),
                     CodigoFornecedor = table.Column<int>(type: "integer", nullable: true)
