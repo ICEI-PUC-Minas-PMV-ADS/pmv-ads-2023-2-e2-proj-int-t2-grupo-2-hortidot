@@ -45,8 +45,16 @@ namespace HortiDot.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> CriarPedido([Bind("Id, ListaProdutos,StatusPedidos")] Pedido pedido)
+        public async Task<IActionResult> CriarPedido([Bind("Id, Pedido,StatusPedidos, DataPedido")] Pedido pedido)
         {
+
+            pedido.StatusPedidos = StatusPedidos.EmAndamento;
+            pedido.DataPedido = DateTime.UtcNow;
+
+            _context.Add(pedido);
+            await _context.SaveChangesAsync();
+
+
             return View();
         }
     }
