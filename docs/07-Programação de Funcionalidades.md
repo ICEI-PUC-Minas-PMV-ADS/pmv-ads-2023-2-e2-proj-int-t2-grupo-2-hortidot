@@ -6,18 +6,22 @@ Nesta seção são apresentadas as telas desenvolvidas para cada uma das funcion
 
 ### Tela Cadastro do Perfil
 
-Tela permite o cadastro, edição e visualização de dados do usuário. A estrutura é um CRUD desenvolvido em C# e os dados ficam armazenados em um banco de dados baseado no SQL Server. 
+Tela permite o cadastro, edição e visualização de dados do usuário. A estrutura é um CRUD desenvolvido em C# e os dados ficam armazenados no banco de dados PostgreSQL. 
 
-<img src="/docs/img/tela-cadastro-perfil.jpg" alt="">
+<img src="/docs/img/tela-cadastro-perfil.01.jpg" alt="">
 
 #### Requisitos atendidos
 * RF-07- O sistema deve permitir que o fornecedor e comprador possam cadastrar, alterar e excluir seu cadastro.
 
 #### Artefatos da funcionalidade
-Em construção.
+* usuario.cs<br>
+* Usuarioscontroller<br>
+* DataContext.cs<br>
+* CriarUsuario.cshtml<br>
+* EditarUsuario.cshtml<br>
 
 #### Estrutura de dados 
-Em construção. 
+Em construção.
 
 ### Tela Excluir Conta 
 
@@ -29,14 +33,17 @@ Tela que permite a exclusão dos dados de um usuário da base de dados.
 * RF-07 - O sistema deve permitir que o fornecedor e comprador possam cadastrar, alterar e excluir seu cadastro.
 
 #### Artefatos da funcionalidade
-Em construção.
+* usuario.cs<br>
+* Usuarioscontroller<br>
+* DataContext.cs<br>
+(Acrescentar artefatos pendentes)
 
 #### Estrutura de dados 
 Em construção. 
 
 ### Tela Cadastro de Produtos
 
-Tela permite o cadastro, edição, visualização e exclusão de dados de um produto. A estrutura é um CRUD desenvolvido em C# e os dados ficam armazenados em um banco de dados baseado no SQL Server.
+Tela permite o cadastro, edição, visualização e exclusão de dados de um produto. A estrutura é um CRUD desenvolvido em C# e os dados ficam armazenados no banco de dados PostgreSQL. 
 
 <img src="/docs/img/tela-cadastro-produto.jpg" alt="">
 
