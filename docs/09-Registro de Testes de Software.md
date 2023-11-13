@@ -7,5 +7,10 @@ Relatório com as evidências dos testes de software realizados no sistema pela 
 | :-----------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 |       Imagem        | <img widt = "500px" src = "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/main/docs/img/tela-login.01.jpg"/> |
 | Requisito Associado |                          RF-11- O sistema deve permitir que o fornecedor e o comprador possam fazer login com e-mail e senha                          |
-|      Avaliação      |                                                                               ✅ Login realizado com êxito                                                                                |
-|                     |                                                                                                                                                                                             |
+|      Avaliação      |                                                                               ✅ Login realizado com êxito                                                                     |                                                                                                           
+
+|    Caso de Teste    |                                                                   CT-02 - Cadastro do Perfil                                                               |
+| :-----------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|       Imagem        | <img widt = "500px" src = "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/main/docs/img/tela-cadastro-perfil.01.jpg"/> |
+| Requisito Associado |                          RF-07- O sistema deve permitir que o fornecedor e o comprador possam cadastrar, alterar e excluir seu cadastro                          |
+|      Avaliação      |                                                                               ✅ Cadastro realizado com sucesso                                                                                                                                                                                                                                 
