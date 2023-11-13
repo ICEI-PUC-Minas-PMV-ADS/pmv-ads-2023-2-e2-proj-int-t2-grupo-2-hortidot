@@ -12,5 +12,8 @@ namespace HortiDot.Config
         public DbSet<Produto> Produtos { get; set; }
 
         public DbSet<Pedido> Pedidos { get; set; }
+
+        public DbSet<Chat> Chats { get; set; } 
+
     }
 }
