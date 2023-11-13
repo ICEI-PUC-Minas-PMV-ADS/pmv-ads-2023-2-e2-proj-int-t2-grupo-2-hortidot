@@ -4,6 +4,25 @@
 
 Nesta seção são apresentadas as telas desenvolvidas para cada uma das funcionalidades do sistema. O respectivo endereço (URL) e outras orientações de acesso são são apresentadas na sequência.
 
+### Tela login
+
+Tela permite o usuário acessar sua conta com e-mail e senha.
+
+<img src="/docs/img/tela-login.01.jpg" alt="">
+
+
+#### Requisitos atendidos
+* RF-11- O sistema deve permitir que o fornecedor e o comprador possam fazer login com e-mail e senha.
+
+#### Artefatos da funcionalidade
+* Logincontroller<br>
+* DataContext.cs<br>
+* Home.cshtml<br>
+* Login.cshtml<br>
+
+#### Estrutura de dados 
+Em construção.
+
 ### Tela Cadastro do Perfil
 
 Tela permite o cadastro, edição e visualização de dados do usuário. A estrutura é um CRUD desenvolvido em C# e os dados ficam armazenados no banco de dados PostgreSQL. 
@@ -41,6 +60,40 @@ Tela que permite a exclusão dos dados de um usuário da base de dados.
 #### Estrutura de dados 
 Em construção. 
 
+### Tela Págna Inicial 
+
+Tela exibe os pedidos em andamento e últimos pedidos, e permite que o comprador abra um novo pedido.
+
+<img src="/docs/img/tela-inicial.jpg" alt="">
+
+#### Requisitos atendidos
+
+RF-09 - O sistema deve permitir que o fornecedor e o comprador possam visualizar todos os pedidos.
+RF-12 - O sistema deve permitir a abertura de novos pedidos.
+
+#### Artefatos da funcionalidade
+Em construção.
+
+#### Estrutura de dados
+Em construção.
+
+### Tela Pedidos
+
+Tela mostra todos os pedidos feitos pelo comprador e os detalhes dos pedidos, além de permitir a abertura de novos pedidos. 
+
+<img src="/docs/img/tela-pedidos.01.jpg" alt="">
+
+#### Requisitos atendidos
+
+RF-09 - O sistema deve permitir que o fornecedor e o comprador possam visualizar todos os pedidos.
+RF-12 - O sistema deve permitir a abertura de novos pedidos.
+
+#### Artefatos da funcionalidade
+Em construção.
+
+#### Estrutura de dados
+Em construção.
+
 ### Tela Cadastro de Produtos
 
 Tela permite o cadastro, edição, visualização e exclusão de dados de um produto. A estrutura é um CRUD desenvolvido em C# e os dados ficam armazenados no banco de dados PostgreSQL. 
@@ -51,6 +104,21 @@ Tela permite o cadastro, edição, visualização e exclusão de dados de um pro
 * RF-06 - O sistema deve permitir o cadastro, edição e exclusão dos produtos de hortifruti contendo imagem, nome, código único do item e quantidade em estoque.
 
 #### Artefatos da funcionalidade 
+Em construção.
+
+#### Estrutura de dados
+Em construção.
+
+### Tela Produtos
+
+Tela exibe aos usuários todos os produtos cadastrados pelo fornecedor.
+
+<img src="/docs/img/tela-produtos.jpg" alt="">
+
+#### Requisitos atendidos
+* RF-10 - O sistema deve permitir que o fornecedor e o comprador possam visualizar todos os produtos cadastrados.
+
+#### Artefatos da funcionalidade
 Em construção.
 
 #### Estrutura de dados
@@ -91,7 +159,7 @@ Em construção.
 
 Apresenta as opções de produtos e informações a serem incluidas em uma cotação para que seja enviada aos fornecedores, tais como código do produtos, imagem e nome dos produtos, juntamente com as quantidades desejadas.
 
-(Tela em construção)
+<img src="/docs/img/tela-cotacao-comprador.jpg" alt="">
 
 #### Requisitos atendidos
 * RF-02 - O sistema deve permitir que o comprador e fornecedor ajustem a quantidade de itens solicitados.
@@ -104,7 +172,7 @@ Em construção.
 
 Apresenta a cotação recebida para que seja editada e atualizada de acordo com os preços deste fornecedor. 
 
-(Tela em construção)
+<img src="/docs/img/tela-cotacao-fornecedor.jpg" alt="">
 
 #### Requisitos atendidos
 * RF-01 - O sistema deve permitir que os fornecedores ajustem o preço para cada comprador correspondente.
@@ -121,7 +189,7 @@ Em construção.
 
 Apresenta as informações atualizadas pelos fornecedores para que sejam avaliadas para finalização do pedido.
 
-(Tela em construção)
+<img src="/docs/img/tela-analisar-pedido.jpg" alt="">
 
 #### Requisitos atendidos
 * RF-05 - O sistema deve permitir que o comprador e fornecedor possam fazer a revisão do pedido antes do fechamento e do envio da mensagem.
