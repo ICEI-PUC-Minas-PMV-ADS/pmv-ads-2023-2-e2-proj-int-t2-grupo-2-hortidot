@@ -23,7 +23,7 @@
         <nav class="menu-topo">
             <div class="container">
                 <div class="user-info">
-                    <img src="../Assets/login-bg.jpg" alt="Foto do usuário" />
+                    <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/main/docs/img/persona-ana.jpg?raw=true" alt="Foto do usuário" />
                     <div class="user-name">
                         <h2>Olá @User.Identity.Name</h2>
                         <p>@userCargo</p>
@@ -78,10 +78,8 @@
                                     </svg>
                                     Pedidos
                                 </h2>
-                                <a asp-area="" asp-controller="Pedidos" asp-action="Index">Ver histórico</a>
-                            <a asp-area="" asp-controller="Pedidos" asp-action="Create">Em andamento</a>
-                            <a asp-area="" asp-controller="Pedidos" asp-action="Index">Finalizados</a>
-                            <a asp-area="" asp-controller="Pedidos" asp-action="Index">Cancelados</a>
+                            <a asp-area="" asp-controller="Pedidos" asp-action="Create">Novo pedido</a>
+                                <a asp-area="" asp-controller="Pedidos" asp-action="Index">Todos os pedidos</a>
                             </li>
 
                             <li>
@@ -91,8 +89,8 @@
                                     </svg>
                                     Produtos
                                 </h2>
-                                <a asp-area="" asp-controller="Home" asp-action="Index">Ver todos</a>
-                                <a asp-area="" asp-controller="Home" asp-action="Index">Cadastrar item</a>
+                            <a asp-area="" asp-controller="Produtos" asp-action="Index">Todos os produtos</a>
+                            <a asp-area="" asp-controller="Produtos" asp-action="Create">Cadastrar produto</a>
                             </li>
 
                             <li>
@@ -102,8 +100,8 @@
                                     </svg>
                                     Caixa de entrada
                                 </h2>
-                                <a asp-area="" asp-controller="Home" asp-action="Index">Nova mensagem</a>
-                                <a asp-area="" asp-controller="Home" asp-action="Index">Histórico</a>
+                                <a asp-area="" asp-controller="Chats" asp-action="Create">Nova mensagem</a>
+                            <a asp-area="" asp-controller="Chats" asp-action="Index">Histórico</a>
                             </li>
 
                         </ul>
