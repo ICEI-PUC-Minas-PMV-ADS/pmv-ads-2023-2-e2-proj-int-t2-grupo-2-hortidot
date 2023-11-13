@@ -62,6 +62,11 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 | João Victor Souza    | Quero poder fazer a revisão do pedido na cotação                                      | para que eu não fique sem estoque dos produtos.              |
 | João Victor Souza    | Quero ter uma comunicação clara com o fornecedor                                      | para agilizar os meus pedidos.                               |
 | Roger Silva          | Quero poder me cadastrar, alterar e excluir minhas informações                        | para me sentir seguro com os meus dados.                     |
+| Amanda Carvalho | Quero poder ter uma visão geral de todos os pedidos realizados ou em andamento | para poder organizar minhas tarefas.|
+| Hugo Barbosa | Quero poder acessar minha conta através de e-mail e senha | para me sentir mais seguro ao consultar meus pedidos. |
+| Roger Silva | Quero poder abrir um novo pedido | para suprir as demandas do meu estoque. |
+| Ana Resende | Quero poder visualizar a lista de produtos cadastrados | para ter mais controle dos pedidos. |
+
 
 ## Requisitos
 
@@ -72,13 +77,18 @@ A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade
 | ID    | Descrição do Requisito                                                                                                                                | Prioridade |
 | ----- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
 | RF-01 | O sistema deve permitir que os fornecedores ajustem o preço para cada comprador correspondente.                                                       | ALTA       |
-| RF-02 | O sistema deve permitir que o comprador e fornecedor ajustem a quantidade de itens solicitados.                                                       | ALTA       |
+| RF-02 | O sistema deve permitir que o comprador e o fornecedor ajustem a quantidade de itens solicitados.                                                       | ALTA       |
 | RF-03 | O sistema deve enviar uma mensagem informando a abertura e fechamento da cotação solicitada.                                                          | MÉDIA      |
 | RF-04 | O sistema deve permitir um canal de comunicação entre fornecedor e comprador.                                                                         | ALTA       |
-| RF-05 | O sistema deve permitir que o comprador e fornecedor possam fazer a revisão do pedido antes do fechamento e do envio da mensagem.                     | ALTA       |
+| RF-05 | O sistema deve permitir que o comprador e o fornecedor possam fazer a revisão do pedido antes do fechamento e do envio da mensagem.                     | ALTA       |
 | RF-06 | O sistema deve permitir o cadastro, edição e exclusão dos produtos de hortifruti contendo imagem, nome, código único do item e quantidade em estoque. | ALTA       |
-| RF-07 | O sistema deve permitir que o fornecedor e comprador possam cadastrar, alterar e excluir seu cadastro.                                                | ALTA       |
+| RF-07 | O sistema deve permitir que o fornecedor e o comprador possam cadastrar, alterar e excluir seu cadastro.                                                | ALTA       |
 | RF-08 | O sistema deve permitir que o fornecedor feche o pedido e que o comprador finalize a cotação após a revisão.                                          | ALTA       |
+| RF-09 | O sistema deve permitir que o fornecedor e o comprador possam visualizar todos os pedidos. | ALTA | 
+| RF-10 | O sistema deve permitir que o fornecedor e o comprador possam visualizar todos os produtos cadastrados. | ALTA |
+| RF-11 | O sistema deve permitir que o fornecedor e o comprador possam fazer login com e-mail e senha | ALTA |     
+| RF-12 | O sistema deve permitir a abertura de novos pedidos. | ALTA |
+                      
 
 ### Requisitos não Funcionais
 
