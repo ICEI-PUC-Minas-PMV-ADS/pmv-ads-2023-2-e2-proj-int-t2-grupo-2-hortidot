@@ -9,21 +9,21 @@ Os requisitos para realização dos testes de software são:
 
 Os testes funcionais a serem realizados na aplicação são descritos a seguir.
 
-|    Caso de Teste    |                                                                                                  **CT-01 – Ajustar preço**                                                                                                  |
+| Caso de Teste | **CT-01 – Ajustar preço** |                                                                                    
 | :-----------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| Requisito Associado |                                                           RF-01 - O sistema deve permitir que os fornecedores ajustem o preço para cada comprador correspondente.                                                           |
-|  Objetivo do Teste  |                                                                              Verificar se os campos de preços são editáveis para o fornecedor.                                                                              |
+| Requisito Associado | RF-01 - O sistema deve permitir que os fornecedores ajustem o preço para cada comprador correspondente.  |                                 
+|  Objetivo do Teste  | Verificar se os campos de preços são editáveis para o fornecedor. |
 |       Passos        | 1) Acessar o Navegador <br> 2) Informar o endereço da aplicação <br> 3) Inserir informações para o login <br> 4) Abrir a solicitação de cotação feita pelo comprador <br> 5) Inserir os preços correspondentes aos produtos |
-|  Critério de Êxito  |                                                           O sistema deve permitir que o fornecedor altere os preços de seus produtos através de campos editáveis.                                                           |
+|  Critério de Êxito  | O sistema deve permitir que o fornecedor altere os preços de seus produtos através de campos editáveis. |
 
-|    Caso de Teste    |                                                                                                                               **CT-02 - Ajustar quantidades de produtos**                                                                                                                                |
+|    Caso de Teste    | **CT-02 - Ajustar quantidades de produtos** |
 | :-----------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| Requisito Associado |                                                                                                 RF-02 - O sistema deve permitir que o comprador e fornecedor ajustem a quantidade de itens solicitados.                                                                                                  |
-|  Objetivo do Teste  |                                                                                                 Verificar se os campos de quantidades de produtos são editáveis para os usuários fornecedor e comprador.                                                                                                 |
+| Requisito Associado | RF-02 - O sistema deve permitir que o comprador e fornecedor ajustem a quantidade de itens solicitados. |
+|  Objetivo do Teste  | Verificar se os campos de quantidades de produtos são editáveis para os usuários fornecedor e comprador. |
 |       Passos        | 1) Acessar o Navegador <br> 2) Informar o endereço da aplicação <br> 3) Inserir informações para o login <br> 4) Abrir uma nova cotação (comprador) <br> 5) Abrir a solicitação de cotação feita pelo comprador (fornecedor) <br> 6) Inserir as quantidades de itens desejadas ou disponíveis em estoque |
-| Critérios de Êxito  |                                          O sistema deve permitir que o comprador possa colocar a quantidade de itens desejados na solicitação, e deve permitir que o fornecedor ajuste a quantidade de itens solicitados na cotação de acordo com seu estoque.                                           |
+| Critérios de Êxito  | O sistema deve permitir que o comprador possa colocar a quantidade de itens desejados na solicitação, e deve permitir que o fornecedor ajuste a quantidade de itens solicitados na cotação de acordo com seu estoque. |
 
-|    Caso de Teste    |                                                                                                                                  **CT-03 - Mensagem de aviso sobre a cotação**                                                                                                                                  |
+|    Caso de Teste    | **CT-03 - Mensagem de aviso sobre a cotação** |
 | :-----------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | Requisito Associado |                                                                                                      RF-03 - O sistema deve enviar uma mensagem informando a abertura e fechamento da cotação solicitada.                                                                                                       |
 |  Objetivo do Teste  |                                                                           Verificar se o sistema irá emitir corretamente uma mensagem de abertura e fechamento da cotação quando um botão específico com essas funções for disparado.                                                                           |
@@ -63,4 +63,12 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
 | Requisito Associado |                                             RF-08 - O sistema deve permitir que o fornecedor feche o pedido e que o comprador finalize a cotação após a revisão.                                              |
 |  Objetivo do Teste  |                                                         Verificar se os usuários conseguem executar a ação sem que ocorram erros durante o processo.                                                          |
 |       Passos        | 1) Acessar o Navegador <br> 2) Informar o endereço da aplicação <br> 3) Inserir informações para o login <br> 4) Abrir a solicitação de cotação feita pelo comprador <br> 5) Clicar no botão “Fechar cotação” |
-| Critérios de Êxito  |                                          O fornecedor deve conseguir fechar o pedido sem dificuldades, e o comprador deve conseguir finalizar o processo de cotação.                                          |
+| Critérios de Êxito  |                                          O fornecedor deve conseguir fechar o pedido sem dificuldades, e o comprador deve conseguir finalizar o processo de cotação. |
+
+|    Caso de Teste    | **CT-09 - Login** |                                 
+| :-----------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| Requisito Associado | RF-11 - O sistema deve permitir que o fornecedor e o comprador possam fazer login com e-mail e senha. |                              
+|  Objetivo do Teste  | Verificar se o usuário consegue acessar sua conta com e-mail e senha. |
+|       Passos        | 1) Acessar o Navegador <br> 2) Informar o endereço da aplicação <br> 3) Inserir informações para o login <br>  |
+|  Critério de Êxito  |  O sistema deve permitir que o usuário acesse sua conta. |
+
