@@ -1,3 +1,4 @@
+using HortiDot.Chat;
 using HortiDot.Config;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
@@ -6,6 +7,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddSignalR();
 
 builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 
@@ -43,6 +46,7 @@ app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 
+app.MapHub<Chat>("/chat");
 
 app.MapControllerRoute(
     name: "default",

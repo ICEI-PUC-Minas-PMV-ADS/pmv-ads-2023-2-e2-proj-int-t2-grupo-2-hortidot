@@ -22,36 +22,6 @@ namespace HortiDot.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("HortiDot.Models.Chat", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Assunto")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<int>("CompradorID")
-                        .HasColumnType("integer");
-
-                    b.Property<string>("Destinatario")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("Mensagem")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CompradorID");
-
-                    b.ToTable("Chats");
-                });
-
             modelBuilder.Entity("HortiDot.Models.Pedido", b =>
                 {
                     b.Property<int>("Id")

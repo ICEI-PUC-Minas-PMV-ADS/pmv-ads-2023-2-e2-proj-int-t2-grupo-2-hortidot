@@ -13,7 +13,6 @@ namespace HortiDot.Config
 
         public DbSet<Pedido> Pedidos { get; set; }
 
-        public DbSet<Chat> Chats { get; set; } 
 
     }
 }
