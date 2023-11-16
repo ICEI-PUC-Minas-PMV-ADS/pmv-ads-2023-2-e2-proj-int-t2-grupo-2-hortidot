@@ -44,8 +44,7 @@ namespace HortiDot.Models
         public string Senha { get; set; }
 
         [AllowNull]
-        [ForeignKey("Pedido")]
-        public ICollection<Pedido> Pedidos { get; set; }
+        public string Pedidos { get; set; }
 
         [Required(ErrorMessage = "Campo obrigatório.")]
         [Display(Name = "Tipo de usuário*:")]

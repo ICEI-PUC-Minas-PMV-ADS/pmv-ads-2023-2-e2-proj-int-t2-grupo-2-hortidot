@@ -12,7 +12,7 @@ namespace HortiDot.Models
 
         [Required]
         [ForeignKey("Produto")]
-        public ICollection<Produto> ListaProdutos { get; set; }
+        public string ListaProdutos { get; set; }
 
         [Display(Name = "Data do Pedido")]
         [DataType(DataType.Date)]
@@ -22,7 +22,7 @@ namespace HortiDot.Models
         public StatusPedidos StatusPedidos { get; set; }
 
         [AllowNull]
-        public virtual Usuario Fornecedor { get; set; }
+        public List<String> Envolvidos { get; set; }
     }
 
     public enum StatusPedidos
