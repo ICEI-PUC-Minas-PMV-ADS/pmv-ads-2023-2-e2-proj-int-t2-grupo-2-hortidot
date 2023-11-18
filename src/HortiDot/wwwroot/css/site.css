@@ -217,6 +217,13 @@ aside {
     margin-bottom: 24px;
 }
 
+.text-validation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
 footer {
     width: 100%;
     background-color: var(--verde-escuro);
