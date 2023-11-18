@@ -32,11 +32,16 @@ namespace HortiDot.Controllers
         }
         [AllowAnonymous]
         [HttpPost]
-        public async Task<IActionResult> Login(Usuario usuario)
+        public async Task<IActionResult> Login(Login login)
         {
+            if (!ModelState.IsValid)
+            {
+                return View("Login", login);
+            }
+
             var role = "";
             var dados = _context.Usuarios
-                .FirstOrDefault(acc => acc.Email == usuario.Email);
+                .FirstOrDefault(acc => acc.Email == login.Email);
 
             if (dados == null)
             {
@@ -50,7 +55,7 @@ namespace HortiDot.Controllers
             else
                 role = "Fornecedor";
 
-            bool senhaOK = BCrypt.Net.BCrypt.Verify(usuario.Senha, dados.Senha);
+            bool senhaOK = BCrypt.Net.BCrypt.Verify(login.Senha, dados.Senha);
 
             if (senhaOK)
             {

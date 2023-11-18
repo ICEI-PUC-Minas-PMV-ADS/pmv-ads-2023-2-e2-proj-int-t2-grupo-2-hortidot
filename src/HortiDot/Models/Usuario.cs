@@ -15,10 +15,12 @@ namespace HortiDot.Models
         public string Nome { get; set; }
 
         [Required(ErrorMessage = "Campo obrigatório.")]
+        [EmailAddress(ErrorMessage = "E-mail inválido.")]
         [Display(Name = "E-mail*:")]
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Campo obrigatório.")]
+        [RegularExpression(@"^[0-9]{3}.?[0-9]{3}.?[0-9]{3}-?[0-9]{2}$", ErrorMessage = "CPF inválido.")]
         [Display(Name = "CPF*:")]
         public string Cpf { get; set; }
 
