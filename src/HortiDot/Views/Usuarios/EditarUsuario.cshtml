@@ -79,8 +79,8 @@
                         <span asp-validation-for="TipoDeUsuario" class="text-danger"></span>
                     </div>
                     <div class="form-group">
-                        <a asp-action="Home" class="btn btn-amarelo">Cancelar</a>
-                        <a asp-action="DeletarConta" class="btn btn-vermelho">Deletar conta</a>
+                        <a asp-controller="Login" asp-action="Home" class="btn btn-amarelo">Cancelar</a>
+                        <a asp-controller="Usuarios" asp-action="DeletarConta" asp-route-id="@Model?.ID" class="btn btn-vermelho">Deletar conta</a>
                         <input type="submit" value="Salvar alterações" class="btn btn-verde" />
                     </div>
                 </form>
