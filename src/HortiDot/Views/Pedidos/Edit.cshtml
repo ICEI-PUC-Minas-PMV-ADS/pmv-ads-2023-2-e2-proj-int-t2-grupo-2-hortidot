@@ -1,14 +1,13 @@
 ﻿@model HortiDot.Models.Pedido
 
 @{
-    ViewData["Title"] = "Edit";
+    ViewData["Title"] = "Editar";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <div class="content">
-<h1>Edit</h1>
+<h1>Editar pedido</h1>
 
-<h4>Pedido</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -30,15 +29,12 @@
                 <input asp-for="CompradorId" class="form-control" />
                 <span asp-validation-for="CompradorId" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-primary" />
+            <div class="form-group btns">
+                    <a asp-action="Index" class="btn btn-amarelo">Cancelar</a>
+                <input type="submit" value="Salvar alterações" class="btn btn-verde" />
             </div>
         </form>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
 </div>
 </div>
 

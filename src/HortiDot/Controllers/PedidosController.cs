@@ -14,6 +14,14 @@ namespace HortiDot.Controllers
             _context = context;
         }
 
+        // Add prod ao pedido
+        [HttpPost]
+        public async Task<IActionResult> AddSelectedProduct(int Id)
+        {
+            return View(await _context.Pedidos.ToListAsync());
+        }
+
+
         // GET: Pedidos
         public async Task<IActionResult> Index()
         {

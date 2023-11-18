@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace HortiDot.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20231116013840_AlterandoModels")]
-    partial class AlterandoModels
+    [Migration("20231118232912_AddModelInicial")]
+    partial class AddModelInicial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -33,10 +33,13 @@ namespace HortiDot.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("CompradorId")
+                        .HasColumnType("integer");
+
                     b.Property<DateTime>("DataPedido")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<int?>("Pedido")
+                    b.Property<int?>("FornecedorIdID")
                         .HasColumnType("integer");
 
                     b.Property<int>("StatusPedidos")
@@ -44,7 +47,7 @@ namespace HortiDot.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("Pedido");
+                    b.HasIndex("FornecedorIdID");
 
                     b.ToTable("Pedidos");
                 });
@@ -57,20 +60,14 @@ namespace HortiDot.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Imagem")
-                        .IsRequired()
-                        .HasColumnType("text");
+                    b.Property<DateTime>("DataProduto")
+                        .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("Nome")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<int?>("Produto")
-                        .HasColumnType("integer");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("Produto");
 
                     b.ToTable("Produtos");
                 });
@@ -123,25 +120,43 @@ namespace HortiDot.Migrations
                     b.ToTable("Usuários");
                 });
 
-            modelBuilder.Entity("HortiDot.Models.Pedido", b =>
+            modelBuilder.Entity("PedidoProduto", b =>
                 {
-                    b.HasOne("HortiDot.Models.Usuario", "Fornecedor")
-                        .WithMany("Pedidos")
-                        .HasForeignKey("Pedido");
+                    b.Property<int>("PedidosId")
+                        .HasColumnType("integer");
 
-                    b.Navigation("Fornecedor");
+                    b.Property<int>("ProdutosId")
+                        .HasColumnType("integer");
+
+                    b.HasKey("PedidosId", "ProdutosId");
+
+                    b.HasIndex("ProdutosId");
+
+                    b.ToTable("PedidoProduto");
                 });
 
-            modelBuilder.Entity("HortiDot.Models.Produto", b =>
+            modelBuilder.Entity("HortiDot.Models.Pedido", b =>
+                {
+                    b.HasOne("HortiDot.Models.Usuario", "FornecedorId")
+                        .WithMany("Pedidos")
+                        .HasForeignKey("FornecedorIdID");
+
+                    b.Navigation("FornecedorId");
+                });
+
+            modelBuilder.Entity("PedidoProduto", b =>
                 {
                     b.HasOne("HortiDot.Models.Pedido", null)
-                        .WithMany("ListaProdutos")
-                        .HasForeignKey("Produto");
-                });
+                        .WithMany()
+                        .HasForeignKey("PedidosId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-            modelBuilder.Entity("HortiDot.Models.Pedido", b =>
-                {
-                    b.Navigation("ListaProdutos");
+                    b.HasOne("HortiDot.Models.Produto", null)
+                        .WithMany()
+                        .HasForeignKey("ProdutosId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("HortiDot.Models.Usuario", b =>

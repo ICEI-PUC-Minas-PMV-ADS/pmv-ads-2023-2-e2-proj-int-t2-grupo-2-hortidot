@@ -1,41 +1,56 @@
 ﻿@model HortiDot.Models.ListaPedidos
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Criar";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <div class="content">
-<h1>Create</h1>
+    <h1>Criar pedido</h1>
 
-<h4>Pedido</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
+    <div class="row">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                @foreach (var item in Model.ListaProdutos)
-                {
+            <table class="table">
+                <thead>
                     <tr>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Nome)
-                            <br>
-                        </td>
+                        <th>Código</th>
+                        <th>Nome</th>
                     </tr>
-                }
-            <div class="form-group">
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.ListaProdutos)
+                    {
+                        <tr>
+                            <td>
+                                <button class="add-item">
+                                    <input asp-action="AddSelectedProduct" type="hidden" asp-for="@item.Id" asp-route-id="@item.Id" />
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="1.5" y="1.5" width="17" height="17" stroke="black" />
+                                        <path d="M15.8203 10.8203H10.8203V15.8203H9.17969V10.8203H4.17969V9.17969H9.17969V4.17969H10.8203V9.17969H15.8203V10.8203Z" fill="black" />
+                                    </svg>
+                                </button>
+                                @Html.DisplayFor(modelItem => item.Id)
+                                <br>
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Nome)
+                                <br>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            <div class="form-group btns">
+                <a asp-action="Index" class="btn btn-amarelo">Ver todos</a>
                 <input type="submit" value="Criar pedido" class="btn btn-verde" />
             </div>
         </form>
     </div>
 </div>
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
-</div>
-
-
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

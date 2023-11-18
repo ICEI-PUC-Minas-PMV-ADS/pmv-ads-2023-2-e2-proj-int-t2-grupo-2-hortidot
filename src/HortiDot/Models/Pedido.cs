@@ -14,7 +14,7 @@ namespace HortiDot.Models
 
         [Display(Name = "Data do Pedido")]
         [DataType(DataType.Date)]
-        public DateTime DataPedido { get; set; } = DateTime.Now;
+        public DateTime DataPedido { get; set; } = DateTime.UtcNow;
 
         [Display(Name = "Status do Pedido")]
         public StatusPedidos StatusPedidos { get; set; } = StatusPedidos.EmAndamento;
