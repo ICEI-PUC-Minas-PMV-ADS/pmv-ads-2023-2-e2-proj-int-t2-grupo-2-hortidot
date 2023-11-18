@@ -150,6 +150,7 @@ aside {
                     color: var(--preto);
                 }
 
+
 .btn {
     display: block;
     width: 100%;
@@ -212,6 +213,8 @@ aside {
 
 .content {
     width: 100%;
+    padding: 0 40px;
+    margin-bottom: 24px;
 }
 
 footer {
@@ -249,5 +252,9 @@ footer {
 
     main .container {
         flex-wrap: nowrap;
+    }
+
+    .content {
+        padding: 0;
     }
 }

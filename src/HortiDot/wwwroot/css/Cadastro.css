@@ -1,22 +1,20 @@
-﻿header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 0;
+﻿body {
     background-color: var(--amarelo-claro);
+}
+
+header,
+main{
+    padding: 40px;
 }
 
     header img {
         max-height: 100px;
+        width: 100%;
     }
-
-main {
-    padding: 40px 0;
-    background-color: var(--amarelo-claro);
-}
 
     main .container {
         align-items: flex-start;
+        justify-content: center;
     }
 
         main .container .cadastro-foto {
@@ -71,7 +69,8 @@ main {
                 text-wrap: nowrap;
             }
 
-            main .container form .form-group input:not(input.btn) {
+            main .container form .form-group input:not(input.btn),
+            main .container form .form-group select {
                 width: 100%;
                 background-color: var(--cinza);
                 border-radius: 12px;
