@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using HortiDot.Config;
 using HortiDot.Models;
@@ -23,8 +18,7 @@ namespace HortiDot.Controllers
         [HttpGet]
         public async Task<IActionResult> Index()
         {
-            var obj = await _context.Produtos.ToListAsync();
-              return View(obj);
+              return View(await _context.Produtos.ToListAsync());
         }
 
         // GET: Produtos/Details/5
@@ -61,6 +55,7 @@ namespace HortiDot.Controllers
             if (ModelState.IsValid)
             {
                 _context.Add(produto);
+
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }

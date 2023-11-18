@@ -1,7 +1,9 @@
 ﻿using HortiDot.Config;
 using HortiDot.Models;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace HortiDot.Controllers
 {
@@ -39,18 +41,14 @@ namespace HortiDot.Controllers
             return Redirect("/Login");
         }
 
-        public async Task<IActionResult> EditarUsuario(int? ID)
+        public async Task<IActionResult> EditarUsuario()
         {
-            if (ID == null)
+            var usuario = await _context.Usuarios.FirstOrDefaultAsync(u => u.Nome.Equals(User.Identity.Name));
+
+            if (usuario == null)
                 return NotFound();
 
-            var dados = await _context.Usuarios.FindAsync(ID);
-
-            if (dados == null)
-                return NotFound();
-
-
-            return View(dados);
+            return View(usuario);
         }
 
         [HttpPost]
@@ -70,18 +68,15 @@ namespace HortiDot.Controllers
             return View();
         }
 
-        public async Task<IActionResult> DeletarConta(int? ID)
+        public async Task<IActionResult> DeletarConta()
         {
-            if (ID == null)
+
+            var usuario = await _context.Usuarios.FirstOrDefaultAsync(u => u.Nome.Equals(User.Identity.Name));
+
+            if (usuario == null)
                 return NotFound();
 
-
-            var dados = await _context.Usuarios.FindAsync(ID);
-
-            if (dados == null)
-                return NotFound();
-
-            return View(dados);
+            return View(usuario);
         }
 
         [HttpPost, ActionName("DeletarConta")]
@@ -98,7 +93,8 @@ namespace HortiDot.Controllers
             _context.Usuarios.Remove(dados);
             await _context.SaveChangesAsync();
 
-            return RedirectToAction("/Login/Home");
+            await HttpContext.SignOutAsync();
+            return RedirectToAction("Home", "Login");
         }
 
         public IActionResult CriarPedido()

@@ -28,7 +28,7 @@ h6 {
     color: var(--verde-escuro);
 }
 
-.container {
+main .container {
     padding: 0;
     margin: 24px auto;
 }
@@ -219,6 +219,20 @@ aside {
     padding: 40px;
     background: var(--amarelo-claro);
     border-radius: 12px;
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6,
+.content p {
+    text-align: center;
+}
+
+.content svg {
+    margin: 4px;
 }
 
 .text-validation {

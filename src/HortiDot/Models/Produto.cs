@@ -12,8 +12,9 @@ namespace HortiDot.Models
         [Required(ErrorMessage = "Campo obrigatório.")]
         public string Nome { get; set; }
 
-        [Required(ErrorMessage = "Campo obrigatório.")]
-        public string Imagem { get; set; }
+        [Display(Name = "Data de inclusão")]
+        [DataType(DataType.Date)]
+        public DateTime DataProduto { get; set; } = DateTime.UtcNow;
 
         public virtual List<Pedido> Pedidos { get; set; }
 

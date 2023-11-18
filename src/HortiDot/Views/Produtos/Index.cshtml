@@ -1,4 +1,5 @@
-﻿@model IEnumerable<HortiDot.Models.Produto>
+﻿@using System.Globalization;
+@model IEnumerable<HortiDot.Models.Produto>
 
 @{
     ViewData["Title"] = "Produtos";
@@ -15,27 +16,45 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Nome)
+                @Html.DisplayNameFor(model => model.Id)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Imagem)
+                @Html.DisplayNameFor(model => model.Nome)
             </th>
-            <th></th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DataProduto)
+                </th>
+            <th>Opções</th>
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model) {
         <tr>
             <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
                 @Html.DisplayFor(modelItem => item.Nome)
             </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.DataProduto.Date)
+                    </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Imagem)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Detalhes</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Apagar</a>
+                <a asp-action="Edit" asp-route-id="@item.Id">
+                            <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.582 4.82422L16.6777 6.72852L12.7715 2.82227L14.6758 0.917969C14.8711 0.722656 15.1152 0.625 15.4082 0.625C15.7012 0.625 15.9453 0.722656 16.1406 0.917969L18.582 3.35938C18.7773 3.55469 18.875 3.79883 18.875 4.0918C18.875 4.38477 18.7773 4.62891 18.582 4.82422ZM0.125 15.4688L11.6484 3.94531L15.5547 7.85156L4.03125 19.375H0.125V15.4688Z" fill="#455218" />
+                            </svg>
+                </a> |
+                <a asp-action="Details" asp-route-id="@item.Id">
+                            <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.30273 5.80273C9.92122 5.18424 10.6536 4.875 11.5 4.875C12.3464 4.875 13.0788 5.18424 13.6973 5.80273C14.3158 6.42122 14.625 7.15365 14.625 8C14.625 8.84635 14.3158 9.57878 13.6973 10.1973C13.0788 10.8158 12.3464 11.125 11.5 11.125C10.6536 11.125 9.92122 10.8158 9.30273 10.1973C8.68424 9.57878 8.375 8.84635 8.375 8C8.375 7.15365 8.68424 6.42122 9.30273 5.80273ZM7.78906 11.7109C8.83073 12.7201 10.0677 13.2246 11.5 13.2246C12.9323 13.2246 14.153 12.7201 15.1621 11.7109C16.2038 10.6693 16.7246 9.43229 16.7246 8C16.7246 6.56771 16.2038 5.34701 15.1621 4.33789C14.153 3.29622 12.9323 2.77539 11.5 2.77539C10.0677 2.77539 8.83073 3.29622 7.78906 4.33789C6.77995 5.34701 6.27539 6.56771 6.27539 8C6.27539 9.43229 6.77995 10.6693 7.78906 11.7109ZM4.51758 2.33594C6.60091 0.903646 8.92839 0.1875 11.5 0.1875C14.0716 0.1875 16.3991 0.903646 18.4824 2.33594C20.5658 3.76823 22.0632 5.65625 22.9746 8C22.0632 10.3438 20.5658 12.2318 18.4824 13.6641C16.3991 15.0964 14.0716 15.8125 11.5 15.8125C8.92839 15.8125 6.60091 15.0964 4.51758 13.6641C2.43424 12.2318 0.936849 10.3438 0.0253906 8C0.936849 5.65625 2.43424 3.76823 4.51758 2.33594Z" fill="#455218" />
+                            </svg>
+                </a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id">
+                            <svg width="15" height="20" viewBox="0 0 15 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.7754 1.65039V3.75H0.224609V1.65039H3.83789L4.91211 0.625H10.0879L11.1621 1.65039H14.7754ZM1.25 17.2754V4.77539H13.75V17.2754C13.75 17.8288 13.5384 18.3171 13.1152 18.7402C12.6921 19.1634 12.2038 19.375 11.6504 19.375H3.34961C2.79622 19.375 2.30794 19.1634 1.88477 18.7402C1.46159 18.3171 1.25 17.8288 1.25 17.2754Z" fill="#455218" />
+                            </svg>
+                        </a>
             </td>
         </tr>
 }
