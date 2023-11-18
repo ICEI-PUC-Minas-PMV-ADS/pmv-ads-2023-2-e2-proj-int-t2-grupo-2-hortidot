@@ -46,7 +46,7 @@ namespace HortiDot.Models
         public string Senha { get; set; }
 
         [AllowNull]
-        public string Pedidos { get; set; }
+        public virtual List<Pedido> Pedidos { get; set; }
 
         [Required(ErrorMessage = "Campo obrigatório.")]
         [Display(Name = "Tipo de usuário*:")]

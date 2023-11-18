@@ -3,6 +3,7 @@ using System;
 using HortiDot.Config;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace HortiDot.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20231118140402_AttModelProdutos02")]
+    partial class AttModelProdutos02
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -30,7 +33,7 @@ namespace HortiDot.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("CompradorId")
+                    b.Property<int?>("CompradorIdID")
                         .HasColumnType("integer");
 
                     b.Property<DateTime>("DataPedido")
@@ -43,6 +46,8 @@ namespace HortiDot.Migrations
                         .HasColumnType("integer");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("CompradorIdID");
 
                     b.HasIndex("FornecedorIdID");
 
@@ -102,6 +107,9 @@ namespace HortiDot.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<string>("Pedidos")
+                        .HasColumnType("text");
+
                     b.Property<string>("Senha")
                         .IsRequired()
                         .HasColumnType("text");
@@ -120,24 +128,30 @@ namespace HortiDot.Migrations
 
             modelBuilder.Entity("PedidoProduto", b =>
                 {
-                    b.Property<int>("PedidosId")
+                    b.Property<int>("ListaPedidosId")
                         .HasColumnType("integer");
 
-                    b.Property<int>("ProdutosId")
+                    b.Property<int>("ListaProdutosId")
                         .HasColumnType("integer");
 
-                    b.HasKey("PedidosId", "ProdutosId");
+                    b.HasKey("ListaPedidosId", "ListaProdutosId");
 
-                    b.HasIndex("ProdutosId");
+                    b.HasIndex("ListaProdutosId");
 
                     b.ToTable("PedidoProduto");
                 });
 
             modelBuilder.Entity("HortiDot.Models.Pedido", b =>
                 {
+                    b.HasOne("HortiDot.Models.Usuario", "CompradorId")
+                        .WithMany()
+                        .HasForeignKey("CompradorIdID");
+
                     b.HasOne("HortiDot.Models.Usuario", "FornecedorId")
-                        .WithMany("Pedidos")
+                        .WithMany()
                         .HasForeignKey("FornecedorIdID");
+
+                    b.Navigation("CompradorId");
 
                     b.Navigation("FornecedorId");
                 });
@@ -146,20 +160,15 @@ namespace HortiDot.Migrations
                 {
                     b.HasOne("HortiDot.Models.Pedido", null)
                         .WithMany()
-                        .HasForeignKey("PedidosId")
+                        .HasForeignKey("ListaPedidosId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("HortiDot.Models.Produto", null)
                         .WithMany()
-                        .HasForeignKey("ProdutosId")
+                        .HasForeignKey("ListaProdutosId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("HortiDot.Models.Usuario", b =>
-                {
-                    b.Navigation("Pedidos");
                 });
 #pragma warning restore 612, 618
         }

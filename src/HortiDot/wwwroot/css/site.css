@@ -25,10 +25,12 @@ h4,
 h5,
 h6 {
     font-family: 'Righteous', sans-serif;
+    color: var(--verde-escuro);
 }
 
 .container {
     padding: 0;
+    margin: 24px auto;
 }
 
 main .container {
@@ -50,11 +52,6 @@ button {
     border: none;
     cursor: pointer;
     background: none;
-}
-
-.menu-topo,
-aside {
-    margin-bottom: 24px;
 }
 
 .menu-topo {
@@ -150,6 +147,12 @@ aside {
                     color: var(--preto);
                 }
 
+.btns {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 24px;
+}
 
 .btn {
     display: block;
@@ -213,8 +216,9 @@ aside {
 
 .content {
     width: 100%;
-    padding: 0 40px;
-    margin-bottom: 24px;
+    padding: 40px;
+    background: var(--amarelo-claro);
+    border-radius: 12px;
 }
 
 .text-validation {
@@ -259,9 +263,5 @@ footer {
 
     main .container {
         flex-wrap: nowrap;
-    }
-
-    .content {
-        padding: 0;
     }
 }

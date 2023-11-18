@@ -1,15 +1,14 @@
 ﻿@model HortiDot.Models.Produto
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Detalhes";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <div class="content">
-<h1>Details</h1>
+<h1>Detalhes do produto</h1>
 
 <div>
-    <h4>Produto</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
@@ -27,7 +26,9 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <div class="form-group btns">
+            <a asp-action="Index" class="btn btn-amarelo">Ver todos</a>
+            <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-verde">Editar</a>
+        </div>   
 </div>
 </div>

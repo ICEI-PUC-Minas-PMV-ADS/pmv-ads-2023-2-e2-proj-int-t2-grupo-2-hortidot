@@ -1,7 +1,7 @@
 ﻿@model HortiDot.Models.Produto
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Cadastrar";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
@@ -26,12 +26,12 @@
                 <span asp-validation-for="Imagem" class="text-danger"></span>
             </div>
                 <div class="form-group btns">
+                    <a asp-action="Index" class="btn btn-amarelo">Ver todos</a>
                     <input type="submit" value="Cadastrar" class="btn btn-verde" />
             </div>
         </form>
     </div>
 </div>
-    <a asp-action="Index">Voltar à lista</a>
 </div>
 
 @section Scripts {

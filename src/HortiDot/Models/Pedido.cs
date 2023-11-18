@@ -1,6 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
-using System.Diagnostics.CodeAnalysis;
 
 namespace HortiDot.Models
 {
@@ -11,18 +10,18 @@ namespace HortiDot.Models
         public int Id { get; set; }
 
         [Required]
-        [ForeignKey("Produto")]
-        public string ListaProdutos { get; set; }
+        public virtual List<Produto> Produtos { get; set; }
 
         [Display(Name = "Data do Pedido")]
         [DataType(DataType.Date)]
-        public DateTime DataPedido { get; set; }
+        public DateTime DataPedido { get; set; } = DateTime.Now;
 
         [Display(Name = "Status do Pedido")]
-        public StatusPedidos StatusPedidos { get; set; }
+        public StatusPedidos StatusPedidos { get; set; } = StatusPedidos.EmAndamento;
 
-        [AllowNull]
-        public List<String> Envolvidos { get; set; }
+        public int CompradorId { get; set; }
+
+        public virtual Usuario FornecedorId { get; set; } = null!;
     }
 
     public enum StatusPedidos

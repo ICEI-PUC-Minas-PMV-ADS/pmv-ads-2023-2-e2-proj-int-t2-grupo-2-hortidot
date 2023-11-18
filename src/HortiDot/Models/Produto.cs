@@ -15,5 +15,7 @@ namespace HortiDot.Models
         [Required(ErrorMessage = "Campo obrigatório.")]
         public string Imagem { get; set; }
 
+        public virtual List<Pedido> Pedidos { get; set; }
+
     }
 }
