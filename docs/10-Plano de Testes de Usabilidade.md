@@ -2,9 +2,9 @@
 
 O propósito deste teste é verificar a performance alcançada pelos participantes e o entendimento das funções utilizadas no sistema, com a finalidade de realizar alterações necessárias.
 
-O objetivo da aplicação é realizar a cotação e os pedidos de alimentos no setor de hortifruti, permitindo a comunicação entre fornecedor e comprador, facilitando o envio de pedidos.
+O objetivo da aplicação é realizar pedidos de alimentos no setor de hortifruti, permitindo a comunicação entre fornecedor e comprador, facilitando o envio de pedidos.
 
-Os testes vão acontecer de maneira remota, utilizando quatro participantes, sendo dois compradores e dois fornecedores, com experiência em hortifruti, contendo uma lista de tarefas voltadas para o comprador e outra para o fornecedor, todos os testes serão gravados, visando complementar o questionário que será aplicado logo após o teste da aplicação HortDot.
+Os testes vão acontecer de maneira remota, utilizando dois participantes, sendo um compradore e um fornecedore, serão gravados, visando complementar o questionário que será aplicado logo após o teste da aplicação HortDot.
 
 ## Lista de tarefas
 
@@ -15,11 +15,11 @@ Os testes vão acontecer de maneira remota, utilizando quatro participantes, sen
 | 01               | Autentique-se no sistema. Caso não possua conta, crie uma        |
 | 02               | Faça o cadastro, alteração e exclusão do seu perfil              |
 | 03               | Na menu cadastrar produto, inclua um item                        |
-| 04               | Na página inicial, abra uma cotação                              |
-| 05               | Entre no menu de chat e envie uma mensagem                       |
-| 06               | Volte na cotação, faça a revisão do pedido e ajuste a quantidade |
-| 07               | Envie a cotação alterada                                         |
-| 08               | Feche o pedido e finalize a cotação                              |
+| 04               | Na menu pedido, realize novo pedido                              |
+| 05               | Adcione os produtos e quantidades desejados              |
+| 06               | Verificar se todos os itens já estão na lista                    |
+| 07               | Verifique todos os pedidos na menu pedidos                       |
+| 08               | Edite seu pedido, auterando a quantidade do primero produto da lista|
 
 ### Fornecedores
 
@@ -27,12 +27,11 @@ Os testes vão acontecer de maneira remota, utilizando quatro participantes, sen
 | ---------------- | --------------------------------------------------------- |
 | 01               | Autentique-se no sistema. Caso não possua conta, crie uma |
 | 02               | Faça o cadastro, alteração e exclusão do seu perfil       |
-| 03               | Na menu cadastrar produto, inclua um item                 |
-| 04               | Verifique os pedidos recebidos na página inicial          |
-| 05               | Dirija-se a aba cotação, em abrir notificações            |
-| 06               | Abra a cotação e faça ajustes nas quantidades e preços    |
-| 07               | Encaminhe a cotação atualizada ao comprador               |
-| 08               | Entre no menu de chat e envie uma mensagem                |
+| 03               | Na menu cadastrar produto, inclua um item em novo produto |
+| 04               | Verique todos os produtos                                 |
+| 05               | Dirija-se a aba pedidos                                   |
+| 06               | Verifique os pedidos recebidos na aba todos os pedidos    |
+| 07               | Edite pedido, auterando a quantidade                      |
 
 Por meio deste questionário vamos colher informações sobre as opiniões dos participantes do teste de usabilidade, que será realizado na aplicação HortiDot. As informações fornecidas são vitais para o aprimoramento do sistema.
 
