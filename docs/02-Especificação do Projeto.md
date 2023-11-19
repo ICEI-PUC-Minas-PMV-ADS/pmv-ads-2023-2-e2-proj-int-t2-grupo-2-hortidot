@@ -78,7 +78,7 @@ A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade
 | RF-01 | O sistema deve permitir que os fornecedores ajustem o preço para cada comprador correspondente.                                                       | ALTA       |
 | RF-02 | O sistema deve permitir que o comprador e o fornecedor ajustem a quantidade de itens solicitados.                                                       | ALTA       |
 | RF-03 | O sistema deve permitir que o comprador e o fornecedor possam fazer a revisão do pedido antes do fechamento.                    | ALTA       |
-| RF-04 | O sistema deve permitir o cadastro, edição e exclusão dos produtos de hortifruti contendo nome, código único do item e quantidade em estoque. | ALTA       |
+| RF-04 | O sistema deve permitir o cadastro, edição e exclusão dos produtos de hortifruti contendo nome e código único do item. | ALTA |
 | RF-05 | O sistema deve permitir que o fornecedor e o comprador possam cadastrar, alterar e excluir seu cadastro.                                                | ALTA       |
 | RF-06 | O sistema deve permitir que o fornecedor feche o pedido e que o comprador finalize a cotação após a revisão.                                          | ALTA       |
 | RF-07 | O sistema deve permitir que o fornecedor e o comprador possam visualizar todos os pedidos. | ALTA | 
