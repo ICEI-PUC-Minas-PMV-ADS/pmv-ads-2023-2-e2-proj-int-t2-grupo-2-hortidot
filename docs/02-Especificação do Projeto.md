@@ -55,9 +55,8 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 | EU COMO... `PERSONA` | QUERO/PRECISO ... `FUNCIONALIDADE`                                                    | PARA ... `MOTIVO/VALOR`                                      |
 | -------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
 | Amanda Carvalho      | Desejo ajustar os meus preços para cada comprador que abriu a solicitação             | para oferecer preços personalizados.                         |
-| Hugo Barbosa         | Desejo receber as cotações de forma padronizada com os campos de valores e quantidade | a fim de otimizar o meu processo.                            |
-| Ana Resende          | Quero receber uma indicação de quando o processo de cotação for aberto                | para informar os preços dentro do prazo.                     |
-| Hugo Barbosa         | Quero que o nome da minha empresa fique em destaque                                   | para que os compradores consigam identificar com facilidade. |
+| Hugo Barbosa         | Desejo receber as cotações de forma padronizada com os campos de valores e quantidade | a fim de otimizar o meu processo.                            |                    |
+| Hugo Barbosa         | Quero que o nome da minha empresa seja cadastrado                                  | para que os compradores consigam identificar e divulgar o nome da minha empresa |
 | Amanda Carvalho      | Quero poder cadastrar os meus produtos                                                | para ter mais controle sobre os pedidos.                     |
 | João Victor Souza    | Quero poder fazer a revisão do pedido na cotação                                      | para que eu não fique sem estoque dos produtos.              |
 | Roger Silva          | Quero poder me cadastrar, alterar e excluir minhas informações                        | para me sentir seguro com os meus dados.                     |
@@ -77,10 +76,10 @@ A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade
 | ----- | ----------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
 | RF-01 | O sistema deve permitir que os fornecedores ajustem o preço para cada comprador correspondente.                                                       | ALTA       |
 | RF-02 | O sistema deve permitir que o comprador e o fornecedor ajustem a quantidade de itens solicitados.                                                       | ALTA       |
-| RF-03 | O sistema deve permitir que o comprador e o fornecedor possam fazer a revisão do pedido antes do fechamento.                    | ALTA       |
+| RF-03 | O sistema deve permitir que o comprador e o fornecedor possam fazer a revisão do pedido antes do fechamento.                    | MEDIA       |
 | RF-04 | O sistema deve permitir o cadastro, edição e exclusão dos produtos de hortifruti contendo nome e código único do item. | ALTA |
 | RF-05 | O sistema deve permitir que o fornecedor e o comprador possam cadastrar, alterar e excluir seu cadastro.                                                | ALTA       |
-| RF-06 | O sistema deve permitir que o fornecedor feche o pedido e que o comprador finalize a cotação após a revisão.                                          | ALTA       |
+| RF-06 | O sistema deve permitir que o fornecedor feche o pedido e que o comprador finalize a cotação após a revisão.                                          | MEDIA       |
 | RF-07 | O sistema deve permitir que o fornecedor e o comprador possam visualizar todos os pedidos. | ALTA | 
 | RF-08 | O sistema deve permitir que o fornecedor e o comprador possam visualizar todos os produtos cadastrados. | ALTA |
 | RF-09 | O sistema deve permitir que o fornecedor e o comprador possam fazer login com e-mail e senha | ALTA |     
