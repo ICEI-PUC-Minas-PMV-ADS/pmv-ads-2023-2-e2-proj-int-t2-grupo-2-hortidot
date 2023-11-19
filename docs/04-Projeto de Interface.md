@@ -5,7 +5,7 @@ Quando se trata de criar a interface do sistema, estamos dando prioridade a aspe
 
 ## Diagrama de Fluxo
 
-<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/a7375d0241093b7c66853c4c1f86105f6a85fcaf/docs/img/Diagrama%20de%20Fluxo%20Final.jpg" />
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/26f5661f9c1a0ceeac16b515c18c316fb3cac8f8/docs/img/Diagrama%20de%20Fluxo%20Hortidot.jpg" />
 Figura 3 - Diagrama de Fluxo
 
 ## Wireframes
