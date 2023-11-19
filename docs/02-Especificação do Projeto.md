@@ -60,7 +60,6 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 | Hugo Barbosa         | Quero que o nome da minha empresa fique em destaque                                   | para que os compradores consigam identificar com facilidade. |
 | Amanda Carvalho      | Quero poder cadastrar os meus produtos                                                | para ter mais controle sobre os pedidos.                     |
 | João Victor Souza    | Quero poder fazer a revisão do pedido na cotação                                      | para que eu não fique sem estoque dos produtos.              |
-| João Victor Souza    | Quero ter uma comunicação clara com o fornecedor                                      | para agilizar os meus pedidos.                               |
 | Roger Silva          | Quero poder me cadastrar, alterar e excluir minhas informações                        | para me sentir seguro com os meus dados.                     |
 | Amanda Carvalho | Quero poder ter uma visão geral de todos os pedidos realizados ou em andamento | para poder organizar minhas tarefas.|
 | Hugo Barbosa | Quero poder acessar minha conta através de e-mail e senha | para me sentir mais seguro ao consultar meus pedidos. |
