@@ -15,10 +15,25 @@ namespace HortiDot.Controllers
         }
 
         // Add prod ao pedido
-        [HttpPost]
         public async Task<IActionResult> AddSelectedProduct(int Id)
         {
-            return View(await _context.Pedidos.ToListAsync());
+            ListaPedidos listaPedidos = (ListaPedidos)ViewBag.listaPedidos;
+            listaPedidos.ListaProdutos = _context.Produtos.ToList();
+            listaPedidos.ProdutosSelecionados.Add(await _context.Produtos.FirstOrDefaultAsync(p => p.Id == Id));
+
+            return View("Create", listaPedidos);
+
+        }
+
+        // Remove prod ao pedido
+        public async Task<IActionResult> RemoveSelectedProduct(int Id)
+        {
+            ListaPedidos listaPedidos = (ListaPedidos)ViewBag.listaPedidos;
+            listaPedidos.ListaProdutos = _context.Produtos.ToList();
+            listaPedidos.ProdutosSelecionados.Remove(await _context.Produtos.FirstOrDefaultAsync(p => p.Id == Id));
+
+            return View("Create", listaPedidos);
+
         }
 
 
@@ -51,7 +66,8 @@ namespace HortiDot.Controllers
         {
             ListaPedidos listaPedidos = new ListaPedidos();
             listaPedidos.ListaProdutos = _context.Produtos.ToList();
-            return View(listaPedidos);
+            ViewBag.listaPedidos = listaPedidos;
+            return View();
         }
 
         // POST: Pedidos/Create

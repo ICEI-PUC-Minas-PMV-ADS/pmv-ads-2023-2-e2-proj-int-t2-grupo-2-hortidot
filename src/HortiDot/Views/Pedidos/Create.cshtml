@@ -19,17 +19,36 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach (var item in Model.ListaProdutos)
+                    @foreach (var item in ((ListaPedidos)ViewBag.listaPedidos).ListaProdutos)
                     {
                         <tr>
                             <td>
-                                <button class="add-item">
-                                    <input asp-action="AddSelectedProduct" type="hidden" asp-for="@item.Id" asp-route-id="@item.Id" />
+                                    <a asp-action="AddSelectedProduct" type="hidden" asp-route-id="@item.Id">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="1.5" y="1.5" width="17" height="17" stroke="black" />
+                                            <path d="M15.8203 10.8203H10.8203V15.8203H9.17969V10.8203H4.17969V9.17969H9.17969V4.17969H10.8203V9.17969H15.8203V10.8203Z" fill="black" />
+                                        </svg>
+                                    </a>
+                                @Html.DisplayFor(modelItem => item.Id)
+                                <br>
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Nome)
+                                <br>
+                            </td>
+                        </tr>
+                    }
+                    @foreach (var item in ((ListaPedidos)ViewBag.listaPedidos).ProdutosSelecionados)
+                    {
+                        <tr>
+                            <td>
+                                <a asp-action="RemoveSelectedProduct" type="hidden" asp-route-id="@item.Id">
                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <rect x="1.5" y="1.5" width="17" height="17" stroke="black" />
-                                        <path d="M15.8203 10.8203H10.8203V15.8203H9.17969V10.8203H4.17969V9.17969H9.17969V4.17969H10.8203V9.17969H15.8203V10.8203Z" fill="black" />
+                                        <path d="M15.8203 10.8203H4.17969V9.17969H15.8203V10.8203Z" fill="black" />
                                     </svg>
-                                </button>
+
+                                </a>
                                 @Html.DisplayFor(modelItem => item.Id)
                                 <br>
                             </td>
