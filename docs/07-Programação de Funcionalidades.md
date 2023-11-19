@@ -15,13 +15,18 @@ Tela permite o usuário acessar sua conta com e-mail e senha.
 * RF-09- O sistema deve permitir que o fornecedor e o comprador possam fazer login com e-mail e senha.
 
 #### Artefatos da funcionalidade
-* Logincontroller<br>
+* Login.cs<br>
+* LoginController<br>
 * DataContext.cs<br>
 * Home.cshtml<br>
 * Login.cshtml<br>
+* Login.css
 
-#### Estrutura de dados 
-Em construção.
+#### Instruções de acesso
+1) Acessar o Navegador<br>
+2) Informar o endereço da aplicação: (inserir URL)<br>
+3) Inserir informações para o login<br>
+4) Clique em "Entrar".<br>
 
 ### Tela Cadastro do Perfil
 
@@ -33,14 +38,42 @@ Tela permite o cadastro, edição e visualização de dados do usuário. A estru
 * RF-05- O sistema deve permitir que o fornecedor e comprador possam cadastrar, alterar e excluir seu cadastro.
 
 #### Artefatos da funcionalidade
-* usuario.cs<br>
-* Usuarioscontroller<br>
+* Usuario.cs<br>
+* UsuariosController<br>
 * DataContext.cs<br>
 * CriarUsuario.cshtml<br>
 * EditarUsuario.cshtml<br>
+* Cadastro.css<br>
 
-#### Estrutura de dados 
-Em construção.
+#### Instruções de acesso
+1) Acessar o Navegador<br>
+2) Informar o endereço da aplicação: (inserir URL)<br>
+3) Inserir informações para o login<br>
+4) Ainda na tela de login, clique em "Ainda não possui uma conta? Inscreva-se!"<br>
+
+### Tela Editar Conta
+
+Tela permite que o usuário edite e atualize suas informações pessoais e informações de sua empresa.
+
+
+
+#### Requisitos atendidos
+* RF-05 - O sistema deve permitir que o fornecedor e o comprador possam cadastrar, alterar e excluir seu cadastro.
+
+#### Artefatos da funcionalidade
+* perfil.css<br>
+* Usuario.cs<br>
+* UsuariosControllers.cs<br>
+* EditarUsuario.cshtml<br>
+* DataContext.cs<br>
+
+#### Instruções de acesso
+1) Acessar o Navegador<br>
+2) Informar o endereço da aplicação: (inserir URL)<br>
+3) Inserir informações para o login<br>
+4) Clique em "Entrar" para acessar a conta e a tela inicial.<br>
+5) No menu lateral, clique em Editar Conta.<br>
+
 
 ### Tela Excluir Conta 
 
@@ -52,13 +85,17 @@ Tela que permite a exclusão dos dados de um usuário da base de dados.
 * RF-05 - O sistema deve permitir que o fornecedor e comprador possam cadastrar, alterar e excluir seu cadastro.
 
 #### Artefatos da funcionalidade
-* usuario.cs<br>
-* Usuarioscontroller<br>
+* Usuario.cs<br>
+* UsuariosController<br>
 * DataContext.cs<br>
-(Acrescentar artefatos pendentes)
+* DeletarConta.cshtml<br>
 
-#### Estrutura de dados 
-Em construção. 
+#### Instruções de acesso
+1) Acessar o Navegador<br>
+2) Informar o endereço da aplicação: (inserir URL)<br>
+3) Inserir informações para o login<br>
+4) Clique em "Entrar" para acessar a conta e a tela inicial.<br>
+5) No menu lateral, clique em Excluir Conta.<br>
 
 ### Tela Págna Inicial 
 
@@ -68,14 +105,17 @@ Tela exibe os pedidos em andamento e últimos pedidos, e permite que o comprador
 
 #### Requisitos atendidos
 
-RF-07 - O sistema deve permitir que o fornecedor e o comprador possam visualizar todos os pedidos.
-RF-10 - O sistema deve permitir a abertura de novos pedidos.
+RF-07 - O sistema deve permitir que o fornecedor e o comprador possam visualizar todos os pedidos.<br>
+RF-10 - O sistema deve permitir a abertura de novos pedidos.<br>
 
 #### Artefatos da funcionalidade
 Em construção.
 
-#### Estrutura de dados
-Em construção.
+#### Instruções de acesso
+1) Acessar o Navegador<br>
+2) Informar o endereço da aplicação: (inserir URL)<br>
+3) Inserir informações para o login<br>
+4) Clique em "Entrar" para acessar a conta e a tela inicial.<br>
 
 ### Tela Pedidos
 
@@ -91,8 +131,12 @@ RF-10 - O sistema deve permitir a abertura de novos pedidos.
 #### Artefatos da funcionalidade
 Em construção.
 
-#### Estrutura de dados
-Em construção.
+#### Instruções de acesso
+1) Acessar o Navegador<br>
+2) Informar o endereço da aplicação: (inserir URL)<br>
+3) Inserir informações para o login<br>
+4) Clique em "Entrar" para acessar a conta e a tela inicial.<br>
+5) No menu lateral, clique em "Novo Pedido" para abrir uma nova cotação, ou clique em "Todos os pedidos" para visualizar uma lista de todos os pedidos.
 
 ### Tela Cadastro de Produtos
 
@@ -101,13 +145,20 @@ Tela permite o cadastro, edição, visualização e exclusão de dados de um pro
 <img src="/docs/img/tela-cadastro-produto.jpg" alt="">
 
 #### Requisitos atendidos
-* RF-04 - O sistema deve permitir o cadastro, edição e exclusão dos produtos de hortifruti contendo imagem, nome, código único do item e quantidade em estoque.
+* RF-04 - O sistema deve permitir o cadastro, edição e exclusão dos produtos de hortifruti contendo nome e código único do item.
 
 #### Artefatos da funcionalidade 
-Em construção.
+* Produto.cs<br>
+* ProdutosController.cs<br>
+* Create.cshtml<br>
+* produtos.css<br>
 
-#### Estrutura de dados
-Em construção.
+#### Instruções de acesso
+1) Acessar o Navegador<br>
+2) Informar o endereço da aplicação: (inserir URL)<br>
+3) Inserir informações para o login<br>
+4) Clique em "Entrar" para acessar a conta e a tela inicial.<br>
+5) No menu lateral, clique em "Cadastrar Produto".
 
 ### Tela Produtos
 
@@ -119,10 +170,21 @@ Tela exibe aos usuários todos os produtos cadastrados pelo fornecedor.
 * RF-08 - O sistema deve permitir que o fornecedor e o comprador possam visualizar todos os produtos cadastrados.
 
 #### Artefatos da funcionalidade
-Em construção.
+* Produto.cs<br>
+* ProdutosController.cs<br>
+* Index.cshtml<br>
+* Delete.cshtml<br>
+* Details.cshtml<br>
+* Edit.cshtml<br>
+* Create.cshtml<br>
+* produtos.css<br>
 
-#### Estrutura de dados
-Em construção.
+#### Instruções de acesso
+1) Acessar o Navegador<br>
+2) Informar o endereço da aplicação: (inserir URL)<br>
+3) Inserir informações para o login<br>
+4) Clique em "Entrar" para acessar a conta e a tela inicial.<br>
+5) No menu lateral, clique em "Todos os produtos".
 
 ### Tela Nova Cotação (comprador)
 
