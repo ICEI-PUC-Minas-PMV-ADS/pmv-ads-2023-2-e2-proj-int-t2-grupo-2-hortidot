@@ -5,7 +5,7 @@ Quando se trata de criar a interface do sistema, estamos dando prioridade a aspe
 
 ## Diagrama de Fluxo
 
-<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/ba111e486641475bae8a2a8fd146e2d5a4b5ca1b/docs/img/Diagrama%20de%20Fluxo.jpg" />
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/a7375d0241093b7c66853c4c1f86105f6a85fcaf/docs/img/Diagrama%20de%20Fluxo%20Final.jpg" />
 Figura 3 - Diagrama de Fluxo
 
 ## Wireframes
@@ -47,44 +47,32 @@ Apresenta todos os pedidos realizados com informações como a data de criação
 <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/107df6b8ee825cc9da3e8255f55c0a465ccfe2a2/docs/img/Pedidos.jpg" />
 Figura 9 - Pedidos
 
-### Tela - Caixa de Entrada
-
-Apresenta o histórico de mensagens e a possibilidade de criação de uma nova.
-<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/107df6b8ee825cc9da3e8255f55c0a465ccfe2a2/docs/img/Caixa%20de%20entrada.jpg" />
-Figura 10 - Caixa de Entrada
-
-### Tela - Nova Mensagem
-
-Esta tela é exibida na forma de pop-up e permite criar uma nova mensagem para que seja enviada.
-<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/107df6b8ee825cc9da3e8255f55c0a465ccfe2a2/docs/img/Nova%20mensagem.jpg" />
-Figura 11 - Nova mensagem
-
 ### Tela - Produtos
 
 Apresenta todos os produtos cadastrados com informações como a data de criação e imagem.
 <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/107df6b8ee825cc9da3e8255f55c0a465ccfe2a2/docs/img/Produtos.jpg" />
-Figura 12 - Produtos
+Figura 10 - Produtos
 
 ### Tela - Cadastrar produtos
 
 Esta tela é exibida na forma de pop-up e permite cadastrar um novo produto para que seja utilizado nas cotações.
 <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/107df6b8ee825cc9da3e8255f55c0a465ccfe2a2/docs/img/Cadastrar%20produto.jpg" />
-Figura 13 - Cadastrar produtos
+Figura 11 - Cadastrar produtos
 
 ### Tela - Nova cotação (comprador)
 
 Apresenta as opções de produtos e informações a serem incluidas em uma cotação para que seja enviada aos fornecedores.
 <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/107df6b8ee825cc9da3e8255f55c0a465ccfe2a2/docs/img/Nova%20cota%C3%A7%C3%A3o%20(comprador).jpg" />
-Figura 14 -  Nova cotação (comprador)
+Figura 12 -  Nova cotação (comprador)
 
 ### Tela - Nova cotação (fornecedor)
 
 Apresenta a cotação recebida para que seja editada e atualizada de acordo com os preços deste fornecedor.
 <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/107df6b8ee825cc9da3e8255f55c0a465ccfe2a2/docs/img/Nova%20cota%C3%A7%C3%A3o%20(fornecedor).jpg" />
-Figura 15 -  Nova cotação (fornecedor)
+Figura 13 -  Nova cotação (fornecedor)
 
 ### Tela - Analisar cotação
 
 Apresenta as informações atualizadas pelos fornecedores para que sejam avaliadas para finalização do pedido.
 <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/107df6b8ee825cc9da3e8255f55c0a465ccfe2a2/docs/img/Analisar%20cota%C3%A7%C3%A3o%20(comprador).jpg" />
-Figura 16 -  Analisar cotação
+Figura 14 -  Analisar cotação
