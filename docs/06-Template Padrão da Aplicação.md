@@ -122,17 +122,17 @@ Figura 30 - Cadastro de produtos
 
 Apresenta as opções de produtos e informações a serem incluidas em uma cotação para que seja enviada aos fornecedores, tais como código do produtos, imagem e nome dos produtos, juntamente com as quantidades desejadas.
 
-(Tela em Construção)
+<img src="/docs/img/tela-cotacao-comprador.jpg" alt="">
 
 ### Tela de Nova Cotação (Fornecedor)
 
 Apresenta a cotação recebida para que seja editada e atualizada de acordo com os preços deste fornecedor. 
 
-
-(Tela em Construção)
+<img src="/docs/img/tela-cotacao-fornecedor.jpg" alt="">
 
 ### Analisar Cotação
 
 Apresenta as informações atualizadas pelos fornecedores para que sejam avaliadas para finalização do pedido.
-(Tela em Construção)
+
+<img src="/docs/img/tela-analisar-pedido.jpg" alt="">
 
