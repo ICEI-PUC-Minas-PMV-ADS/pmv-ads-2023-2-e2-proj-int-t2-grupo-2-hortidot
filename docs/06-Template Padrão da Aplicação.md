@@ -48,8 +48,6 @@ As telas seguem o projeto de interface elaborado anteriormente, conforme figura 
 - Tela Cadastro do Perfil
 - Tela Excluir Conta
 - Tela de Pedidos
-- Tela Caixa de Entrada
-- Tela Nova Mensagem
 - Tela de Produtos
 - Tela Cadastrar Produtos 
 - Tela de Nova Cotação (Comprador) 
@@ -104,29 +102,13 @@ Apresenta todos os pedidos realizados com informações como código do pedido, 
 
 Figura 32 - Pedidos
 
-### Tela Caixa de Entrada
-
-Apresenta o histórico de mensagens e a possibilidade de criação de uma nova.
-
-<img src="/docs/img/tela-caixa-entrada.jpg" alt="">
-
-Figura 33 - Caixa de Entrada
-
-### Tela Nova Mensagem
-
-Esta tela é exibida na forma de pop-up e permite criar uma nova mensagem para que seja enviada.
-
-<img src="/docs/img/tela-mensagem.jpg" alt="">
-
-Figura 34 - Nova mensagem
-
 ### Tela de produtos
 
 Esta tela apresenta os produtos cadastrados no sistema. Os produtos devem possuir código próprio, imagem e nome. A tela deve permitir ao usuário a possibilidade de cadastrar, visualizar, editar ou excluir um produto. Possui menu lateral e uma barra de pesquisas.
 
 <img src="/docs/img/tela-produtos.jpg" alt="">
 
-Figura 35 - Produtos
+Figura 33 - Produtos
 
 ### Tela Cadastrar Produtos
 
@@ -134,7 +116,7 @@ A tela é exibida em formato pop-up e permite o cadastro de um novo produto, que
 
 <img src="/docs/img/tela-cadastro-produto.jpg" alt="">
 
-Figura 36 - Cadastro de produtos 
+Figura 34 - Cadastro de produtos 
 
 ### Tela de Nova Cotação (Comprador)
 
