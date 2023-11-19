@@ -125,8 +125,8 @@ Tela mostra todos os pedidos feitos pelo comprador e os detalhes dos pedidos, al
 
 #### Requisitos atendidos
 
-RF-07 - O sistema deve permitir que o fornecedor e o comprador possam visualizar todos os pedidos.
-RF-10 - O sistema deve permitir a abertura de novos pedidos.
+RF-07 - O sistema deve permitir que o fornecedor e o comprador possam visualizar todos os pedidos.<br>
+RF-10 - O sistema deve permitir a abertura de novos pedidos.<br>
 
 #### Artefatos da funcionalidade
 Em construção.
@@ -230,8 +230,6 @@ Em construção.
 
 #### Estrutura de dados
 Em construção.
-
-
 
 # Instruções de acesso
 
