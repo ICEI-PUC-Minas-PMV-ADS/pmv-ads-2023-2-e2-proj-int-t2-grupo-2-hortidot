@@ -11,7 +11,7 @@ Este projeto visa resolver o problema da deficiência no mercado de uma soluçã
 Este projeto tem como objetivo desenvolver um sistema “HortiDot” para realizar a cotação e os pedidos de alimentos no setor de hortifruti.
 
 Como objetivos específicos, podemos ressaltar: 
-- Permitir a comunicação entre fornecedor e comprador.
+- Fornecer a conexão entre fornecedores e compradores.
 - Permitir o envio de pedidos personalizados.
 
 ## Justificativa
