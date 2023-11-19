@@ -36,10 +36,10 @@ namespace HortiDot.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(Login login)
         {
-            //if (!ModelState.IsValid)
-            //{
-            //    return View("Login", login);
-            //}
+            if (!ModelState.IsValid)
+            {
+                return View("Login", login);
+            }
 
             var role = "";
             var dados = _context.Usuarios
