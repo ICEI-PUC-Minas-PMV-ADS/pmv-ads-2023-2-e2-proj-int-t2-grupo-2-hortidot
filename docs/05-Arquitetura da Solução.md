@@ -8,7 +8,7 @@ A aplicação é composta por 3 componentes responsáveis por representar entida
 
 O diagrama de classes ilustra graficamente como será a estrutura do software, e como cada uma das classes da sua estrutura estarão interligadas. Essas classes servem de modelo para materializar os objetos que executarão na memória.
 
-<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/775443b3508d65246c20c89855ebf7e31b049515/docs/img/Diagrama%20de%20Classes%20Hortidot.jpg">
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/18ec2b3cdde1b21785ab3c31f6247626522d080e/docs/img/Diagrama%20de%20Classes.jpg">
 
 Figura 15 - Diagrama de Classes 
 
