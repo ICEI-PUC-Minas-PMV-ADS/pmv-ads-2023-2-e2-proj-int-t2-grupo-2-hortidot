@@ -3,6 +3,8 @@ using HortiDot.Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 using System.Security.Claims;
 
 namespace HortiDot.Controllers
@@ -46,19 +48,24 @@ namespace HortiDot.Controllers
             if (dados == null)
             {
                 ViewBag.Message = "erro";
+                return Redirect("/Login");
             }
-
-            if (dados.TipoDeUsuario == 0)
-            {
-                role = "Comprador";
-            }
-            else
-                role = "Fornecedor";
 
             bool senhaOK = BCrypt.Net.BCrypt.Verify(login.Senha, dados.Senha);
 
             if (senhaOK)
             {
+                var pedidos = await _context.Pedidos.Where(p => p.CompradorId == dados.ID).ToListAsync();
+
+                TempData["Pedidos"] = JsonConvert.SerializeObject(pedidos);
+
+                if (dados.TipoDeUsuario == 0)
+                {
+                    role = "Comprador";
+                }
+                else
+                    role = "Fornecedor";
+
                 var claims = new List<Claim>
                 {
                     new Claim(ClaimTypes.Name, dados.Nome),
@@ -81,11 +88,24 @@ namespace HortiDot.Controllers
             }
             else
                 ViewBag.Message = "erro";
+
             return View();
         }
 
-        public IActionResult Home()
+        public async Task<IActionResult> Home()
         {
+
+            var dados = _context.Usuarios
+                .FirstOrDefault(acc => acc.Nome.Equals(User.Identity.Name));
+
+            try
+            {
+                var pedidos = await _context.Pedidos.Where(p => p.CompradorId == dados.ID).ToListAsync();
+                TempData["Pedidos"] = JsonConvert.SerializeObject(pedidos);
+            } 
+
+            catch { }
+
             return View();
         }
         public async Task<IActionResult> Logout()

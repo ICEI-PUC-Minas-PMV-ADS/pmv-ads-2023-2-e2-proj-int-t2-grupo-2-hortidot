@@ -24,12 +24,11 @@
 
             <div class="cadastro-foto">
                 <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/main/docs/img/persona-ana.jpg?raw=true" />
-                <a asp-area="" asp-controller="" asp-action="">Selecione uma imagem.</a>
             </div>
 
             <div class="cadastro">
 
-                <form asp-action="Edit">
+                <form asp-action="EditarUsuario">
                     <div>
                         <h1>Dados Pessoais</h1>
                         <p>Preencha todos os campos com *</p>
@@ -88,8 +87,8 @@
                         <select asp-for="TipoDeUsuario" class="form-control" asp-items="Html.GetEnumSelectList<TipoDeUsuario>()"></select>
                         <span asp-validation-for="TipoDeUsuario" class="text-danger"></span>
                     </div>
-                    <div class="form-group">
-                        <a asp-controller="Login" asp-action="Home" class="btn btn-amarelo">Cancelar</a>
+                    <div class="form-group btns">
+                        <a asp-controller="Login" asp-action="Home" class="btn btn-amarelo">Voltar a home</a>
                         <a asp-controller="Usuarios" asp-action="DeletarConta" asp-route-id="@Model?.ID" class="btn btn-vermelho">Deletar conta</a>
                         <input type="submit" value="Salvar alterações" class="btn btn-verde" />
                     </div>

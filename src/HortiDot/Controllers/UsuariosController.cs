@@ -60,11 +60,13 @@ namespace HortiDot.Controllers
 
             if (ModelState.IsValid)
             {
+                usuario.Senha = BCrypt.Net.BCrypt.HashPassword(usuario.Senha);
                 _context.Usuarios.Update(usuario);
                 await _context.SaveChangesAsync();
-                return RedirectToAction("/");
+                //return RedirectToAction("Home", "Login");
+                await HttpContext.SignOutAsync();
             }
-
+            
             return View();
         }
 
@@ -95,26 +97,6 @@ namespace HortiDot.Controllers
 
             await HttpContext.SignOutAsync();
             return RedirectToAction("Home", "Login");
-        }
-
-        public IActionResult CriarPedido()
-        {
-            return View();
-        }
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> CriarPedido([Bind("Id, Pedido,StatusPedidos, DataPedido")] Pedido pedido)
-        {
-
-            pedido.StatusPedidos = StatusPedidos.EmAndamento;
-            pedido.DataPedido = DateTime.UtcNow;
-
-            _context.Add(pedido);
-            await _context.SaveChangesAsync();
-
-
-            return View();
         }
     }
 }

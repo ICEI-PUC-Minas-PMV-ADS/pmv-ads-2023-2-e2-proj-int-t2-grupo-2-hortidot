@@ -1,7 +1,7 @@
 ﻿@model HortiDot.Models.Usuario
 
 @{
-    ViewData["Title"] = "DeletarConta";
+    ViewData["Title"] = "Deletar Conta";
 }
 
 <!DOCTYPE html>
@@ -21,17 +21,17 @@
     </header>
 
     <main>
+        <div class="delete">
+            <h1>Excluir conta</h1>
+            <p class="title">Tem certeza que deseja exlcuir a sua conta?</p>
+            <p>Todos os seus dados serão apagados.</p>
 
-    <h1>Tem certeza que deseja exlcuir sua conta?</h1>
-
-    <h3>Todos os seus dados serão apagados.</h3>
-    <div>
-        <form asp-action="DeletarConta">
-            <input type="hidden" asp-for="ID" />
-            <a asp-controller="Usuarios" asp-action="EditarUsuario" asp-route-id="@Model?.ID" class="btn btn-amarelo">Não, quero manter minha conta</a> |
-            <input type="submit" value="Sim, quero excluir" class="btn btn-vermelho" />
-        </form>
-    </div>
+            <form class="btns" asp-action="DeletarConta">
+                <input type="hidden" asp-for="ID" />
+                <a asp-controller="Login" asp-action="Home" asp-route-id="@Model?.ID" class="btn btn-amarelo">Não, quero manter minha conta</a>
+                <input type="submit" value="Sim, quero excluir" class="btn btn-vermelho" />
+            </form>
+        </div>
 </main>
     <footer>
         <div class="container">

@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using HortiDot.Config;
 using HortiDot.Models;
+using Newtonsoft.Json;
 
 namespace HortiDot.Controllers
 {
@@ -17,30 +18,28 @@ namespace HortiDot.Controllers
         // Add prod ao pedido
         public async Task<IActionResult> AddSelectedProduct(int Id)
         {
-            ListaPedidos listaPedidos = (ListaPedidos)ViewBag.listaPedidos;
+            ListaPedidos listaPedidos = JsonConvert.DeserializeObject<ListaPedidos>((string)TempData["listaPedidos"]);
             listaPedidos.ListaProdutos = _context.Produtos.ToList();
             listaPedidos.ProdutosSelecionados.Add(await _context.Produtos.FirstOrDefaultAsync(p => p.Id == Id));
-
-            return View("Create", listaPedidos);
-
+            ViewBag.listaPedidos = listaPedidos;
+            return View("Create");
         }
 
         // Remove prod ao pedido
         public async Task<IActionResult> RemoveSelectedProduct(int Id)
         {
-            ListaPedidos listaPedidos = (ListaPedidos)ViewBag.listaPedidos;
+            ListaPedidos listaPedidos = JsonConvert.DeserializeObject<ListaPedidos>((string)TempData["listaPedidos"]);
             listaPedidos.ListaProdutos = _context.Produtos.ToList();
-            listaPedidos.ProdutosSelecionados.Remove(await _context.Produtos.FirstOrDefaultAsync(p => p.Id == Id));
-
-            return View("Create", listaPedidos);
-
+            listaPedidos.ProdutosSelecionados.RemoveAll(p => p.Id == Id);
+            ViewBag.listaPedidos = listaPedidos;
+            return View("Create");
         }
 
 
         // GET: Pedidos
         public async Task<IActionResult> Index()
         {
-              return View(await _context.Pedidos.ToListAsync());
+            return View(await _context.Pedidos.ToListAsync());
         }
 
         // GET: Pedidos/Details/5
@@ -51,7 +50,7 @@ namespace HortiDot.Controllers
                 return NotFound();
             }
 
-            var pedido = await _context.Pedidos
+            var pedido = await _context.Pedidos.Include(p => p.Produtos)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (pedido == null)
             {
@@ -75,21 +74,25 @@ namespace HortiDot.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(ListaPedidos listaPedido)
+        public async Task<IActionResult> CreateAsync()
         {
-            if (ModelState.IsValid)
+            ListaPedidos listaPedidos = JsonConvert.DeserializeObject<ListaPedidos>((string)TempData["listaPedidos"]);
+
+            Pedido pedido = new Pedido();
+            pedido.Produtos = new List<Produto>();
+            pedido.Produtos.AddRange(listaPedidos.ProdutosSelecionados);
+
+            var usuarioLogado = _context.Usuarios.FirstOrDefault(U => U.Nome.Equals(User.Identity.Name));
+            pedido.CompradorId = usuarioLogado.ID;
+
+            foreach (var produto in listaPedidos.ProdutosSelecionados)
             {
-                Pedido pedido = new Pedido();
-                pedido.Produtos = listaPedido.ProdutosSelecionados;
-
-                var usuarioLogado = _context.Usuarios.FirstOrDefault(U => U.Nome.Equals(User.Identity.Name));
-                pedido.CompradorId = usuarioLogado.ID;
-
-                _context.Add(pedido);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                _context.Attach(produto);
             }
-            return View(listaPedido);
+
+            await _context.Pedidos.AddAsync(pedido);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
         }
 
         // GET: Pedidos/Edit/5
@@ -113,7 +116,7 @@ namespace HortiDot.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,DataPedido,StatusPedidos,CompradorId")] Pedido pedido)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,DataPedido,StatusPedidos,CompradorId")] Pedido pedido, StatusPedidos statusPedidos)
         {
             if (id != pedido.Id)
             {
@@ -175,14 +178,14 @@ namespace HortiDot.Controllers
             {
                 _context.Pedidos.Remove(pedido);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool PedidoExists(int id)
         {
-          return _context.Pedidos.Any(e => e.Id == id);
+            return _context.Pedidos.Any(e => e.Id == id);
         }
     }
 }

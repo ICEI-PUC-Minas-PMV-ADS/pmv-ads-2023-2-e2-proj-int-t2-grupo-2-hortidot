@@ -1,4 +1,3 @@
-using HortiDot.Chat;
 using HortiDot.Config;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
@@ -45,8 +44,6 @@ app.UseRouting();
 
 app.UseAuthentication();
 app.UseAuthorization();
-
-app.MapHub<Chat>("/chat");
 
 app.MapControllerRoute(
     name: "default",

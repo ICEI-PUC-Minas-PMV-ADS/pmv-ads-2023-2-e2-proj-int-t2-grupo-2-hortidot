@@ -26,7 +26,6 @@
 
             <div class="cadastro-foto">
                 <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/main/docs/img/persona-ana.jpg?raw=true" />
-                <p>Selecione uma imagem</p>
             </div>
 
             <div class="cadastro">
@@ -89,7 +88,7 @@
                 <select asp-for="TipoDeUsuario" class="form-control" asp-items="Html.GetEnumSelectList<TipoDeUsuario>()"></select>
                 <span asp-validation-for="TipoDeUsuario" class="text-danger"></span>
             </div>
-            <div class="form-group">
+            <div class="form-group btns">
                         <a asp-controller="Login" asp-action="Login" class="btn btn-amarelo">Já tenho uma conta</a>
                         <input type="submit" value="Criar Cadastro" class="btn btn-verde" />
             </div>

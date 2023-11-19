@@ -39,7 +39,7 @@ main .container {
     gap: 40px;
 }
 
-ul {
+ul:not(td ul) {
     list-style: none;
     margin-bottom: 0;
 }
@@ -166,6 +166,10 @@ aside {
     transition: 0.3s ease;
 }
 
+    .btn:not(.form-group.btns .btn, form.btns .btn, .loginBox .btn) {
+        margin: 24px auto;
+    }
+
     .btn:hover {
         color: var(--branco);
     }
@@ -221,14 +225,26 @@ aside {
     border-radius: 12px;
 }
 
+.content:has(.content-vazio) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .content h1,
 .content h2,
 .content h3,
 .content h4,
 .content h5,
 .content h6,
-.content p {
+.content p:not(.content td p) {
     text-align: center;
+}
+
+p.title {
+    text-align: center;
+    font-weight: 700;
+    margin-top: 24px;
 }
 
 .content svg {

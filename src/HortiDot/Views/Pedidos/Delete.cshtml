@@ -9,33 +9,44 @@
     <h1>Apagar pedido?</h1>
 
     <p>Você tem certeza que deseja apagar este pedido?</p>
-    <div>
-        <hr />
-        <dl class="row">
-            <dt class="col-sm-2">
-                @Html.DisplayNameFor(model => model.DataPedido)
-            </dt>
-            <dd class="col-sm-10">
-                @Html.DisplayFor(model => model.DataPedido)
-            </dd>
-            <dt class="col-sm-2">
-                @Html.DisplayNameFor(model => model.StatusPedidos)
-            </dt>
-            <dd class="col-sm-10">
-                @Html.DisplayFor(model => model.StatusPedidos)
-            </dd>
-            <dt class="col-sm-2">
-                @Html.DisplayNameFor(model => model.CompradorId)
-            </dt>
-            <dd class="col-sm-10">
-                @Html.DisplayFor(model => model.CompradorId)
-            </dd>
-        </dl>
 
-        <form class="btns" asp-action="Delete">
-            <input type="hidden" asp-for="Id" />
-            <a asp-action="Index" class="btn btn-amarelo">Cancelar</a>
-            <input type="submit" value="Apagar" class="btn btn-vermelho" />
-        </form>
-    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Id)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CompradorId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DataPedido)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.StatusPedidos)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    @Html.DisplayFor(model => model.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.CompradorId)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.DataPedido)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.StatusPedidos)
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <form class="btns" asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <a asp-action="Index" class="btn btn-amarelo">Cancelar</a>
+        <input type="submit" value="Apagar" class="btn btn-vermelho" />
+    </form>
 </div>

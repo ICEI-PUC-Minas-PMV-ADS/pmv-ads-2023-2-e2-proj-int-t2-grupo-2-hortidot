@@ -61,6 +61,7 @@ main{
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-wrap: wrap;
             gap: 12px;
             width: 100%;
         }
@@ -75,3 +76,21 @@ main{
                 background-color: var(--cinza);
                 border-radius: 12px;
             }
+
+.delete {
+    text-align: center;
+}
+
+.delete form.btns {
+    flex-wrap: wrap;
+}
+
+@media (min-width: 800px) {
+
+    main .container form .form-group {
+        flex-wrap: unset;
+    }
+    .delete {
+        height: calc(100vh - 412px);
+    }
+}
