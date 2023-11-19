@@ -9,12 +9,12 @@ Layout padrão da aplicação que será utilizado em todas as páginas com a def
 ### Logos
 
 <img src="/docs/img/Logos.jpg" alt="">
-Figura 22 - Variações das logos
+Figura 18 - Variações das logos
 
 ### Paleta de cores
 
 <img src="/docs/img/Paleta de cores.jpg" alt="">
-Figura 23 - Paleta de cores escolhida
+Figura 19 - Paleta de cores escolhida
 
 ### Tipografia
 
@@ -25,18 +25,18 @@ Títulos: Righteous
 Texto corrido: Montserrat
 
 <img src="/docs/img/Tipografia.jpg" alt="">
-Figura 24 - Tipografia escolhida
+Figura 20 - Tipografia escolhida
 
 ### Ícones
 
 <img src="/docs/img/Ícones.jpg" alt="">
 Ícones criados pela fonte Material Icons do Figma.
-Figura 25 - Ícones usados
+Figura 21 - Ícones usados
 
 ### Botões
 
 <img src="/docs/img/Botões.jpg" alt="">
-Figura 26 - Componentes de botões
+Figura 22 - Componentes de botões
 
 ## Estrutura
 
@@ -60,7 +60,7 @@ Tela que apresenta as opções de entrada e cadastro do sistema, solicitando CPF
 
 <img src="/docs/img/tela-login.jpg" alt="">
 
-Figura 27 - Login
+Figura 23 - Login
 
 ### Tela Página Inicial do Comprador
 
@@ -68,7 +68,7 @@ Esta tela apresenta os pedidos em andamento, contendo o código e os itens do pe
 
 <img src="/docs/img/tela-inicial.jpg" alt="">
 
-Figura 28 - Página incial do comprador
+Figura 24 - Página incial do comprador
 
 ### Tela Página Inicial do Fornecedor
 
@@ -76,7 +76,7 @@ Apresenta os novos pedidos e o histórico de pedidos, além do menu lateral dand
 
 <img src="/docs/img/tela-inicial.jpg" alt="">
 
-Figura 29 - Página incial do fornecedor
+Figura 25 - Página incial do fornecedor
 
 ### Tela Cadastro do Perfil
 
@@ -84,7 +84,7 @@ Tela apresenta campos para preenchimento de dados para cadastro de usuários. O 
 
 <img src="/docs/img/tela-cadastro-perfil.jpg" alt="">
 
-Figura 30 - Página incial do perfil
+Figura 26 - Página incial do perfil
 
 ### Tela Excluir Conta
 
@@ -92,7 +92,7 @@ Tela é exibida na forma de pop-up e permite apagar a conta completamente.
 
 <img src="/docs/img/tela-excluir-perfil.jpg" alt="">
 
-Figura 31 - Excluir conta
+Figura 27 - Excluir conta
 
 ### Tela Pedidos
 
@@ -100,7 +100,7 @@ Apresenta todos os pedidos realizados com informações como código do pedido, 
 
 <img src="/docs/img/tela-pedidos.jpg" alt="">
 
-Figura 32 - Pedidos
+Figura 28 - Pedidos
 
 ### Tela de produtos
 
@@ -108,7 +108,7 @@ Esta tela apresenta os produtos cadastrados no sistema. Os produtos devem possui
 
 <img src="/docs/img/tela-produtos.jpg" alt="">
 
-Figura 33 - Produtos
+Figura 29 - Produtos
 
 ### Tela Cadastrar Produtos
 
@@ -116,7 +116,7 @@ A tela é exibida em formato pop-up e permite o cadastro de um novo produto, que
 
 <img src="/docs/img/tela-cadastro-produto.jpg" alt="">
 
-Figura 34 - Cadastro de produtos 
+Figura 30 - Cadastro de produtos 
 
 ### Tela de Nova Cotação (Comprador)
 
