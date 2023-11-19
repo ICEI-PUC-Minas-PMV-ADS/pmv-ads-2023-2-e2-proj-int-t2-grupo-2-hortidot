@@ -12,7 +12,7 @@ Tela permite o usuário acessar sua conta com e-mail e senha.
 
 
 #### Requisitos atendidos
-* RF-11- O sistema deve permitir que o fornecedor e o comprador possam fazer login com e-mail e senha.
+* RF-09- O sistema deve permitir que o fornecedor e o comprador possam fazer login com e-mail e senha.
 
 #### Artefatos da funcionalidade
 * Logincontroller<br>
@@ -30,7 +30,7 @@ Tela permite o cadastro, edição e visualização de dados do usuário. A estru
 <img src="/docs/img/tela-cadastro-perfil.01.jpg" alt="">
 
 #### Requisitos atendidos
-* RF-07- O sistema deve permitir que o fornecedor e comprador possam cadastrar, alterar e excluir seu cadastro.
+* RF-05- O sistema deve permitir que o fornecedor e comprador possam cadastrar, alterar e excluir seu cadastro.
 
 #### Artefatos da funcionalidade
 * usuario.cs<br>
@@ -49,7 +49,7 @@ Tela que permite a exclusão dos dados de um usuário da base de dados.
 <img src="/docs/img/tela-excluir-perfil.jpg" alt="">
 
 #### Requisitos atendidos
-* RF-07 - O sistema deve permitir que o fornecedor e comprador possam cadastrar, alterar e excluir seu cadastro.
+* RF-05 - O sistema deve permitir que o fornecedor e comprador possam cadastrar, alterar e excluir seu cadastro.
 
 #### Artefatos da funcionalidade
 * usuario.cs<br>
@@ -68,8 +68,8 @@ Tela exibe os pedidos em andamento e últimos pedidos, e permite que o comprador
 
 #### Requisitos atendidos
 
-RF-09 - O sistema deve permitir que o fornecedor e o comprador possam visualizar todos os pedidos.
-RF-12 - O sistema deve permitir a abertura de novos pedidos.
+RF-07 - O sistema deve permitir que o fornecedor e o comprador possam visualizar todos os pedidos.
+RF-10 - O sistema deve permitir a abertura de novos pedidos.
 
 #### Artefatos da funcionalidade
 Em construção.
@@ -85,8 +85,8 @@ Tela mostra todos os pedidos feitos pelo comprador e os detalhes dos pedidos, al
 
 #### Requisitos atendidos
 
-RF-09 - O sistema deve permitir que o fornecedor e o comprador possam visualizar todos os pedidos.
-RF-12 - O sistema deve permitir a abertura de novos pedidos.
+RF-07 - O sistema deve permitir que o fornecedor e o comprador possam visualizar todos os pedidos.
+RF-10 - O sistema deve permitir a abertura de novos pedidos.
 
 #### Artefatos da funcionalidade
 Em construção.
@@ -101,7 +101,7 @@ Tela permite o cadastro, edição, visualização e exclusão de dados de um pro
 <img src="/docs/img/tela-cadastro-produto.jpg" alt="">
 
 #### Requisitos atendidos
-* RF-06 - O sistema deve permitir o cadastro, edição e exclusão dos produtos de hortifruti contendo imagem, nome, código único do item e quantidade em estoque.
+* RF-04 - O sistema deve permitir o cadastro, edição e exclusão dos produtos de hortifruti contendo imagem, nome, código único do item e quantidade em estoque.
 
 #### Artefatos da funcionalidade 
 Em construção.
@@ -116,44 +116,13 @@ Tela exibe aos usuários todos os produtos cadastrados pelo fornecedor.
 <img src="/docs/img/tela-produtos.jpg" alt="">
 
 #### Requisitos atendidos
-* RF-10 - O sistema deve permitir que o fornecedor e o comprador possam visualizar todos os produtos cadastrados.
+* RF-08 - O sistema deve permitir que o fornecedor e o comprador possam visualizar todos os produtos cadastrados.
 
 #### Artefatos da funcionalidade
 Em construção.
 
 #### Estrutura de dados
 Em construção.
-
-### Tela Caixa de Entrada
-
-Tela apresenta o histórico de mensagens e a possibilidade de criação de novas conversas via chat.
-
-<img src="/docs/img/tela-caixa-entrada.jpg" alt="">
-
-#### Requisitos atendidos
-* RF-03 - O sistema deve enviar uma mensagem informando a abertura e fechamento da cotação solicitada.
-* RF-04 - O sistema deve permitir um canal de comunicação entre fornecedor e comprador.
-
-#### Artefatos da funcionalidade
-Em construção.
-
-#### Estrutura de dados 
-Em construção.
-
-### Tela Nova Mensagem
-
-Tela pop-up permite a criação de uma nova mensagem. 
-
-<img src="/docs/img/tela-mensagem.jpg" alt="">
-
-#### Requisitos atendidos
-* RF-04 - O sistema deve permitir um canal de comunicação entre fornecedor e comprador.
-
-#### Artefatos da funcionalidade
-Em construção.
-
-#### Estrutura de dados
-Em construção. 
 
 ### Tela Nova Cotação (comprador)
 
@@ -163,7 +132,7 @@ Apresenta as opções de produtos e informações a serem incluidas em uma cota�
 
 #### Requisitos atendidos
 * RF-02 - O sistema deve permitir que o comprador e fornecedor ajustem a quantidade de itens solicitados.
-* RF-08 - O sistema deve permitir que o fornecedor feche o pedido e que o comprador finalize a cotação após a revisão.
+* RF-06 - O sistema deve permitir que o fornecedor feche o pedido e que o comprador finalize a cotação após a revisão.
   
 #### Artefatos da funcionalidade
 Em construção.
@@ -177,7 +146,7 @@ Apresenta a cotação recebida para que seja editada e atualizada de acordo com 
 #### Requisitos atendidos
 * RF-01 - O sistema deve permitir que os fornecedores ajustem o preço para cada comprador correspondente.
 * RF-02 - O sistema deve permitir que o comprador e fornecedor ajustem a quantidade de itens solicitados.
-* RF-08 - O sistema deve permitir que o fornecedor feche o pedido e que o comprador finalize a cotação após a revisão.
+* RF-06 - O sistema deve permitir que o fornecedor feche o pedido e que o comprador finalize a cotação após a revisão.
 
 #### Artefatos da funcionalidade
 Em construção.
@@ -192,7 +161,7 @@ Apresenta as informações atualizadas pelos fornecedores para que sejam avaliad
 <img src="/docs/img/tela-analisar-pedido.jpg" alt="">
 
 #### Requisitos atendidos
-* RF-05 - O sistema deve permitir que o comprador e fornecedor possam fazer a revisão do pedido antes do fechamento e do envio da mensagem.
+* RF-03 - O sistema deve permitir que o comprador e fornecedor possam fazer a revisão do pedido antes do fechamento.
 
 #### Artefatos da funcionalidade
 Em construção.
