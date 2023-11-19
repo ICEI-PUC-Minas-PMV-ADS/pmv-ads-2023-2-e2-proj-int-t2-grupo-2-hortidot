@@ -8,7 +8,7 @@ Nesta seção são apresentadas as telas desenvolvidas para cada uma das funcion
 
 Tela permite o usuário acessar sua conta com e-mail e senha.
 
-<img src="/docs/img/tela-login.01.jpg" alt="">
+<img src="/docs/img/tela-login.jpg" alt="">
 
 
 #### Requisitos atendidos
@@ -32,7 +32,7 @@ Tela permite o usuário acessar sua conta com e-mail e senha.
 
 Tela permite o cadastro, edição e visualização de dados do usuário. A estrutura é um CRUD desenvolvido em C# e os dados ficam armazenados no banco de dados PostgreSQL. 
 
-<img src="/docs/img/tela-cadastro-perfil.01.jpg" alt="">
+<img src="/docs/img/tela-cadastro-perfil.jpg" alt="">
 
 #### Requisitos atendidos
 * RF-05- O sistema deve permitir que o fornecedor e comprador possam cadastrar, alterar e excluir seu cadastro.
@@ -55,7 +55,7 @@ Tela permite o cadastro, edição e visualização de dados do usuário. A estru
 
 Tela permite que o usuário edite e atualize suas informações pessoais e informações de sua empresa.
 
-
+<img src="/" alt="">
 
 #### Requisitos atendidos
 * RF-05 - O sistema deve permitir que o fornecedor e o comprador possam cadastrar, alterar e excluir seu cadastro.
@@ -121,7 +121,7 @@ Em construção.
 
 Tela mostra todos os pedidos feitos pelo comprador e os detalhes dos pedidos, além de permitir a abertura de novos pedidos. 
 
-<img src="/docs/img/tela-pedidos.01.jpg" alt="">
+<img src="/docs/img/tela-pedidos.jpg" alt="">
 
 #### Requisitos atendidos
 
