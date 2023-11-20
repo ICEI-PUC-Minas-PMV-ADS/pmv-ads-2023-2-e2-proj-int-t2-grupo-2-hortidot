@@ -33,11 +33,11 @@ Relatório com as evidências dos testes de software realizados no sistema pela 
 | Requisito Associado | RF-05 - O sistema deve permitir que o fornecedor e o comprador possam cadastrar, alterar e excluir seu cadastro |
 |      Avaliação      |                                    ✅ Edição da conta realizada com sucesso                                     |
 
-|    Caso de Teste    |                                                             CT-06 - Edição de produto                                                              |
-| :-----------------: | :------------------------------------------------------------------------------------------------------------------------------------------------: |
-|       Imagem        | <img   src = "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/main/docs/img/CadastrarProduto.jpeg"/> |
-| Requisito Associado |           RF-04 - O sistema deve permitir o cadastro, edição e exclusão dos produtos de hortifruti contendo nome e código único do item            |
-|      Avaliação      |                                                     ✅ Edição de produto realizado com sucesso                                                     |
+|    Caso de Teste    |                                                   CT-06 - Edição de produto                                                   |
+| :-----------------: | :---------------------------------------------------------------------------------------------------------------------------: |
+|       Imagem        |                                         <img   src = "/docs/img/Editar-produto.png"/>                                         |
+| Requisito Associado | RF-04 - O sistema deve permitir o cadastro, edição e exclusão dos produtos de hortifruti contendo nome e código único do item |
+|      Avaliação      |                                          ✅ Edição de produto realizado com sucesso                                           |
 
 |    Caso de Teste    |                                                    CT-07 - Excluir produto                                                    |
 | :-----------------: | :---------------------------------------------------------------------------------------------------------------------------: |
