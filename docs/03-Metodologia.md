@@ -14,12 +14,11 @@ Na segunda etapa definimos como será a metodologia do todo o projeto, incluindo
 
 ## Etapa 3
 
-Na etapa três o grupo irá desenvolver o template padrão da aplicação e registrar os casos de testes planejados na etapa anterior.
+Na terceira etapa o grupo desenvolveu o template padrão da aplicação, casos de teste de software e de usabilidade.
 
 ## Etapa 4
 
-A etapa quatro será completamente voltada para o desenvolvimento de todas as funcionalidades e correção de possíveis bugs na aplicação.
-
+Já na etapa 4, o grupo desenvolveu toda a aplicação, banco de dados e hospedagem na Azure. Além disso, registramos os testes de software e usabilidade das funcionalidades desenvolvidas.
 ## Etapa 5
 
 Por fim, o grupo estará encarregado de finalizar as funcionalidades propostas e preparar a apresentação do projeto.
