@@ -56,7 +56,6 @@ Com base na análise das personas foram identificadas as seguintes histórias de
 | -------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
 | Amanda Carvalho      | Desejo ajustar os meus preços para cada comprador que abriu a solicitação             | para oferecer preços personalizados.                         |
 | Hugo Barbosa         | Desejo receber as cotações de forma padronizada com os campos de valores e quantidade | a fim de otimizar o meu processo.                            |                    |
-| Hugo Barbosa         | Quero que o nome da minha empresa seja cadastrado                                  | para que os compradores consigam identificar e divulgar o nome da minha empresa |
 | Amanda Carvalho      | Quero poder cadastrar os meus produtos                                                | para ter mais controle sobre os pedidos.                     |
 | João Victor Souza    | Quero poder fazer a revisão do pedido na cotação                                      | para que eu não fique sem estoque dos produtos.              |
 | Roger Silva          | Quero poder me cadastrar, alterar e excluir minhas informações                        | para me sentir seguro com os meus dados.                     |
@@ -92,10 +91,10 @@ A tabela a seguir apresenta os requisitos não funcionais que o projeto deverá 
 
 | ID     | Descrição do Requisito                                                                                                                                             | Prioridade |
 | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- |
-| RNF-01 | A aplicação deve ser publicada em um ambiente acessível publicamente na Internet (a definir).                                                                      | ALTA       |
+| RNF-01 | A aplicação deve ser publicada em um ambiente acessível publicamente na Internet (Azure).                                                                      | ALTA       |
 | RNF-02 | A aplicação deve ser responsiva permitindo a visualização em um celular de forma acessível                                                                         | ALTA       |
 | RNF-03 | A aplicação deve ser compatível com os principais navegadores do mercado.                                                                                          | ALTA       |
-| RNF-04 | A aplicação deve cumprir com boas práticas de acessibilidade, como por exemplo: contraste adequado, atributos para leitores de tela, tags semânticas em HTML, etc. | MÉDIA      |
+| RNF-04 | A aplicação deve cumprir com boas práticas de acessibilidade, como por exemplo: contraste adequado, atributos para leitores de tela, tags semânticas em HTML, etc. | BAIXA      |
 
 ## Restrições
 
