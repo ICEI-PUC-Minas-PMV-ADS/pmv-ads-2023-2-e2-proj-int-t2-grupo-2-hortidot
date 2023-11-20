@@ -40,3 +40,5 @@ Tecnologias necessárias para o desenvolvimento da solução:
 ## Hospedagem
 
 A hospedagem foi realizada na plataforma Azure 
+
+Link: https://hortidot.azurewebsites.net/
