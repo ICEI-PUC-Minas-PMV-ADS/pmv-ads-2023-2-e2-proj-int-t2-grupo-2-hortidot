@@ -2,7 +2,12 @@
 
 <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="4-Metodologia.md"> Metodologia</a>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="5-Arquitetura da Solução.md"> Arquitetura da Solução</a>
 
-Nesta seção são apresentadas as telas desenvolvidas para cada uma das funcionalidades do sistema. O respectivo endereço (URL) e outras orientações de acesso são são apresentadas na sequência.
+Nesta seção são apresentadas as telas desenvolvidas para cada uma das funcionalidades do sistema. O respectivo endereço (URL) e outras orientações de acesso são apresentadas na sequência.
+
+### Artefatos compartilhados em toda aplicação
+* _layout.cshtml
+* site.css
+* DataContext.cs
 
 ### Tela login
 
@@ -17,7 +22,6 @@ Tela permite o usuário acessar sua conta com e-mail e senha.
 #### Artefatos da funcionalidade
 * Login.cs<br>
 * LoginController<br>
-* DataContext.cs<br>
 * Home.cshtml<br>
 * Login.cshtml<br>
 * Login.css
@@ -40,7 +44,6 @@ Tela permite o cadastro, edição e visualização de dados do usuário. A estru
 #### Artefatos da funcionalidade
 * Usuario.cs<br>
 * UsuariosController<br>
-* DataContext.cs<br>
 * CriarUsuario.cshtml<br>
 * EditarUsuario.cshtml<br>
 * Cadastro.css<br>
@@ -55,17 +58,15 @@ Tela permite o cadastro, edição e visualização de dados do usuário. A estru
 
 Tela permite que o usuário edite e atualize suas informações pessoais e informações de sua empresa.
 
-<img src="/" alt="">
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/771b22166b3c696c1eaa5d56d0cd6db0f48b1481/docs/img/EditarUsuario.jpeg" alt="">
 
 #### Requisitos atendidos
 * RF-05 - O sistema deve permitir que o fornecedor e o comprador possam cadastrar, alterar e excluir seu cadastro.
 
 #### Artefatos da funcionalidade
-* perfil.css<br>
 * Usuario.cs<br>
 * UsuariosControllers.cs<br>
 * EditarUsuario.cshtml<br>
-* DataContext.cs<br>
 
 #### Instruções de acesso
 1) Acessar o Navegador<br>
@@ -79,7 +80,7 @@ Tela permite que o usuário edite e atualize suas informações pessoais e infor
 
 Tela que permite a exclusão dos dados de um usuário da base de dados. 
 
-<img src="/docs/img/tela-excluir-perfil.jpg" alt="">
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/a3b473035d9cceebc7e09472f88a62faf1ad2671/docs/img/DeletarConta.jpeg" alt="">
 
 #### Requisitos atendidos
 * RF-05 - O sistema deve permitir que o fornecedor e comprador possam cadastrar, alterar e excluir seu cadastro.
@@ -87,7 +88,6 @@ Tela que permite a exclusão dos dados de um usuário da base de dados.
 #### Artefatos da funcionalidade
 * Usuario.cs<br>
 * UsuariosController<br>
-* DataContext.cs<br>
 * DeletarConta.cshtml<br>
 
 #### Instruções de acesso
@@ -97,11 +97,13 @@ Tela que permite a exclusão dos dados de um usuário da base de dados.
 4) Clique em "Entrar" para acessar a conta e a tela inicial.<br>
 5) No menu lateral, clique em Excluir Conta.<br>
 
-### Tela Págna Inicial 
+### Tela Página Inicial 
 
 Tela exibe os pedidos em andamento e últimos pedidos, e permite que o comprador abra um novo pedido.
 
 <img src="/docs/img/tela-inicial.jpg" alt="">
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/6179d47a332cac9fe113aae1e36857ca29a49f42/docs/img/Tela%20Inicial%20sem%20pedidos.jpeg" alt="">
+
 
 #### Requisitos atendidos
 
@@ -121,7 +123,7 @@ Em construção.
 
 Tela mostra todos os pedidos feitos pelo comprador e os detalhes dos pedidos, além de permitir a abertura de novos pedidos. 
 
-<img src="/docs/img/tela-pedidos.jpg" alt="">
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/64a76def1ce340664fe102e0ffc26da853a3a608/docs/img/TelaPedidos.jpeg" alt="">
 
 #### Requisitos atendidos
 
@@ -142,7 +144,7 @@ Em construção.
 
 Tela permite o cadastro, edição, visualização e exclusão de dados de um produto. A estrutura é um CRUD desenvolvido em C# e os dados ficam armazenados no banco de dados PostgreSQL. 
 
-<img src="/docs/img/tela-cadastro-produto.jpg" alt="">
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/468ce0f24fe5525c923845b05864558bbb6d746f/docs/img/CadastrarProduto.jpeg" alt="">
 
 #### Requisitos atendidos
 * RF-04 - O sistema deve permitir o cadastro, edição e exclusão dos produtos de hortifruti contendo nome e código único do item.
@@ -164,7 +166,7 @@ Tela permite o cadastro, edição, visualização e exclusão de dados de um pro
 
 Tela exibe aos usuários todos os produtos cadastrados pelo fornecedor.
 
-<img src="/docs/img/tela-produtos.jpg" alt="">
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/468ce0f24fe5525c923845b05864558bbb6d746f/docs/img/TodososProdutos.jpeg" alt="">
 
 #### Requisitos atendidos
 * RF-08 - O sistema deve permitir que o fornecedor e o comprador possam visualizar todos os produtos cadastrados.
