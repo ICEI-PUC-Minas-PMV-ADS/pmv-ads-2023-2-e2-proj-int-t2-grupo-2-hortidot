@@ -10,7 +10,7 @@ Na primeira etapa discutimos a definição do problema, realizamos um benchmarki
 
 ## Etapa 2
 
-Na segunda etapa definimos como será a metodologia do todo o projeto, incluindo ferramentas que vamos utilizar para o desenvolvimento e documentação do projeto, papéis que cada integrante irá desempenhar, além de diagramas de fluxo e de classes, wireframes, projeto da base de dados e planos de testes de software e de usabilidade.
+Na segunda etapa definimos como será a metodologia de todo o projeto, incluindo ferramentas que vamos utilizar para o desenvolvimento e documentação do projeto, papéis que cada integrante irá desempenhar, além de diagramas de fluxo e de classes, wireframes, projeto da base de dados e planos de testes de software e de usabilidade.
 
 ## Etapa 3
 
