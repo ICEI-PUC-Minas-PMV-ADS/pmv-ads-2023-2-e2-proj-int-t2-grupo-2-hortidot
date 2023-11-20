@@ -120,7 +120,7 @@ Figura 30 - Cadastro de produtos
 
 ### Tela de Nova Cotação (Comprador)
 
-Apresenta as opções de produtos e informações a serem incluidas em uma cotação para que seja enviada aos fornecedores.
+Apresenta as opções de produtos e informações a serem incluídas em uma cotação para que seja enviada aos fornecedores.
 
 <img src="/docs/img/tela-cotacao-comprador.jpg" alt="">
 
