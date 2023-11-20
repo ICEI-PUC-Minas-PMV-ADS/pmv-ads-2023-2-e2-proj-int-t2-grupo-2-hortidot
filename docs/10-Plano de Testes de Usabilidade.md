@@ -43,7 +43,6 @@ Nas questões, marcar com X o número correspondente ao grau de concordância, d
 | O design e comandos são padronizados?                    |            |      |     |       |           |
 | É fácil desfazer um comando, ou corrigir um erro?        |            |      |     |       |           |
 | Você ficou satisfeito com sua experiência utilizando nossa aplicação? |            |      |     |       |           |
-| A aplicação possui acessibilidade?                       |            |      |     |       |           |
 | Todas as informações e comandos são de fácil entendimento? |            |      |     |       |           |
 | Gostaria de usar este sistema com frequência?            |            |      |     |       |           |
 | No geral, como foi a realização do teste?                |            |      |     |       |           |
