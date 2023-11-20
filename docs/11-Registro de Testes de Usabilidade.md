@@ -1,7 +1,7 @@
 # Registro de Testes de Usabilidade
 
 Os resultados obtidos nos testes de usabilidade realizados são descritos na Tabela a seguir.
-Os testes foram realizados por dois usuários, sendo um comprador e um fornecedor. O teste foi registrado em vídeo. Foi iden
+Os testes foram realizados por dois usuários, sendo um comprador e um fornecedor. O testes foram registrados em vídeo e estão na pasta "presentation".
 
 ## Questionário de avaliação de usabilidade (SUS)
 
