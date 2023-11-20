@@ -51,3 +51,31 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
 | Passos | 1) Acessar o Navegador <br> 2) Informar o endereço da aplicação <br> 3) Inserir informações para o login <br> 4) No menu lateral, clicar em “Todos os produto” <br> 5) Efetuar a edição do produto selecionado.<br>
 | Critérios de Êxito | O sistema deve permitir a edição dos dados de um produto. 
 
+| Caso de Teste | **CT-07 - Excluir produto** | 
+| :-----------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| Requisito Associado | RF-04 - O sistema deve permitir o cadastro, edição e exclusão dos produtos de hortifruti contendo nome e código único do item. | 
+| Objetivo do Teste | Verificar se o sistema permite a exclusão de um produto cadastrado. | 
+| Passos | 1) Acessar o Navegador <br> 2) Informar o endereço da aplicação <br> 3) Inserir informações para o login <br> 4) No menu lateral, clicar em “Todos os produto” <br> 5) Efetuar a exclusão do produto selecionado.<br>
+| Critérios de Êxito | O sistema deve permitir a edição dos dados de um produto. 
+
+| Caso de Teste | **CT-08 - Criação de Pedido** | 
+| :-----------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| Requisito Associado | RF-10	O sistema deve permitir a abertura de novos pedidos. | 
+| Objetivo do Teste | Verificar se o sistema permite a criação de um novo pedido. | 
+| Passos | 1) Acessar o Navegador <br> 2) Informar o endereço da aplicação <br> 3) Inserir informações para o login <br> 4) No menu lateral, clicar em “Novo Pedido” <br> 5) Efetuar a criação do novo pedido<br>
+| Critérios de Êxito | O sistema deve permitir a criação do pedido. 
+
+| Caso de Teste | **CT-09 - Edição de Pedido** | 
+| :-----------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| Requisito Associado | RF-03	O sistema deve permitir que o comprador e o fornecedor possam fazer a revisão do pedido antes do fechamento. | 
+| Objetivo do Teste | Verificar se o sistema permite a edição de um novo pedido. | 
+| Passos | 1) Acessar o Navegador <br> 2) Informar o endereço da aplicação <br> 3) Inserir informações para o login <br> 4) No menu lateral, clicar em “Todos os pedidos” <br> 5) Efetuar a edição do pedido selecionado<br>
+| Critérios de Êxito | O sistema deve permitir a edição do pedido. 
+
+| Caso de Teste | **CT-09 - Exclusão de Pedido** | 
+| :-----------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| Requisito Associado | RF-03	O sistema deve permitir que o comprador e o fornecedor possam fazer a revisão do pedido antes do fechamento. | 
+| Objetivo do Teste | Verificar se o sistema permite a exclusão de um novo pedido. | 
+| Passos | 1) Acessar o Navegador <br> 2) Informar o endereço da aplicação <br> 3) Inserir informações para o login <br> 4) No menu lateral, clicar em “Todos os pedidos” <br> 5) Efetuar a exclusão do pedido selecionado<br>
+| Critérios de Êxito | O sistema deve permitir a exclusão do pedido. 
+
