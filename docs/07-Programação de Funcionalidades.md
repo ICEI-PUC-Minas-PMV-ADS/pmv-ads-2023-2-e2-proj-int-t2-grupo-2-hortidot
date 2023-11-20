@@ -37,7 +37,7 @@ Tela permite o usuário acessar sua conta com e-mail e senha.
 3. Inserir informações para o login
 4. Clique em "Entrar"
 
-### Tela Cadastro do Perfil
+### Tela Cadastrar conta
 
 Tela permite o cadastro, edição e visualização de dados do usuário.
 
@@ -64,7 +64,7 @@ Tela permite o cadastro, edição e visualização de dados do usuário.
 
 Tela permite que o usuário edite e atualize suas informações pessoais e informações de sua empresa.
 
-<img src="/docs/img/" alt="editar conta">
+<img src="/docs/img/Editar-Conta.png" alt="editar conta">
 
 #### Requisitos atendidos
 
@@ -113,8 +113,11 @@ Tela que permite a exclusão dos dados de um usuário da base de dados.
 
 Tela exibe os pedidos em andamento e últimos pedidos, e permite que o comprador abra um novo pedido.
 
-<img src="/docs/img/tela-inicial.jpg" alt="">
 <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/6179d47a332cac9fe113aae1e36857ca29a49f42/docs/img/Tela%20Inicial%20sem%20pedidos.jpeg" alt="">
+Página inicial sem pedidos
+
+<img src="/docs/img/Página-inicial-com-pedidos.png" alt="">
+Página inicial com pedidos
 
 #### Requisitos atendidos
 
@@ -123,75 +126,21 @@ RF-10 - O sistema deve permitir a abertura de novos pedidos.<br>
 
 #### Artefatos da funcionalidade
 
-- Login.cs
-- LoginController
+- ListaPedidos.cs
+- Pedido.cs
+- LoginController.cs
 - Home.cshtml
 
 #### Instruções de acesso
 
-1. Acessar o Navegador<br>
-2. Informar o endereço da aplicação: http://hortidot.azurewebsites.net/<br>
-3. Inserir informações para o login<br>
-4. Clique em "Entrar" para acessar a conta e a tela inicial.<br>
-
-### Tela Pedidos
-
-Tela mostra todos os pedidos feitos pelo comprador e os detalhes dos pedidos, além de permitir a abertura de novos pedidos.
-
-<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/30b714e51a80f7178e06ed38fbbdfdb28c45744f/docs/img/Criar%20Pedido%20com%20itens.jpeg" alt="">
-<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/64a76def1ce340664fe102e0ffc26da853a3a608/docs/img/TelaPedidos.jpeg" alt="">
-
-#### Requisitos atendidos
-
-RF-07 - O sistema deve permitir que o fornecedor e o comprador possam visualizar todos os pedidos.<br>
-RF-10 - O sistema deve permitir a abertura de novos pedidos.<br>
-
-#### Artefatos da funcionalidade
-
-- Pedido.cs
-- PedidosController.cs
-- Create.cshtml
-- Delete.cshtml
-- Details.cshtml
-- Edit.cshtml
-- Index.cshtml
-
-#### Instruções de acesso
-
-1. Acessar o Navegador<br>
-2. Informar o endereço da aplicação: http://hortidot.azurewebsites.net/<br>
-3. Inserir informações para o login<br>
-4. Clique em "Entrar" para acessar a conta e a tela inicial.<br>
-5. No menu lateral, clique em "Novo Pedido" para abrir uma nova cotação, ou clique em "Todos os pedidos" para visualizar uma lista de todos os pedidos.
-
-### Tela Cadastro de Produtos
-
-Tela permite o cadastro, edição, visualização e exclusão de dados de um produto. A estrutura é um CRUD desenvolvido em C# e os dados ficam armazenados no banco de dados PostgreSQL.
-
-<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/468ce0f24fe5525c923845b05864558bbb6d746f/docs/img/CadastrarProduto.jpeg" alt="">
-
-#### Requisitos atendidos
-
-- RF-04 - O sistema deve permitir o cadastro, edição e exclusão dos produtos de hortifruti contendo nome e código único do item.
-
-#### Artefatos da funcionalidade
-
-- Produto.cs<br>
-- ProdutosController.cs<br>
-- Create.cshtml<br>
-- produtos.css<br>
-
-#### Instruções de acesso
-
-1. Acessar o Navegador<br>
-2. Informar o endereço da aplicação: http://hortidot.azurewebsites.net/<br>
-3. Inserir informações para o login<br>
-4. Clique em "Entrar" para acessar a conta e a tela inicial.<br>
-5. No menu lateral, clique em "Cadastrar Produto".
+1. Acessar o Navegador
+2. Informar o endereço da aplicação: http://hortidot.azurewebsites.net/
+3. Inserir informações para o login
+4. Clique em "Entrar" para acessar a conta e a tela inicial
 
 ### Tela Produtos
 
-Tela exibe aos usuários todos os produtos cadastrados pelo fornecedor.
+Tela que exibe aos usuários todos os produtos cadastrados.
 
 <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/468ce0f24fe5525c923845b05864558bbb6d746f/docs/img/TodososProdutos.jpeg" alt="">
 
@@ -201,80 +150,236 @@ Tela exibe aos usuários todos os produtos cadastrados pelo fornecedor.
 
 #### Artefatos da funcionalidade
 
-- Produto.cs<br>
-- ProdutosController.cs<br>
-- Index.cshtml<br>
-- Delete.cshtml<br>
-- Details.cshtml<br>
-- Edit.cshtml<br>
-- Create.cshtml<br>
-- produtos.css<br>
+- Produto.cs
+- ProdutosController.cs
+- Index.cshtml
 
 #### Instruções de acesso
 
-1. Acessar o Navegador<br>
-2. Informar o endereço da aplicação: http://hortidot.azurewebsites.net/<br>
-3. Inserir informações para o login<br>
-4. Clique em "Entrar" para acessar a conta e a tela inicial.<br>
+1. Acessar o Navegador
+2. Informar o endereço da aplicação: http://hortidot.azurewebsites.net/
+3. Inserir informações para o login
+4. Clique em "Entrar" para acessar a conta e a tela inicial.
 5. No menu lateral, clique em "Todos os produtos".
 
-### Tela Nova Cotação (comprador)
+### Tela Cadastro de Produto
 
-Apresenta as opções de produtos e informações a serem incluidas em uma cotação para que seja enviada aos fornecedores, tais como código do produtos, imagem e nome dos produtos, juntamente com as quantidades desejadas.
+Tela que permite o cadastro de um produto.
 
-<img src="/docs/img/tela-cotacao-comprador.jpg" alt="">
-
-#### Requisitos atendidos
-
-- RF-02 - O sistema deve permitir que o comprador e fornecedor ajustem a quantidade de itens solicitados.
-- RF-06 - O sistema deve permitir que o fornecedor feche o pedido e que o comprador finalize a cotação após a revisão.
-
-#### Artefatos da funcionalidade
-
-Em construção.
-
-### Tela Nova Cotação (fornecedor)
-
-Apresenta a cotação recebida para que seja editada e atualizada de acordo com os preços deste fornecedor.
-
-<img src="/docs/img/tela-cotacao-fornecedor.jpg" alt="">
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/468ce0f24fe5525c923845b05864558bbb6d746f/docs/img/CadastrarProduto.jpeg" alt="">
 
 #### Requisitos atendidos
 
-- RF-01 - O sistema deve permitir que os fornecedores ajustem o preço para cada comprador correspondente.
-- RF-02 - O sistema deve permitir que o comprador e fornecedor ajustem a quantidade de itens solicitados.
-- RF-06 - O sistema deve permitir que o fornecedor feche o pedido e que o comprador finalize a cotação após a revisão.
+- RF-04 - O sistema deve permitir o cadastro, edição e exclusão dos produtos de hortifruti contendo nome e código único do item.
 
 #### Artefatos da funcionalidade
 
-Em construção.
+- Produto.cs
+- ProdutosController.cs
+- Create.cshtml
 
-#### Estrutura de dados
+#### Instruções de acesso
 
-Em construção.
+1. Acessar o Navegador
+2. Informar o endereço da aplicação: http://hortidot.azurewebsites.net/
+3. Inserir informações para o login
+4. Clique em "Entrar" para acessar a conta e a tela inicial.
+5. No menu lateral, clique em "Novo Produto".
 
-### Tela Analisar Cotação
+### Tela Edição de Produto
 
-Apresenta as informações atualizadas pelos fornecedores para que sejam avaliadas para finalização do pedido.
+Tela que permite a edição de um produto.
 
-<img src="/docs/img/tela-analisar-pedido.jpg" alt="">
+<img src="/docs/img/Editar-produto.png" alt="">
 
 #### Requisitos atendidos
 
-- RF-03 - O sistema deve permitir que o comprador e fornecedor possam fazer a revisão do pedido antes do fechamento.
+- RF-04 - O sistema deve permitir o cadastro, edição e exclusão dos produtos de hortifruti contendo nome e código único do item.
 
 #### Artefatos da funcionalidade
 
-Em construção.
+- Produto.cs
+- ProdutosController.cs
+- Edit.cshtml
 
-#### Estrutura de dados
+#### Instruções de acesso
 
-Em construção.
+1. Acessar o Navegador
+2. Informar o endereço da aplicação: http://hortidot.azurewebsites.net/
+3. Inserir informações para o login
+4. Clique em "Entrar" para acessar a conta e a tela inicial.
+5. No menu lateral, clique em "Todos os produtos".
+6. Clique no ícone de lápis do produto que deseja editar.
 
-# Instruções de acesso
+### Tela Exclusão do Produto
 
-Não deixe de informar o link onde a aplicação estiver disponível para acesso (por exemplo: https://adota-pet.herokuapp.com/src/index.html).
+Tela que permite a exclusão de um produto.
 
-Se houver usuário de teste, o login e a senha também deverão ser informados aqui (por exemplo: usuário - admin / senha - admin).
+<img src="/docs/img/Apagar-produto.png" alt="">
 
-O link e o usuário/senha descritos acima são apenas exemplos de como tais informações deverão ser apresentadas.
+#### Requisitos atendidos
+
+- RF-04 - O sistema deve permitir o cadastro, edição e exclusão dos produtos de hortifruti contendo nome e código único do item.
+
+#### Artefatos da funcionalidade
+
+- Produto.cs
+- ProdutosController.cs
+- Delete.cshtml
+
+#### Instruções de acesso
+
+1. Acessar o Navegador
+2. Informar o endereço da aplicação: http://hortidot.azurewebsites.net/
+3. Inserir informações para o login
+4. Clique em "Entrar" para acessar a conta e a tela inicial.
+5. No menu lateral, clique em "Todos os produtos".
+6. Clique no ícone de lixeira do produto que deseja excluir.
+
+### Tela Detalhes do Produto
+
+Tela que permite visualizar um produto.
+
+<img src="/docs/img/Detalhes-produto.png" alt="">
+
+#### Requisitos atendidos
+
+- RF-04 - O sistema deve permitir o cadastro, edição e exclusão dos produtos de hortifruti contendo nome e código único do item.
+
+#### Artefatos da funcionalidade
+
+- Produto.cs
+- ProdutosController.cs
+- Details.cshtml
+
+#### Instruções de acesso
+
+1. Acessar o Navegador
+2. Informar o endereço da aplicação: http://hortidot.azurewebsites.net/
+3. Inserir informações para o login
+4. Clique em "Entrar" para acessar a conta e a tela inicial.
+5. No menu lateral, clique em "Todos os produtos".
+6. Clique no ícone do olho do produto que deseja ver.
+
+### Tela Pedidos
+
+Tela mostra todos os pedidos feitos pelo usuário, além de permitir a abertura de novos pedidos.
+
+<img src="/docs/img/TelaPedidos.jpeg" alt="">
+
+#### Requisitos atendidos
+
+RF-07 - O sistema deve permitir que o fornecedor e o comprador possam visualizar todos os pedidos.
+
+#### Artefatos da funcionalidade
+
+- Pedido.cs
+- PedidosController.cs
+- Index.cshtml
+
+#### Instruções de acesso
+
+1. Acessar o Navegador
+2. Informar o endereço da aplicação: http://hortidot.azurewebsites.net/
+3. Inserir informações para o login
+4. Clique em "Entrar" para acessar a conta e a tela inicial.
+5. No menu lateral, clique em "Todos os pedidos".
+
+### Tela criar pedido
+
+Tela que apresenta os itens para serem adicionados a lista do pedido, contendo código e nome.
+
+<img src="/docs/img/Criar-pedido.png" alt="">
+
+#### Requisitos atendidos
+
+RF-10 - O sistema deve permitir a abertura de novos pedidos.
+
+#### Artefatos da funcionalidade
+
+- Pedido.cs
+- PedidosController.cs
+- Create.cshtml
+
+#### Instruções de acesso
+
+1. Acessar o Navegador
+2. Informar o endereço da aplicação: http://hortidot.azurewebsites.net/
+3. Inserir informações para o login
+4. Clique em "Entrar" para acessar a conta e a tela inicial.
+5. No menu lateral, clique em "Novo pedido".
+
+### Tela editar pedido
+
+Apresenta um select onde você pode alterar o status do pedido.
+
+<img src="/docs/img/Editar-pedido.png" alt="">
+
+#### Requisitos atendidos
+
+RF-07 - O sistema deve permitir que o fornecedor e o comprador possam visualizar todos os pedidos.
+
+#### Artefatos da funcionalidade
+
+- Pedido.cs
+- PedidosController.cs
+- Edit.cshtml
+
+#### Instruções de acesso
+
+1. Acessar o Navegador
+2. Informar o endereço da aplicação: http://hortidot.azurewebsites.net/
+3. Inserir informações para o login
+4. Clique em "Entrar" para acessar a conta e a tela inicial.
+5. No menu lateral, clique em "Todos os pedidos".
+6. Clique no ícone do lápis do pedido que deseja editar.
+
+### Tela excluir pedido
+
+Apresenta uma mensagem para confirmação da esclusão do pedido.
+
+<img src="/docs/img/Apagar-pedido.png" alt="">
+
+#### Requisitos atendidos
+
+RF-07 - O sistema deve permitir que o fornecedor e o comprador possam visualizar todos os pedidos.
+
+#### Artefatos da funcionalidade
+
+- Pedido.cs
+- PedidosController.cs
+- Delete.cshtml
+
+#### Instruções de acesso
+
+1. Acessar o Navegador
+2. Informar o endereço da aplicação: http://hortidot.azurewebsites.net/
+3. Inserir informações para o login
+4. Clique em "Entrar" para acessar a conta e a tela inicial.
+5. No menu lateral, clique em "Todos os pedidos".
+6. Clique no ícone da lixeira do pedido que deseja excluir.
+
+### Tela detalhes do pedido
+
+Apresenta os detalhes do pedido selecionado, incluindo id, código do comprador, lista de itens do pedido, data de abertura e status.
+
+<img src="/docs/img/Detalhes-pedido.png" alt="">
+
+#### Requisitos atendidos
+
+RF-07 - O sistema deve permitir que o fornecedor e o comprador possam visualizar todos os pedidos.
+
+#### Artefatos da funcionalidade
+
+- Pedido.cs
+- PedidosController.cs
+- Details.cshtml
+
+#### Instruções de acesso
+
+1. Acessar o Navegador
+2. Informar o endereço da aplicação: http://hortidot.azurewebsites.net/
+3. Inserir informações para o login
+4. Clique em "Entrar" para acessar a conta e a tela inicial.
+5. No menu lateral, clique em "Todos os pedidos".
+6. Clique no ícone do olho do pedido que deseja ver.
