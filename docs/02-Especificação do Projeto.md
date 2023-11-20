@@ -113,5 +113,5 @@ As questões que limitam a execução desse projeto e que se configuram como obr
 
 O diagrama de casos de uso representa todas as funcionalidades do nosso sistema, mostrando os casos de uso, atores e seus respectivos relacionamentos.
 
-<img src="/docs/img/Diagrama Casos de Uso.jpg" />
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/64a76def1ce340664fe102e0ffc26da853a3a608/docs/img/Diagrama%20de%20casos%20de%20uso.jpg" />
 Figura 1 - Diagrama de casos de uso
