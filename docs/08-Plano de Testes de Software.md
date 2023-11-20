@@ -13,7 +13,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
 | :-----------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | Requisito Associado |                                RF-04 - O sistema deve permitir o cadastro, edição e exclusão dos produtos de hortifruti contendo nome e código único do item.                                |
 |  Objetivo do teste  |                                                           Verificar se o cadastro dos produtos é feito de acordo com as especificações dos requisitos funcionais.                                                           |
-|       Passos        | 1) Acessar o Navegador <br> 2) Informar o endereço da aplicação <br> 3) Inserir informações para o login <br> 4) No menu lateral, clicar em “Cadastrar produto” <br> 5) Efetuar cadastro, alteração ou exclusão dos dados |
+|       Passos        | 1) Acessar o Navegador <br> 2) Informar o endereço da aplicação <br> 3) Inserir informações para o login <br> 4) No menu lateral, clicar em “Novo produto” <br> 5) Efetuar cadastro, alteração ou exclusão dos dados |
 | Critérios de Êxito  |       O sistema deve permitir a criação de cadastros, a leitura dos dados desses cadastros, a atualização dos dados e, se necessário, a exclusão dessas informações. As informações devem ficar em um banco de dados.       |
 
 |    Caso de Teste    |                                                                                         **CT-02– Cadastro de usuário**                                                                                         |
