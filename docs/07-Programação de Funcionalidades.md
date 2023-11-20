@@ -111,7 +111,10 @@ RF-07 - O sistema deve permitir que o fornecedor e o comprador possam visualizar
 RF-10 - O sistema deve permitir a abertura de novos pedidos.<br>
 
 #### Artefatos da funcionalidade
-Em construção.
+* Login.cs
+* LoginController
+* Home.cshtml
+
 
 #### Instruções de acesso
 1) Acessar o Navegador<br>
@@ -123,6 +126,7 @@ Em construção.
 
 Tela mostra todos os pedidos feitos pelo comprador e os detalhes dos pedidos, além de permitir a abertura de novos pedidos. 
 
+<img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/30b714e51a80f7178e06ed38fbbdfdb28c45744f/docs/img/Criar%20Pedido%20com%20itens.jpeg" alt="">
 <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/64a76def1ce340664fe102e0ffc26da853a3a608/docs/img/TelaPedidos.jpeg" alt="">
 
 #### Requisitos atendidos
@@ -131,7 +135,14 @@ RF-07 - O sistema deve permitir que o fornecedor e o comprador possam visualizar
 RF-10 - O sistema deve permitir a abertura de novos pedidos.<br>
 
 #### Artefatos da funcionalidade
-Em construção.
+* Pedido.cs
+* PedidosController.cs
+* Create.cshtml
+* Delete.cshtml
+* Details.cshtml
+* Edit.cshtml
+* Index.cshtml
+  
 
 #### Instruções de acesso
 1) Acessar o Navegador<br>
