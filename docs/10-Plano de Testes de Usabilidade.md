@@ -2,36 +2,27 @@
 
 O propósito deste teste é verificar a performance alcançada pelos participantes e o entendimento das funções utilizadas no sistema, com a finalidade de realizar alterações necessárias.
 
-O objetivo da aplicação é realizar pedidos de alimentos no setor de hortifruti, permitindo a comunicação entre fornecedor e comprador, facilitando o envio de pedidos.
-
-Os testes vão acontecer de maneira remota, utilizando dois participantes, sendo um compradore e um fornecedore, serão gravados, visando complementar o questionário que será aplicado logo após o teste da aplicação HortDot.
+Os testes vão acontecer de maneira remota, utilizando dois participantes, sendo um comprador e um fornecedor, serão gravados, visando complementar o questionário que será aplicado logo após o teste da aplicação HortiDot.
 
 ## Lista de tarefas
 
-### Compradores
-
 | Número da Tarefa | Descrição da Tarefa                                              |
 | ---------------- | ---------------------------------------------------------------- |
-| 01               | Autentique-se no sistema. Caso não possua conta, crie uma        |
-| 02               | Faça o cadastro, alteração e exclusão do seu perfil              |
-| 03               | Na menu cadastrar produto, inclua um item                        |
-| 04               | Na menu pedido, realize novo pedido                              |
-| 05               | Adcione os produtos e quantidades desejados              |
-| 06               | Verificar se todos os itens já estão na lista                    |
-| 07               | Verifique todos os pedidos na menu pedidos                       |
-| 08               | Edite seu pedido, auterando a quantidade do primero produto da lista|
-
-### Fornecedores
-
-| Número da Tarefa | Descrição da Tarefa                                       |
-| ---------------- | --------------------------------------------------------- |
-| 01               | Autentique-se no sistema. Caso não possua conta, crie uma |
-| 02               | Faça o cadastro, alteração e exclusão do seu perfil       |
-| 03               | Na menu cadastrar produto, inclua um item em novo produto |
-| 04               | Verique todos os produtos                                 |
-| 05               | Dirija-se a aba pedidos                                   |
-| 06               | Verifique os pedidos recebidos na aba todos os pedidos    |
-| 07               | Edite pedido, auterando a quantidade                      |
+| 01               | Crie uma conta                                                   |
+| 02               | Efetue login                                                     |
+| 03               | Crie um produto                                                  |
+| 04               | Edite um produto                                                 |
+| 05               | Visualize os detalhes de um produto                              |
+| 06               | Exclua um produto                                                |
+| 07               | Visualize a lista com todos os produtos                          |
+| 08               | Crie um pedido com os itens desejados da lista                   |
+| 09               | Visualize um pedido                                              |
+| 10               | Edite o status de um pedido                                      |
+| 11               | Exclua um pedido                                                 |
+| 12               | Visualize todos os pedidos                                       |
+| 13               | Vá até a tela inicial                                            |
+| 14               | Edite sua conta                                                  |
+| 15               | Exclua sua conta                                                 |
 
 Por meio deste questionário vamos colher informações sobre as opiniões dos participantes do teste de usabilidade, que será realizado na aplicação HortiDot. As informações fornecidas são vitais para o aprimoramento do sistema.
 
