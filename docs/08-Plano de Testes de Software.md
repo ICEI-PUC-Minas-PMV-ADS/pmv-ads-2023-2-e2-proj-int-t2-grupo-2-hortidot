@@ -25,7 +25,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
 
 |    Caso de Teste    | **CT-03 - Login** |                                 
 | :-----------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| Requisito Associado | RF-11 - O sistema deve permitir que o fornecedor e o comprador possam fazer login com e-mail e senha. |                              
+| Requisito Associado | RF-09 - O sistema deve permitir que o fornecedor e o comprador possam fazer login com e-mail e senha. |                              
 |  Objetivo do Teste  | Verificar se o usuário consegue acessar sua conta com e-mail e senha. |
 |       Passos        | 1) Acessar o Navegador <br> 2) Informar o endereço da aplicação <br> 3) Inserir informações para o login <br>  |
 |  Critério de Êxito  |  O sistema deve permitir que o usuário acesse sua conta. |
