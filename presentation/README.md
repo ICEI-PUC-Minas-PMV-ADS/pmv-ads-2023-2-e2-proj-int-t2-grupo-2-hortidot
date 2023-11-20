@@ -7,4 +7,5 @@ Inicialmente desenvolvemos toda a documentação incluindo: documentação do co
 ## Hospedagem
 Você pode conferir nossa aplicação clicando no link: https://hortidot.azurewebsites.net/
 
-## Video
+## Videos e slides
+Os vídeos e a apresentação final se encontram na pasta "videos" dentro de "presentation".
