@@ -35,7 +35,7 @@ Relatório com as evidências dos testes de software realizados no sistema pela 
 
 |    Caso de Teste    |                                                                   CT-06 - Edição de produto|
 | :-----------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|       Imagem        | <img widt = "500px" src = "https://https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/main/docs/img/CadastrarProduto.jpeg"/> |
+|       Imagem        | <img widt = "500px" src = "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/main/docs/img/CadastrarProduto.jpeg"/> |
 | Requisito Associado |                          RF-04 - O sistema deve permitir o cadastro, edição e exclusão dos produtos de hortifruti contendo nome e código único do item                         |
-|      Avaliação      |                                                                               ✅ Cadastro de produto funciona corretamente                                                                                              
+|      Avaliação      |                                                                               ✅ Edição funciona corretamente                                                                                              
  
