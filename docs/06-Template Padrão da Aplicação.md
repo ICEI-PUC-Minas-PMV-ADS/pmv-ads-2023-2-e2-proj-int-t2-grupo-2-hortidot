@@ -56,7 +56,7 @@ As telas seguem o projeto de interface elaborado anteriormente, conforme figura 
   
 ### Tela-Login
 
-Tela que apresenta as opções de entrada e cadastro do sistema, solicitando CPF para login e senha para autenticação,  exibindo a opção de inscreva-se para quando não possuir conta.
+Tela que apresenta as opções de entrada e cadastro do sistema, solicitando E-mail para login e senha para autenticação, exibindo a opção de inscreva-se para quando não possuir conta.
 
 <img src="/docs/img/tela-login.jpg" alt="">
 
@@ -96,7 +96,7 @@ Figura 27 - Excluir conta
 
 ### Tela Pedidos
 
-Apresenta todos os pedidos realizados com informações como código do pedido, itens do pedido, data de criação, status e possibilinando pesquisa por pedido.
+Apresenta todos os pedidos realizados com informações como código do pedido, itens do pedido, data de criação, status e possibilitando pesquisa por pedido.
 
 <img src="/docs/img/tela-pedidos.jpg" alt="">
 
@@ -120,7 +120,7 @@ Figura 30 - Cadastro de produtos
 
 ### Tela de Nova Cotação (Comprador)
 
-Apresenta as opções de produtos e informações a serem incluidas em uma cotação para que seja enviada aos fornecedores, tais como código do produtos, imagem e nome dos produtos, juntamente com as quantidades desejadas.
+Apresenta as opções de produtos e informações a serem incluidas em uma cotação para que seja enviada aos fornecedores.
 
 <img src="/docs/img/tela-cotacao-comprador.jpg" alt="">
 
