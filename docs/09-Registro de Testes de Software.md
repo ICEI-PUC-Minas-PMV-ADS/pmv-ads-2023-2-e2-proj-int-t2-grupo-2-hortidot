@@ -25,7 +25,7 @@ Relatório com as evidências dos testes de software realizados no sistema pela 
 | :-----------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------: |
 |       Imagem        | <img   src = "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/main/docs/img/TesteExcluirConta.jpeg"/> |
 | Requisito Associado |                   RF-05 - O sistema deve permitir que o fornecedor e o comprador possam cadastrar, alterar e excluir seu cadastro                   |
-|      Avaliação      |                                              ✅ Exclusão de usuário realizado com sucesso corretamente                                              |
+|      Avaliação      |                                              ✅ Exclusão de usuário realizado com sucesso                                            |
 
 |    Caso de Teste    |                                         CT-05 - Editar conta de usuário                                         |
 | :-----------------: | :-------------------------------------------------------------------------------------------------------------: |
