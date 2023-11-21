@@ -54,11 +54,11 @@ Relatório com as evidências dos testes de software realizados no sistema pela 
 |    Caso de Teste    |                                      CT-09 - Edição de Pedido                                      |
 | :-----------------: | :------------------------------------------------------------------------------------------------: |
 |       Imagem        |                            <img   src = "/docs/img/Editar-pedido.png"/>                            |
-| Requisito Associado | RF-07 - O sistema deve permitir que o fornecedor e o comprador possam visualizar todos os pedidos. |
+| Requisito Associado | RF-03 O sistema deve permitir que o comprador e o fornecedor possam fazer a revisão do pedido antes do fechamento. |
 |      Avaliação      |                         ❌ Edição do pedido não foi realizado com sucesso                          |
 
 |    Caso de Teste    |                                     CT-10 - Exclusão de Pedido                                     |
 | :-----------------: | :------------------------------------------------------------------------------------------------: |
 |       Imagem        |                            <img   src = "/docs/img/Apagar-pedido.png"/>                            |
-| Requisito Associado | RF-07 - O sistema deve permitir que o fornecedor e o comprador possam visualizar todos os pedidos. |
+| Requisito Associado | RF-03 O sistema deve permitir que o comprador e o fornecedor possam fazer a revisão do pedido antes do fechamento. |
 |      Avaliação      |                            ✅ Exclusão do pedido realizado com sucesso                             |
