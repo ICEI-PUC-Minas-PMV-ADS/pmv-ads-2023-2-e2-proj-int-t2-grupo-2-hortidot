@@ -116,18 +116,16 @@ namespace HortiDot.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,DataPedido,StatusPedidos,CompradorId")] Pedido pedido, StatusPedidos statusPedidos)
+        public async Task<IActionResult> Edit(int id, StatusPedidos statusPedidos)
         {
-            if (id != pedido.Id)
+            var pedido = await _context.Pedidos.FindAsync(id);
+            if (pedido == null)
             {
                 return NotFound();
             }
-
-            if (ModelState.IsValid)
-            {
-                try
+            try
                 {
-                    _context.Update(pedido);
+                    pedido.StatusPedidos = statusPedidos;
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
@@ -142,9 +140,8 @@ namespace HortiDot.Controllers
                     }
                 }
                 return RedirectToAction(nameof(Index));
-            }
-            return View(pedido);
         }
+
 
         // GET: Pedidos/Delete/5
         public async Task<IActionResult> Delete(int? id)

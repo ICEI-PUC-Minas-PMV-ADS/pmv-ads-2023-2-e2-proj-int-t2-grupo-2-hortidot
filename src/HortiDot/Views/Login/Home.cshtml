@@ -32,9 +32,6 @@
                     <th>
                         @Html.DisplayNameFor(model => listaPedidos.FirstOrDefault().StatusPedidos)
                     </th>
-                    <th>
-                        @Html.DisplayNameFor(model => listaPedidos.FirstOrDefault().Produtos)
-                    </th>
                     <th>Opções</th>
                 </tr>
             </thead>
@@ -53,9 +50,6 @@
                         </td>
                         <td>
                             @Html.DisplayFor(model => item.StatusPedidos)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(model => item.Produtos)
                         </td>
                         <td>
                             <a asp-controller="Pedidos" asp-action="Edit" asp-route-id="@item.Id">

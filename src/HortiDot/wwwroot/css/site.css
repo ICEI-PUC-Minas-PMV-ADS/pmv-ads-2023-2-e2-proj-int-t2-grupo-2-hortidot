@@ -28,12 +28,19 @@ h6 {
     color: var(--verde-escuro);
 }
 
-main .container {
-    padding: 0;
-    margin: 24px auto;
+main {
+    min-height: calc(100vh - 284px);
+    height: 100%;
+}
+
+main:hes(.delete){
+    min-height: unset;
+
 }
 
 main .container {
+    padding: 0;
+    margin: 24px auto;
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
