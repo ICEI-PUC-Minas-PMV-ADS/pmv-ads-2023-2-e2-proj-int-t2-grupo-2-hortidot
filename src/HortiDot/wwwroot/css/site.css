@@ -33,11 +33,6 @@ main {
     height: 100%;
 }
 
-main:hes(.delete){
-    min-height: unset;
-
-}
-
 main .container {
     padding: 0;
     margin: 24px auto;

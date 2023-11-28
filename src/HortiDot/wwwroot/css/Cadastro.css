@@ -7,6 +7,18 @@ main{
     padding: 40px;
 }
 
+main.perfil {
+    min-height: unset;
+}
+
+main.perfil.cadastro {
+    min-height: calc(100vh - 332px);
+}
+
+.delete {
+    height: calc(100vh - 476px);
+}
+
     header img {
         max-height: 100px;
         width: 100%;
