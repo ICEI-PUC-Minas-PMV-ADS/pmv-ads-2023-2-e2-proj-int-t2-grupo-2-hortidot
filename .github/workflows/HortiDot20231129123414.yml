@@ -1,17 +1,17 @@
-name: Compilar e implantar o aplicativo .NET Core no aplicativo Web HortiDot
+name: Compilar e implantar o aplicativo .NET Core no aplicativo Web HortiDot20231129123414
 on:
   push:
     branches:
     - main
 env:
-  AZURE_WEBAPP_NAME: HortiDot
-  AZURE_WEBAPP_PACKAGE_PATH: ./published
+  AZURE_WEBAPP_NAME: HortiDot20231129123414
+  AZURE_WEBAPP_PACKAGE_PATH: .\published
   CONFIGURATION: Release
   DOTNET_CORE_VERSION: 7.0.x
-  WORKING_DIRECTORY: ./src/HortiDot
+  WORKING_DIRECTORY: .
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
     - uses: actions/checkout@v3
     - name: Setup .NET SDK
@@ -32,7 +32,7 @@ jobs:
         name: webapp
         path: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     needs: build
     steps:
     - name: Download artifact from build job
@@ -44,5 +44,5 @@ jobs:
       uses: azure/webapps-deploy@v2
       with:
         app-name: ${{ env.AZURE_WEBAPP_NAME }}
-        publish-profile: ${{ secrets.HortiDot_A2CB }}
+        publish-profile: ${{ secrets.HortiDot20231129123414_A43B }}
         package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
