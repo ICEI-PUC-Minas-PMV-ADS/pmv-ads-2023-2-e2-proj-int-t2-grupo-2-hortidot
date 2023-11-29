@@ -11,8 +11,12 @@ builder.Services.AddSignalR();
 
 builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 
-builder.Services.AddDbContext<DataContext>(options =>
-options.UseNpgsql(builder.Configuration.GetConnectionString("Database")));
+var connectionString = builder.Configuration.GetConnectionString("ConnectionString");
+
+builder.Services.AddDbContextPool<DataContext>(options =>  options.UseSqlServer(connectionString));
+
+//builder.Services.AddDbContext<DataContext>(options =>
+//options.UseNpgsql(builder.Configuration.GetConnectionString("ConnectionString")));
 
 builder.Services.Configure<CookiePolicyOptions>(options =>
 {

@@ -1,13 +1,12 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
-using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
 namespace HortiDot.Migrations
 {
     /// <inheritdoc />
-    public partial class AddModelInicial : Migration
+    public partial class InitialModel : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -16,10 +15,10 @@ namespace HortiDot.Migrations
                 name: "Produtos",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    Nome = table.Column<string>(type: "text", nullable: false),
-                    DataProduto = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Nome = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    DataProduto = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -30,17 +29,17 @@ namespace HortiDot.Migrations
                 name: "Usuários",
                 columns: table => new
                 {
-                    ID = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    Nome = table.Column<string>(type: "text", nullable: false),
-                    Email = table.Column<string>(type: "text", nullable: false),
-                    Cpf = table.Column<string>(type: "text", nullable: false),
-                    Telefone = table.Column<string>(type: "text", nullable: false),
-                    NomeEmpresa = table.Column<string>(type: "text", nullable: false),
-                    CNPJ = table.Column<string>(type: "text", nullable: false),
-                    Endereco = table.Column<string>(type: "text", nullable: false),
-                    Senha = table.Column<string>(type: "text", nullable: false),
-                    TipoDeUsuario = table.Column<int>(type: "integer", nullable: false)
+                    ID = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Nome = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Cpf = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Telefone = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    NomeEmpresa = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    CNPJ = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Endereco = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Senha = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    TipoDeUsuario = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -51,12 +50,12 @@ namespace HortiDot.Migrations
                 name: "Pedidos",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "integer", nullable: false)
-                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    DataPedido = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    StatusPedidos = table.Column<int>(type: "integer", nullable: false),
-                    CompradorId = table.Column<int>(type: "integer", nullable: false),
-                    FornecedorIdID = table.Column<int>(type: "integer", nullable: true)
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    DataPedido = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    StatusPedidos = table.Column<int>(type: "int", nullable: false),
+                    CompradorId = table.Column<int>(type: "int", nullable: false),
+                    FornecedorIdID = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -72,8 +71,8 @@ namespace HortiDot.Migrations
                 name: "PedidoProduto",
                 columns: table => new
                 {
-                    PedidosId = table.Column<int>(type: "integer", nullable: false),
-                    ProdutosId = table.Column<int>(type: "integer", nullable: false)
+                    PedidosId = table.Column<int>(type: "int", nullable: false),
+                    ProdutosId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
