@@ -5,9 +5,9 @@
 Relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado em um plano de testes pré-definido.
 | Caso de Teste | CT-01 - Cadastro de produtos |
 | :-----------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| Imagem | <img   src = "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/main/docs/img/CadastrarProduto.jpeg"/> |
+| Imagem | <img   src = "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/main/docs/img/CadastrarProduto.jpeg"/> <img   src = "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/main/docs/img/CadastrodeProdutoCampoObrigatorio.jpeg"/> <img   src = "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/main/docs/img/CadastrandoProdutoBanana.jpeg"/> <img   src = "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/main/docs/img/ProdutoBananaCadastrado.jpeg"/> |
 | Requisito Associado | RF-04- O sistema deve permitir o cadastro, edição e exclusão dos produtos de hortifruti contendo nome e código único do item |
-| Avaliação | ✅ Cadastro realizado com êxito |
+| Avaliação | O sistema permite cadastrar o produto, exibindo como campo obrigatório o nome do produto, após adicionarmos o nome, clicamos em cadastrar, que o mesmo aparecerá na listra de produtos cadastrados. ✅ Cadastro realizado com êxito |
 
 |    Caso de Teste    |                                          CT-02– Cadastro de usuário                                           |
 | :-----------------: | :-----------------------------------------------------------------------------------------------------------: |
