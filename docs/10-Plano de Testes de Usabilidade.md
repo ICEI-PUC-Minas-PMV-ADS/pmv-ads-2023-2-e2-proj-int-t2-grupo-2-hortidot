@@ -32,14 +32,15 @@ O método de avaliação System Usability Scale consiste em um questionário com
 
 | | Itens                                                | Discordo Completamente | Discordo | Não Concordo e Nem Discordo | Concordo | Concordo Completamente |
 |-| ---------------------------------------------------- | ---------- | ---- | --- | ----- | --------- |
-|1|                                                          | 1          | 2    | 3   | 4     | 5         |
-|2| Eu acho que gostaria de usar esse sistema com frequência.|            |      |     |       |           |
-|3| Eu acho o sistema desnecessariamente complexo.           |            |      |     |       |           |
-|4| Eu achei o sistema fácil de usar.                        |            |      |     |       |           |
-|5| Eu acho que precisaria de ajuda de uma pessoa com conhecimentos técnicos para usar o sistema.| | | | | |
-|6| Eu acho que as várias funções do sistema estão muito bem integradas. | | | | | |
-|7| Eu acho que o sistema apresenta muita inconsistência. | | | | | |
-|8| Eu imagino que as pessoas aprenderão como usar esse sistema rapidamente. | | | | | |
+||                                                          | 1          | 2    | 3   | 4     | 5         |
+|1| Eu acho que gostaria de usar esse sistema com frequência.|            |      |     |       |           |
+|2| Eu acho o sistema desnecessariamente complexo.           |            |      |     |       |           |
+|3| Eu achei o sistema fácil de usar.                        |            |      |     |       |           |
+|4| Eu acho que precisaria de ajuda de uma pessoa com conhecimentos técnicos para usar o sistema.| | | | | |
+|5| Eu acho que as várias funções do sistema estão muito bem integradas. | | | | | |
+|6| Eu acho que o sistema apresenta muita inconsistência. | | | | | |
+|7| Eu imagino que as pessoas aprenderão como usar esse sistema rapidamente. | | | | | |
+|8|Eu achei o sistema atrapalhado de usar.
 |9| Eu me senti confiante ao usar o sistema. | | | | | |
 |10| Eu precisei aprender várias coisas novas antes de conseguir usar o sistema. | | | | | | 
 
