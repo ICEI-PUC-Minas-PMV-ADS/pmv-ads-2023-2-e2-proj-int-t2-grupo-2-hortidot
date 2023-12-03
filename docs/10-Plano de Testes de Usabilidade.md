@@ -28,22 +28,18 @@ Por meio deste questionário vamos colher informações sobre as opiniões dos p
 
 ## Questionário de avaliação de usabilidade (SUS)
 
-Nas questões, marcar com X o número correspondente ao grau de concordância, deverá ser marcada somente uma resposta.
+O método de avaliação System Usability Scale consiste em um questionário com 10 questões em escala Likert aplicado após o usuário usar o sistema ou conhecer como ele funciona. O SUS possui um possui um método de cálculo da pontuação de forma normalizada: itens ímpares (1, 3, 5, 7, 9) subtrai-se 1 da pontuação que o usuário respondeu, e itens pares (2 , 4, 6, 8, 10) subtrai-se a resposta do usuário de 5. Após isso, soma-se todos os valores das 10 respostas convertidas e multiplica-se por 2.5. Essa é a pontuação final, que pode ir de 0 a 100. 
 
-| Avaliação                                                | Muito ruim | Ruim | Bom | Ótimo | Excelente |
-| -------------------------------------------------------- | ---------- | ---- | --- | ----- | --------- |
-|                                                          | 1          | 2    | 3   | 4     | 5         |
-| Achou o sistema fácil de usar?                           |            |      |     |       |           |
-| A interface do sistema é agradável?                      |            |      |     |       |           |
-| Você teve facilidade em aprender e usar os comandos no início do teste? |           |      |     |      |          |
-| Achou o sistema eficiente enquanto estava desenvolvendo as tarefas? |            |      |     |       |           |
-| O que achou do Layout das telas?                         |            |      |     |       |           |
-| Sentiu-se confortável com este sistema?                  |            |      |     |       |           |
-| A organização de informações na tela do sistema é clara, sendo fácil de memorizar os comandos? |            |      |     |       |           |
-| O design e comandos são padronizados?                    |            |      |     |       |           |
-| É fácil desfazer um comando, ou corrigir um erro?        |            |      |     |       |           |
-| Você ficou satisfeito com sua experiência utilizando nossa aplicação? |            |      |     |       |           |
-| Todas as informações e comandos são de fácil entendimento? |            |      |     |       |           |
-| Gostaria de usar este sistema com frequência?            |            |      |     |       |           |
-| No geral, como foi a realização do teste?                |            |      |     |       |           |
+| | Itens                                                | Discordo Completamente | Discordo | Não Concordo e Nem Discordo | Concordo | Concordo Completamente |
+|-| ---------------------------------------------------- | ---------- | ---- | --- | ----- | --------- |
+|1|                                                          | 1          | 2    | 3   | 4     | 5         |
+|2| Eu acho que gostaria de usar esse sistema com frequência.|            |      |     |       |           |
+|3| Eu acho o sistema desnecessariamente complexo.           |            |      |     |       |           |
+|4| Eu achei o sistema fácil de usar.                        |            |      |     |       |           |
+|5| Eu acho que precisaria de ajuda de uma pessoa com conhecimentos técnicos para usar o sistema.| | | | | |
+|6| Eu acho que as várias funções do sistema estão muito bem integradas. | | | | | |
+|7| Eu acho que o sistema apresenta muita inconsistência. | | | | | |
+|8| Eu imagino que as pessoas aprenderão como usar esse sistema rapidamente. | | | | | |
+|9| Eu me senti confiante ao usar o sistema. | | | | | |
+|10| Eu precisei aprender várias coisas novas antes de conseguir usar o sistema. | | | | | | 
 
