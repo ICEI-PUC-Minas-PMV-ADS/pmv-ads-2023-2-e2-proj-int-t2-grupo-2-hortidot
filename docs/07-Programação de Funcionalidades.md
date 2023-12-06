@@ -33,7 +33,7 @@ Tela permite o usuário acessar sua conta com e-mail e senha.
 #### Instruções de acesso
 
 1. Acessar o Navegador
-2. Informar o endereço da aplicação: http://hortidot.azurewebsites.net/
+2. Informar o endereço da aplicação: https://hortidot20231129123414.azurewebsites.net/
 3. Inserir informações para o login
 4. Clique em "Entrar"
 
@@ -57,7 +57,7 @@ Tela permite o cadastro, edição e visualização de dados do usuário.
 #### Instruções de acesso
 
 1. Acessar o Navegador
-2. Informar o endereço da aplicação: http://hortidot.azurewebsites.net/
+2. Informar o endereço da aplicação: https://hortidot20231129123414.azurewebsites.net/
 3. Na tela de login, clique em "Ainda não possui uma conta? Inscreva-se!"
 
 ### Tela Editar Conta
@@ -80,7 +80,7 @@ Tela permite que o usuário edite e atualize suas informações pessoais e infor
 #### Instruções de acesso
 
 1. Acessar o Navegador
-2. Informar o endereço da aplicação: http://hortidot.azurewebsites.net/
+2. Informar o endereço da aplicação: https://hortidot20231129123414.azurewebsites.net/
 3. Inserir informações para o login
 4. Clique em "Entrar" para acessar a conta e a tela inicial.
 5. No menu lateral, clique em Editar Conta
@@ -104,7 +104,7 @@ Tela que permite a exclusão dos dados de um usuário da base de dados.
 #### Instruções de acesso
 
 1. Acessar o Navegador
-2. Informar o endereço da aplicação: http://hortidot.azurewebsites.net/<br>
+2. Informar o endereço da aplicação: https://hortidot20231129123414.azurewebsites.net/<br>
 3. Inserir informações para o login<br>
 4. Clique em "Entrar" para acessar a conta e a tela inicial.<br>
 5. No menu lateral, clique em Excluir Conta.<br>
@@ -134,7 +134,7 @@ RF-10 - O sistema deve permitir a abertura de novos pedidos.<br>
 #### Instruções de acesso
 
 1. Acessar o Navegador
-2. Informar o endereço da aplicação: http://hortidot.azurewebsites.net/
+2. Informar o endereço da aplicação: https://hortidot20231129123414.azurewebsites.net/
 3. Inserir informações para o login
 4. Clique em "Entrar" para acessar a conta e a tela inicial
 
@@ -157,7 +157,7 @@ Tela que exibe aos usuários todos os produtos cadastrados.
 #### Instruções de acesso
 
 1. Acessar o Navegador
-2. Informar o endereço da aplicação: http://hortidot.azurewebsites.net/
+2. Informar o endereço da aplicação: https://hortidot20231129123414.azurewebsites.net/
 3. Inserir informações para o login
 4. Clique em "Entrar" para acessar a conta e a tela inicial.
 5. No menu lateral, clique em "Todos os produtos".
@@ -181,7 +181,7 @@ Tela que permite o cadastro de um produto.
 #### Instruções de acesso
 
 1. Acessar o Navegador
-2. Informar o endereço da aplicação: http://hortidot.azurewebsites.net/
+2. Informar o endereço da aplicação: https://hortidot20231129123414.azurewebsites.net/
 3. Inserir informações para o login
 4. Clique em "Entrar" para acessar a conta e a tela inicial.
 5. No menu lateral, clique em "Novo Produto".
@@ -205,7 +205,7 @@ Tela que permite a edição de um produto.
 #### Instruções de acesso
 
 1. Acessar o Navegador
-2. Informar o endereço da aplicação: http://hortidot.azurewebsites.net/
+2. Informar o endereço da aplicação: https://hortidot20231129123414.azurewebsites.net/
 3. Inserir informações para o login
 4. Clique em "Entrar" para acessar a conta e a tela inicial.
 5. No menu lateral, clique em "Todos os produtos".
@@ -230,7 +230,7 @@ Tela que permite a exclusão de um produto.
 #### Instruções de acesso
 
 1. Acessar o Navegador
-2. Informar o endereço da aplicação: http://hortidot.azurewebsites.net/
+2. Informar o endereço da aplicação: https://hortidot20231129123414.azurewebsites.net/
 3. Inserir informações para o login
 4. Clique em "Entrar" para acessar a conta e a tela inicial.
 5. No menu lateral, clique em "Todos os produtos".
@@ -255,7 +255,7 @@ Tela que permite visualizar um produto.
 #### Instruções de acesso
 
 1. Acessar o Navegador
-2. Informar o endereço da aplicação: http://hortidot.azurewebsites.net/
+2. Informar o endereço da aplicação: https://hortidot20231129123414.azurewebsites.net/
 3. Inserir informações para o login
 4. Clique em "Entrar" para acessar a conta e a tela inicial.
 5. No menu lateral, clique em "Todos os produtos".
@@ -280,7 +280,7 @@ RF-07 - O sistema deve permitir que o fornecedor e o comprador possam visualizar
 #### Instruções de acesso
 
 1. Acessar o Navegador
-2. Informar o endereço da aplicação: http://hortidot.azurewebsites.net/
+2. Informar o endereço da aplicação: https://hortidot20231129123414.azurewebsites.net/
 3. Inserir informações para o login
 4. Clique em "Entrar" para acessar a conta e a tela inicial.
 5. No menu lateral, clique em "Todos os pedidos".
@@ -304,7 +304,7 @@ RF-10 - O sistema deve permitir a abertura de novos pedidos.
 #### Instruções de acesso
 
 1. Acessar o Navegador
-2. Informar o endereço da aplicação: http://hortidot.azurewebsites.net/
+2. Informar o endereço da aplicação: https://hortidot20231129123414.azurewebsites.net/
 3. Inserir informações para o login
 4. Clique em "Entrar" para acessar a conta e a tela inicial.
 5. No menu lateral, clique em "Novo pedido".
@@ -328,7 +328,7 @@ RF-07 - O sistema deve permitir que o fornecedor e o comprador possam visualizar
 #### Instruções de acesso
 
 1. Acessar o Navegador
-2. Informar o endereço da aplicação: http://hortidot.azurewebsites.net/
+2. Informar o endereço da aplicação: https://hortidot20231129123414.azurewebsites.net/
 3. Inserir informações para o login
 4. Clique em "Entrar" para acessar a conta e a tela inicial.
 5. No menu lateral, clique em "Todos os pedidos".
@@ -353,7 +353,7 @@ RF-07 - O sistema deve permitir que o fornecedor e o comprador possam visualizar
 #### Instruções de acesso
 
 1. Acessar o Navegador
-2. Informar o endereço da aplicação: http://hortidot.azurewebsites.net/
+2. Informar o endereço da aplicação: https://hortidot20231129123414.azurewebsites.net/
 3. Inserir informações para o login
 4. Clique em "Entrar" para acessar a conta e a tela inicial.
 5. No menu lateral, clique em "Todos os pedidos".
@@ -378,7 +378,7 @@ RF-07 - O sistema deve permitir que o fornecedor e o comprador possam visualizar
 #### Instruções de acesso
 
 1. Acessar o Navegador
-2. Informar o endereço da aplicação: http://hortidot.azurewebsites.net/
+2. Informar o endereço da aplicação: https://hortidot20231129123414.azurewebsites.net/
 3. Inserir informações para o login
 4. Clique em "Entrar" para acessar a conta e a tela inicial.
 5. No menu lateral, clique em "Todos os pedidos".
