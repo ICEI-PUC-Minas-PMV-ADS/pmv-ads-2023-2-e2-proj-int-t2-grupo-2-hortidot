@@ -24,7 +24,7 @@ O projeto se trata de uma aplicação interativa que visa desenvolver um sistema
 
 ## Hospedagem
 
-Você pode conferir nossa aplicação clicando no link: https://hortidot.azurewebsites.net/
+Você pode conferir nossa aplicação clicando no link: https://hortidot20231129123414.azurewebsites.net/
 
 # Documentação
 
