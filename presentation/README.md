@@ -5,7 +5,7 @@ O projeto HortiDot se trata de uma aplicação interativa que visa desenvolver u
 Inicialmente desenvolvemos toda a documentação incluindo: documentação do contexto, especificações do projeto, metodologia, diagramas, projetos das telas e testes.
 
 ## Hospedagem
-Você pode conferir nossa aplicação clicando no link: https://hortidot.azurewebsites.net/
+Você pode conferir nossa aplicação clicando no link: https://hortidot20231129123414.azurewebsites.net/
 
 ## Videos e slides
 Os vídeos e a apresentação final se encontram na pasta "videos" dentro de "presentation".
