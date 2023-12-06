@@ -5,67 +5,67 @@
 Relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado em um plano de testes pré-definido.
 | Caso de Teste | CT-01 - Cadastro de produtos |
 | :-----------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| Imagem | <img   src = "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/main/docs/img/CadastrarProduto.jpeg"/> <img   src = "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/main/docs/img/CadastrodeProdutoCampoObrigatorio.jpeg"/> <img   src = "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/main/docs/img/CadastrandoProdutoBanana.jpeg"/> <img   src = "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/main/docs/img/ProdutoBananaCadastrado.jpeg"/> |
+| Imagem | <img   src = "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/main/docs/img/CadastrodeProdutoCampoObrigatorio.jpeg"/> <img   src = "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/main/docs/img/CadastrandoProdutoBanana.jpeg"/> <img   src = "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/main/docs/img/ProdutoBananaCadastrado.jpeg"/> |
 | Requisito Associado | RF-04- O sistema deve permitir o cadastro, edição e exclusão dos produtos de hortifruti contendo nome e código único do item |
-| Avaliação | O sistema nos permite cadastrar um novo produto, exibindo como campo obrigatório o nome do produto, após adicionarmos o nome, clicamos em cadastrar, que ele aparecerá na lista de produtos cadastrados, ou seja,  cadastro realizado com êxito ✅|
+| Avaliação | O sistema nos permite cadastrar um novo produto, exibindo como campo obrigatório o nome do produto. Após adicionarmos o nome, clicamos em cadastrar e ele aparecerá na lista com os outros produtos cadastrados ✅|
 
-|    Caso de Teste    |                                          CT-02– Cadastro de usuário                                           |
-| :-----------------: | :-----------------------------------------------------------------------------------------------------------: |
-|       Imagem        |                                   <img src = "/docs/img/criar-conta.png"/>                                    |
-| Requisito Associado | RF-05 - O sistema deve permitir que o fornecedor e comprador possam cadastrar, alterar e excluir seu cadastro |
-|      Avaliação      |                                       Após o preenchimento de todos os campos obrigatórios do cadastro de usuário, é possível criar o cadastro com sucesso ✅ |
+|    Caso de Teste    |                                                       CT-02– Cadastro de usuário                                                       |
+| :-----------------: | :------------------------------------------------------------------------------------------------------------------------------------: |
+|       Imagem        |                                                <img src = "/docs/img/criar-conta.png"/>                                                |
+| Requisito Associado |             RF-05 - O sistema deve permitir que o fornecedor e comprador possam cadastrar, alterar e excluir seu cadastro              |
+|      Avaliação      | Após o preenchimento de todos os campos obrigatórios durante a realização do cadastro de usuário, a operação é efetuada com sucesso ✅ |
 
-|    Caso de Teste    |                                            CT-03 - Login                                             |
-| :-----------------: | :--------------------------------------------------------------------------------------------------: |
-|       Imagem        |                                 <img   src = "/docs/img/Login.png"/>                                 |
-| Requisito Associado | RF-09 - O sistema deve permitir que o fornecedor e o comprador possam fazer login com e-mail e senha |
-|      Avaliação      | Logo depois de efetuar o cadastro de usuário, o sistema nos permite entrar por meio de e-mail e senha devidamente cadastrados.✅ Login realizado com êxito. |
+|    Caso de Teste    |                                                           CT-03 - Login                                                           |
+| :-----------------: | :-------------------------------------------------------------------------------------------------------------------------------: |
+|       Imagem        |                                               <img   src = "/docs/img/Login.png"/>                                                |
+| Requisito Associado |               RF-09 - O sistema deve permitir que o fornecedor e o comprador possam fazer login com e-mail e senha                |
+|      Avaliação      | Logo depois de efetuar o cadastro de usuário, o sistema nos permite entrar por meio de e-mail e senha devidamente cadastrados. ✅ |
 
-|    Caso de Teste    |                                                          CT-04 - Excluir conta de usuário                                                           |
-| :-----------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------: |
-|       Imagem        | <img   src = "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/main/docs/img/TesteExcluirConta.jpeg"/> |
-| Requisito Associado |                   RF-05 - O sistema deve permitir que o fornecedor e o comprador possam cadastrar, alterar e excluir seu cadastro                   |
-|      Avaliação      | O usuário que desejar excluir sua conta, tem permissão para fazer, indo no perfil, excluir conta, aparecerá uma mensagem tem certeza de que deseja excluir a sua conta, caso deseje apagar, clicar em sim quero excluir, todos os seus dados serão apagados do sistema. ✅ Exclusão de usuário realizado com sucesso. |
+|    Caso de Teste    |                                                                                                 CT-04 - Excluir conta de usuário                                                                                                  |
+| :-----------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|       Imagem        |                                        <img   src = "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/main/docs/img/TesteExcluirConta.jpeg"/>                                        |
+| Requisito Associado |                                                          RF-05 - O sistema deve permitir que o fornecedor e o comprador possam cadastrar, alterar e excluir seu cadastro                                                          |
+|      Avaliação      | O usuário que desejar excluir sua conta, tem permissão para fazê-lo indo no perfil e em excluir conta. Aparecerá uma mensagem de confirmação. Caso o usuário clique em excluir, todos os seus dados serão apagados do sistema. ✅ |
 
-|    Caso de Teste    |                                         CT-05 - Editar conta de usuário                                         |
-| :-----------------: | :-------------------------------------------------------------------------------------------------------------: |
-|       Imagem        |                                   <img   src = "/docs/img/Editar-Conta.png"/>                                   |
-| Requisito Associado | RF-05 - O sistema deve permitir que o fornecedor e o comprador possam cadastrar, alterar e excluir seu cadastro |
-|      Avaliação      | Temos a possibilidade de editar perfil, trocar informações já cadastradas por novas atualizações, após efetuar as devidas modificações clicar em salvar alterações. Edição da conta realizada com sucesso  ✅ |
+|    Caso de Teste    |                                                                                       CT-05 - Editar conta de usuário                                                                                        |
+| :-----------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|       Imagem        |                                                                                 <img   src = "/docs/img/Editar-Conta.png"/>                                                                                  |
+| Requisito Associado |                                               RF-05 - O sistema deve permitir que o fornecedor e o comprador possam cadastrar, alterar e excluir seu cadastro                                                |
+|      Avaliação      | Temos a possibilidade de editar perfil, trocar informações já cadastradas por novas atualizações, após efetuar as devidas modificações clicar em salvar alterações. Edição da conta realizada com sucesso ✅ |
 
-|    Caso de Teste    |                                                   CT-06 - Edição de produto                                                   |
-| :-----------------: | :---------------------------------------------------------------------------------------------------------------------------: |
-|       Imagem        |                                         <img   src = "/docs/img/Editar-produto.png"/>                                         |
-| Requisito Associado | RF-04 - O sistema deve permitir o cadastro, edição e exclusão dos produtos de hortifruti contendo nome e código único do item |
-|      Avaliação      | Para realizar a edição do produto, é preciso clicar em todos os produtos, ir no lápis de edição do produto que desejado, modificar o que deseja e salvar. ✅ Edição de produto realizado com sucesso.|
+|    Caso de Teste    |                                                                                       CT-06 - Edição de produto                                                                                       |
+| :-----------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|       Imagem        |                                                                             <img   src = "/docs/img/Editar-produto.png"/>                                                                             |
+| Requisito Associado |                                     RF-04 - O sistema deve permitir o cadastro, edição e exclusão dos produtos de hortifruti contendo nome e código único do item                                     |
+|      Avaliação      | Para realizar a edição do produto, é preciso clicar em todos os produtos, ir no lápis de edição do produto que desejado, modificar o que deseja e salvar. Edição de produto realizado com sucesso. ✅ |
 
-|    Caso de Teste    |                                                    CT-07 - Excluir produto                                                    |
-| :-----------------: | :---------------------------------------------------------------------------------------------------------------------------: |
-|       Imagem        |                                         <img   src = "/docs/img/Apagar-produto.png"/>                                         |
-| Requisito Associado | RF-04 - O sistema deve permitir o cadastro, edição e exclusão dos produtos de hortifruti contendo nome e código único do item |
-|      Avaliação      | Indo na lista de todos os produtos e possível excluir um produto devidamente cadastrado, indo no item e clicando na representação de excluir, assim, aparecerá uma mensagem perguntando você tem certeza de que deseja apagar este produto, para continuar e só clicar em apagar.   ✅ Exclusão de produto realizado com sucesso.|
+|    Caso de Teste    |                                                                                                                                                     CT-07 - Excluir produto                                                                                                                                                     |
+| :-----------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|       Imagem        |                                                                                                                                          <img   src = "/docs/img/Apagar-produto.png"/>                                                                                                                                          |
+| Requisito Associado |                                                                                                  RF-04 - O sistema deve permitir o cadastro, edição e exclusão dos produtos de hortifruti contendo nome e código único do item                                                                                                  |
+|      Avaliação      | Indo na lista de todos os produtos e possível excluir um produto devidamente cadastrado, indo no item e clicando na representação de excluir, assim, aparecerá uma mensagem perguntando você tem certeza de que deseja apagar este produto, para continuar e só clicar em apagar. Exclusão de produto realizado com sucesso. ✅ |
 
-|    Caso de Teste    |                  CT-08 - Criação de Pedido                   |
-| :-----------------: | :----------------------------------------------------------: |
-|       Imagem        |         <img   src = "/docs/img/Criar-pedido.png"/>          |
-| Requisito Associado | RF-10 - O sistema deve permitir a abertura de novos pedidos. |
-|      Avaliação      | Para criar um pedido é necessário clicar na aba novo pedido e ir no (+) para adicionar os produtos que queira incluir na lista do novo pedido, assim, como é possível ir no (-) e retirar o produto. ✅ Criação do pedido realizado com sucesso. |
+|    Caso de Teste    |                                                                                                            CT-08 - Criação de Pedido                                                                                                             |
+| :-----------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|       Imagem        |                                                                                                   <img   src = "/docs/img/Criar-pedido.png"/>                                                                                                    |
+| Requisito Associado |                                                                                           RF-10 - O sistema deve permitir a abertura de novos pedidos.                                                                                           |
+|      Avaliação      | Para criar um pedido é necessário clicar na aba novo pedido e ir no (+) para adicionar os produtos que queira incluir na lista do novo pedido, assim, como é possível ir no (-) e retirar o produto. Criação do pedido realizado com sucesso. ✅ |
 
-|    Caso de Teste    |                                      CT-09 - Edição de Pedido                                      |
-| :-----------------: | :------------------------------------------------------------------------------------------------: |
-|       Imagem        | <img   src = "/docs/img/Editar-pedido.png"/>  <img   src = "/docs/img/EditarPedido.jpg"/>          |
-| Requisito Associado | RF-03 O sistema deve permitir que o comprador e o fornecedor possam fazer a revisão do pedido antes do fechamento. |
-|      Avaliação      | Primeiro teste, ao clicar em editar pedido o sistema não esta respondedo como deveria. ❌ Edição do pedido não foi realizado com sucesso. Realização de novo teste após correção de erro, ao clicar em editar status de pedido o sistema exibe os detalhes do pedido e permite editar. ✅ Edição do pedido foi realizado com sucesso. |
+|    Caso de Teste    |                                                                                                      CT-09 - Edição de Pedido                                                                                                       |
+| :-----------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|       Imagem        |                                                                      <img   src = "/docs/img/Editar-pedido.png"/> <img   src = "/docs/img/EditarPedido.jpg"/>                                                                       |
+| Requisito Associado |                                                         RF-03 O sistema deve permitir que o comprador e o fornecedor possam fazer a revisão do pedido antes do fechamento.                                                          |
+|      Avaliação      | Primeiro teste, ao clicar em salvar alterações o sistema não salvou o status correto no banco de dados. ❌ No segundo teste, após a correção do erro, ao salvar as alterações o novo status do pedido foi realizado com sucesso. ✅ |
 
-|    Caso de Teste    |                                     CT-10 - Exclusão de Pedido                                     |
-| :-----------------: | :------------------------------------------------------------------------------------------------: |
-|       Imagem        |                            <img   src = "/docs/img/Apagar-pedido.png"/>                            |
-| Requisito Associado | RF-03 O sistema deve permitir que o comprador e o fornecedor possam fazer a revisão do pedido antes do fechamento. |
-|      Avaliação      | Podemos realizar a exclusão do pedido já criado, clicando no pedido e  clicando na representação de excluir, onde exibirá a pergunta você tem certeza que deseja apagar este pedido, assim, sendo permitido apagar ou cancelar. ✅ Exclusão do pedido realizado com sucesso. |
+|    Caso de Teste    |                                                                                                                         CT-10 - Exclusão de Pedido                                                                                                                          |
+| :-----------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|       Imagem        |                                                                                                                <img   src = "/docs/img/Apagar-pedido.png"/>                                                                                                                 |
+| Requisito Associado |                                                                             RF-03 O sistema deve permitir que o comprador e o fornecedor possam fazer a revisão do pedido antes do fechamento.                                                                              |
+|      Avaliação      | Podemos realizar a exclusão do pedido já criado, clicando no pedido e clicando na representação de excluir, onde exibirá a pergunta você tem certeza que deseja apagar este pedido, assim, sendo permitido apagar ou cancelar. Exclusão do pedido realizado com sucesso. ✅ |
 
 # Relatório de Testes de Software
 
-No dia 19 de novembro de 2023, foi realizado o registro de teste de software da aplicação HortiDot, com objetivo de registrar seu desenvolvimento e suas funcionalidades.
+No dia 19 de novembro de 2023, foram realizados os primeiros testes para registro de teste de software da aplicação HortiDot, com objetivo de validar o desenvolvimento e suas funcionalidades.
 
 Iniciamos nossos testes com o cadastro de produto, que atende ao requisito 04, em que o sistema deve permitir o cadastro, edição e exclusão dos produtos de hortifruti contendo nome e código único do item, o sistema executou com excelência a criação de cadastro, sendo possível fornecedor e comprador incluir um novo produto. Nosso segundo teste foi voltado para o cadastro de usuário, visando atender ao requisito 05, que deve permitir que o fornecedor e comprador possam cadastrar, alterar e excluir seu cadastro, só é possível efetuar o cadastro de usuário com o preenchimento de todos os campos obrigatórios, com os dados pessoais e dados da empresa, ao final indicando o tipo de usuário, fornecedor ou comprador, possibilitando também alterar os dados já cadastrados.
 
@@ -74,6 +74,6 @@ Seguimos os testes com editar conta de usuário, atendendo ao requisito 05, o si
 
 No oitavo teste realizamos a criação de pedido, que nos possibilita criar um pedido, e está adicionando os itens desejados ao pedido, voltado para o requisito 10, em que o sistema deve permitir a abertura de novos pedidos, função executando com excelência, no nono teste edição de pedido, voltado ao requisito 03, o sistema deve permitir que o comprador e o fornecedor possam fazer a revisão do pedido antes do fechamento, esta opção não está funcionando com sucesso, como mostrar na primeira imagem do nosso registro de teste, porém foi corrigida como mostrado na segunda imagem do teste. O décimo registro, também voltado ao requisito 03, mencionado anteriormente, podemos realizar a exclusão do pedido já criado, clicando no pedido e em apagar, permitido apagar ou cancelar.
 
-Alguns requisitos propostos ao longo do desenvolvimento deste projeto não foram executados como gostaríamos, entre eles podemos citar:  01- O sistema deve permitir que os fornecedores ajustem o preço para cada comprador correspondente, 02 - O sistema deve permitir que o comprador e o fornecedor ajustem a quantidade de itens solicitados, 06 - O sistema deve permitir que o fornecedor feche o pedido e que o comprador finalize a cotação após a revisão.
+Alguns requisitos propostos ao longo do desenvolvimento deste projeto não foram executados como gostaríamos, entre eles podemos citar: 01- O sistema deve permitir que os fornecedores ajustem o preço para cada comprador correspondente, 02 - O sistema deve permitir que o comprador e o fornecedor ajustem a quantidade de itens solicitados, 06 - O sistema deve permitir que o fornecedor feche o pedido e que o comprador finalize a cotação após a revisão.
 
 A aplicação precisa de algumas melhorias, ajustes em funções, e estamos buscando aperfeiçoar, porém, o que criamos até aqui, mostra que a equipe empenhou-se na elaboração e execução deste projeto.

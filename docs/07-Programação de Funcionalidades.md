@@ -39,7 +39,7 @@ Tela permite o usuário acessar sua conta com e-mail e senha.
 
 ### Tela Cadastrar conta
 
-Tela permite o cadastro, edição e visualização de dados do usuário.
+Tela permite o cadastro de dados do usuário.
 
 <img src="/docs/img/criar-conta.png" alt="cadastro de usuário">
 
@@ -62,7 +62,7 @@ Tela permite o cadastro, edição e visualização de dados do usuário.
 
 ### Tela Editar Conta
 
-Tela permite que o usuário edite e atualize suas informações pessoais e informações de sua empresa.
+Tela permite que o usuário visualize e edite suas informações pessoais e informações de sua empresa.
 
 <img src="/docs/img/Editar-Conta.png" alt="editar conta">
 
@@ -87,7 +87,7 @@ Tela permite que o usuário edite e atualize suas informações pessoais e infor
 
 ### Tela Excluir Conta
 
-Tela que permite a exclusão dos dados de um usuário da base de dados.
+Tela que permite a exclusão dos dados de um usuário do banco de dados.
 
 <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/a3b473035d9cceebc7e09472f88a62faf1ad2671/docs/img/DeletarConta.jpeg" alt="apagar conta">
 
@@ -111,18 +111,19 @@ Tela que permite a exclusão dos dados de um usuário da base de dados.
 
 ### Tela Página Inicial
 
-Tela exibe os pedidos em andamento e últimos pedidos, e permite que o comprador abra um novo pedido.
+Tela exibe os pedidos em andamento criados pelo usuário logado.
+
+#### Página inicial sem pedidos
 
 <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/6179d47a332cac9fe113aae1e36857ca29a49f42/docs/img/Tela%20Inicial%20sem%20pedidos.jpeg" alt="">
-Página inicial sem pedidos
+
+#### Página inicial com pedidos
 
 <img src="/docs/img/Página-inicial-com-pedidos.png" alt="">
-Página inicial com pedidos
 
 #### Requisitos atendidos
 
 RF-07 - O sistema deve permitir que o fornecedor e o comprador possam visualizar todos os pedidos.<br>
-RF-10 - O sistema deve permitir a abertura de novos pedidos.<br>
 
 #### Artefatos da funcionalidade
 
@@ -263,7 +264,7 @@ Tela que permite visualizar um produto.
 
 ### Tela Pedidos
 
-Tela mostra todos os pedidos feitos pelo usuário, além de permitir a abertura de novos pedidos.
+Tela que exibe aos usuários todos os pedidos cadastrados, além de permitir a abertura de novos pedidos.
 
 <img src="/docs/img/TelaPedidos.jpeg" alt="">
 
@@ -287,7 +288,7 @@ RF-07 - O sistema deve permitir que o fornecedor e o comprador possam visualizar
 
 ### Tela criar pedido
 
-Tela que apresenta os itens para serem adicionados a lista do pedido, contendo código e nome.
+Tela que permite a criação de um pedido apresentando os itens para serem adicionados a lista do pedido, contendo código e nome.
 
 <img src="/docs/img/Criar-pedido.png" alt="">
 
@@ -311,7 +312,7 @@ RF-10 - O sistema deve permitir a abertura de novos pedidos.
 
 ### Tela editar pedido
 
-Apresenta um select onde você pode alterar o status do pedido.
+Apresenta um select onde você pode alterar o status do pedido dentre as opções pré-definidas.
 
 <img src="/docs/img/Editar-pedido.png" alt="">
 
@@ -336,7 +337,7 @@ RF-07 - O sistema deve permitir que o fornecedor e o comprador possam visualizar
 
 ### Tela excluir pedido
 
-Apresenta uma mensagem para confirmação da esclusão do pedido.
+Tela que permite a exclusão de um pedido cadastrado.
 
 <img src="/docs/img/Apagar-pedido.png" alt="">
 
