@@ -7,25 +7,25 @@ Relatório com as evidências dos testes de software realizados no sistema pela 
 | :-----------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | Imagem | <img   src = "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/main/docs/img/CadastrodeProdutoCampoObrigatorio.jpeg"/> <img   src = "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/main/docs/img/CadastrandoProdutoBanana.jpeg"/> <img   src = "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/main/docs/img/ProdutoBananaCadastrado.jpeg"/> |
 | Requisito Associado | RF-04- O sistema deve permitir o cadastro, edição e exclusão dos produtos de hortifruti contendo nome e código único do item |
-| Avaliação | O sistema deve permitir o cadastro de um novo produto, com nome e código único. O nome do produto deve ser inserido no campo obrigatório, e o código próprio é gerado quando o produto é criado. |
+| Avaliação | O sistema deve permitir o cadastro de um novo produto, com nome e código único. O nome do produto deve ser inserido no campo obrigatório, e o código próprio é gerado quando o produto é criado. ✅|
 
 |    Caso de Teste    |                                                       CT-02– Cadastro de usuário                                                       |
 | :-----------------: | :------------------------------------------------------------------------------------------------------------------------------------: |
 |       Imagem        |                                                <img src = "/docs/img/criar-conta.png"/>                                                |
 | Requisito Associado |             RF-05 - O sistema deve permitir que o fornecedor e comprador possam cadastrar, alterar e excluir seu cadastro              |
-|      Avaliação      | Os campos obrigatórios devem ser preenchidos com os dados do usuário. O usuário deve clicar em "Criar Cadastro" para efetuar o a criação da conta com sucesso.|
+|      Avaliação      | Os campos obrigatórios devem ser preenchidos com os dados do usuário. O usuário deve clicar em "Criar Cadastro" para efetuar o a criação da conta com sucesso. ✅|
 
 |    Caso de Teste    |                                                           CT-03 - Login                                                           |
 | :-----------------: | :-------------------------------------------------------------------------------------------------------------------------------: |
 |       Imagem        |                                               <img   src = "/docs/img/Login.png"/>                                                |
 | Requisito Associado |               RF-09 - O sistema deve permitir que o fornecedor e o comprador possam fazer login com e-mail e senha                |
-|      Avaliação      | O sistema deve permitir que o usuário faça login com os dados fornecidos no cadastro. Ao inserir o e-mail e senha corretamente, o login é efetuado com sucesso. |
+|      Avaliação      | O sistema deve permitir que o usuário faça login com os dados fornecidos no cadastro. Ao inserir o e-mail e senha corretamente, o login é efetuado com sucesso. ✅|
 
 |    Caso de Teste    |                                                                                                 CT-04 - Excluir conta de usuário                                                                                                  |
 | :-----------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 |       Imagem        |                                        <img   src = "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t2-grupo-2-hortidot/blob/main/docs/img/TesteExcluirConta.jpeg"/>                                        |
 | Requisito Associado |                                                          RF-05 - O sistema deve permitir que o fornecedor e o comprador possam cadastrar, alterar e excluir seu cadastro                                                          |
-|      Avaliação      | O sistema deve permitir que o usuário exclua sua conta. Deve-se clicar em "Excluir Conta" no menu lateral. Após confirmar a exclusão, o perfil é eliminado com sucesso.|
+|      Avaliação      | O sistema deve permitir que o usuário exclua sua conta. Deve-se clicar em "Excluir Conta" no menu lateral. Após confirmar a exclusão, o perfil é eliminado com sucesso. ✅|
 
 |    Caso de Teste    |                                                                                       CT-05 - Editar conta de usuário                                                                                        |
 | :-----------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
@@ -64,7 +64,7 @@ Relatório com as evidências dos testes de software realizados no sistema pela 
 |      Avaliação      | Podemos realizar a exclusão do pedido já criado, clicando no pedido e clicando na representação de excluir, onde exibirá a pergunta você tem certeza que deseja apagar este pedido, assim, sendo permitido apagar ou cancelar. Exclusão do pedido realizado com sucesso. ✅ |
 
 # Relatório de Testes de Software
-
+## Execução dos testes
 No dia 19 de novembro de 2023, foram realizados os primeiros testes para o registro de teste de software da aplicação HortiDot, com objetivo de validar o desenvolvimento da aplicação e suas funcionalidades.
 
 Iniciamos nossos testes com o cadastro de produtos, que atende ao requisito 04, em que o sistema deve permitir o cadastro, edição e exclusão dos produtos de hortifruti contendo nome e código único do item.  O sistema executou com excelência o cadastro de novos produtos, permitindo que o comprador e o fornecedor efetuem o cadastro. O segundo teste foi voltado para o cadastro de usuários, visando atender ao requisito 05, que deve permitir que o fornecedor e comprador possam cadastrar, alterar e excluir seu cadastro. Só é possível efetuar o cadastro de um usuário com o preenchimento de todos os campos obrigatórios, que inclui os dados pessoais do usuário e os dados da empresa. O usuário deve informar se é um comprador ou um fornecedor. É possível alterar e excluir os dados do usuário.
@@ -74,6 +74,12 @@ Seguimos os testes com editar conta de um usuário, atendendo ao requisito 05, o
 
 O oitavo teste foi uma tentativa de a criar um novo pedido, voltado para o requisito 10, em que o sistema deve permitir a abertura de novos pedidos. A funcionalidade não teve sucesso ao ser executada. O nono teste foi referente à edição de um pedido, voltado ao requisito 03, o sistema deve permitir que o comprador e o fornecedor possam fazer a revisão do pedido antes do fechamento. Inicialmente, a funcionalidade não teve sucesso, porém foi corrigida, como mostrado na segunda imagem do teste. O décimo registro, também voltado ao requisito 03, mencionado anteriormente, podemos realizar a exclusão do pedido já criado, clicando no pedido e em apagar, permitido apagar ou cancelar.
 
-Alguns requisitos propostos ao longo do desenvolvimento deste projeto não foram executados como gostaríamos, entre eles podemos citar: 01- O sistema deve permitir que os fornecedores ajustem o preço para cada comprador correspondente, 02 - O sistema deve permitir que o comprador e o fornecedor ajustem a quantidade de itens solicitados, 06 - O sistema deve permitir que o fornecedor feche o pedido e que o comprador finalize a cotação após a revisão.
+## Conclusão
+Foram 11 casos de teste executados, sendo o primeiro teste referente ao CT-09 - Edição de Pedido o único que apresentou inconsistência. Após o ajuste no código, o teste foi realizado novamente apresentando sucesso.
+
+Alguns requisitos propostos ao longo do desenvolvimento deste projeto foram despriorizados ou não foram executados como gostaríamos, entre eles podemos citar: 
+- 01- O sistema deve permitir que os fornecedores ajustem o preço para cada comprador correspondente,
+- 02 - O sistema deve permitir que o comprador e o fornecedor ajustem a quantidade de itens solicitados,
+- 06 - O sistema deve permitir que o fornecedor feche o pedido e que o comprador finalize a cotação após a revisão.
 
 A aplicação precisa de algumas melhorias e ajustes em funções, e estamos buscando aperfeiçoar. Porém, o que criamos até aqui, mostra que a equipe empenhou-se na elaboração e execução deste projeto.
